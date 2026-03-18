@@ -93,16 +93,21 @@ export default function Home() {
 
       {/* Stats bar */}
       <section className="py-10 px-4 border-b border-gray-100">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { value: "129", label: "Published Articles" },
-            { value: "44+", label: "What Are Guides" },
-            { value: "35+", label: "How-To Guides" },
-            { value: "50+", label: "California Cities" },
+            { value: "129", label: "Published Articles", icon: "📝" },
+            { value: "44+", label: "What Are Guides", icon: "💅" },
+            { value: "35+", label: "How-To Guides", icon: "🛠️" },
+            { value: "50+", label: "California Cities", icon: "📍" },
           ].map((stat) => (
-            <div key={stat.label}>
+            <div
+              key={stat.label}
+              className="text-center rounded-xl py-5 px-3"
+              style={{ background: "linear-gradient(135deg, rgba(4,107,210,0.05) 0%, rgba(65,105,225,0.05) 100%)", border: "1px solid rgba(4,107,210,0.1)" }}
+            >
+              <div className="text-xl mb-1">{stat.icon}</div>
               <p className="text-3xl font-bold" style={{ color: "#046BD2" }}>{stat.value}</p>
-              <p className="text-sm mt-1" style={{ color: "#808285" }}>{stat.label}</p>
+              <p className="text-xs mt-1 font-medium" style={{ color: "#808285" }}>{stat.label}</p>
             </div>
           ))}
         </div>
@@ -244,45 +249,70 @@ export default function Home() {
       {/* Differentiators */}
       <section className="py-14 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6" style={{ color: "#1E293B" }}>
+          <h2 className="text-2xl font-bold mb-2 text-center" style={{ color: "#1E293B" }}>
             Why Nail Salon Reviews and Products?
           </h2>
-          <div className="grid sm:grid-cols-2 gap-6">
+          <p className="text-center text-sm mb-10" style={{ color: "#808285" }}>
+            Everything you need to learn about nails and find the best salon near you.
+          </p>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {[
               {
+                icon: "📚",
                 title: "Dual-Purpose Resource",
                 desc: "Combines educational nail guides with a California nail salon directory in one place.",
+                color: "#046BD2",
+                bg: "rgba(4,107,210,0.07)",
               },
               {
+                icon: "✍️",
                 title: "Single Author Voice",
                 desc: "All 129 articles are written by Nancy Davidson in a first-person, conversational style that feels personal and relatable.",
+                color: "#4169E1",
+                bg: "rgba(65,105,225,0.07)",
               },
               {
+                icon: "📋",
                 title: "Structured, Easy to Skim",
                 desc: "Every article includes comparison tables, step-by-step lists, and FAQ sections so you get the information you need fast.",
+                color: "#046BD2",
+                bg: "rgba(4,107,210,0.07)",
               },
               {
+                icon: "🔗",
                 title: "Source-Backed Content",
                 desc: "Content cites reputable beauty sources including Byrdie, Allure, Refinery29, wikiHow, and Salon Success Academy.",
+                color: "#4169E1",
+                bg: "rgba(65,105,225,0.07)",
               },
               {
+                icon: "📍",
                 title: "California Geographic Focus",
                 desc: "50+ city-specific salon review pages tailored for California readers looking for local recommendations.",
+                color: "#046BD2",
+                bg: "rgba(4,107,210,0.07)",
               },
               {
+                icon: "🔓",
                 title: "Free, No Sign-Up Required",
                 desc: "No paywalls, no login, no email required. All content is freely accessible to everyone.",
+                color: "#4169E1",
+                bg: "rgba(65,105,225,0.07)",
               },
             ].map((item) => (
-              <div key={item.title} className="flex gap-3">
+              <div
+                key={item.title}
+                className="rounded-xl border border-gray-100 p-5 hover:shadow-md transition-shadow bg-white"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)" }}
+              >
                 <div
-                  className="w-1.5 rounded mt-1 flex-shrink-0"
-                  style={{ background: "#046BD2", minWidth: "6px", minHeight: "40px" }}
-                ></div>
-                <div>
-                  <h3 className="font-semibold text-sm mb-1" style={{ color: "#1E293B" }}>{item.title}</h3>
-                  <p className="text-sm" style={{ color: "#808285" }}>{item.desc}</p>
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-lg mb-4"
+                  style={{ background: item.bg }}
+                >
+                  {item.icon}
                 </div>
+                <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{item.title}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -295,11 +325,17 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-center mb-10" style={{ color: "#1E293B" }}>
             Frequently Asked Questions
           </h2>
-          <div className="space-y-6">
-            {faqs.map((faq) => (
-              <div key={faq.q} className="bg-white rounded p-5 border border-gray-200">
-                <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
-                <p className="text-sm" style={{ color: "#808285" }}>{faq.a}</p>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div
+                key={faq.q}
+                className="bg-white rounded-xl p-5 border border-gray-100 flex gap-4"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
+              >
+                <div className="flex-1">
+                  <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+                </div>
               </div>
             ))}
           </div>
