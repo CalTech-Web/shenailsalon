@@ -55,41 +55,71 @@ const articles = [
 
 export default function WhatArePage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-14">
-      {/* Breadcrumb */}
-      <nav className="text-sm mb-6" style={{ color: "#808285" }}>
-        <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
-        <span className="mx-2">/</span>
-        <span>What Are</span>
-      </nav>
-
-      <h1 className="text-3xl font-bold mb-3" style={{ color: "#1E293B" }}>
-        What Are Nail Guides
-      </h1>
-      <p className="mb-10 text-lg" style={{ color: "#808285" }}>
-        44+ educational explainers covering every nail type, what they are made of, how they compare to other options, and whether each type is right for you. Written by Nancy Davidson since late 2024.
-      </p>
+    <>
+      {/* Hero banner */}
+      <section
+        className="py-14 px-4"
+        style={{ background: "linear-gradient(160deg, #EBF4FF 0%, #F0F5FA 60%, #ffffff 100%)" }}
+      >
+        <div className="max-w-5xl mx-auto">
+          <nav className="text-sm mb-5" style={{ color: "#808285" }}>
+            <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
+            <span className="mx-2">/</span>
+            <span>What Are</span>
+          </nav>
+          <div
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-4 border"
+            style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
+          >
+            <span>💅</span>
+            <span>44+ Guides</span>
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
+            What Are Nail Guides
+          </h1>
+          <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
+            Educational explainers covering every nail type, what they are made of, how they compare to other options, and whether each type is right for you. Written by Nancy Davidson since late 2024.
+          </p>
+        </div>
+      </section>
 
       {/* Article grid */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {articles.map((title) => (
-          <div
-            key={title}
-            className="block p-4 rounded border border-gray-200 hover:border-blue-300 hover:shadow-sm transition cursor-pointer"
-          >
-            <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{title}</p>
-            <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
+      <section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {articles.map((title) => (
+              <div
+                key={title}
+                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white cursor-pointer"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
+              >
+                <div className="h-1 w-full" style={{ background: "#046BD2" }}></div>
+                <div className="p-4">
+                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{title}</p>
+                  <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#046BD2" }}>
+                    Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      </section>
 
       {/* About section */}
-      <section className="mt-14 p-6 rounded border border-gray-200" style={{ background: "#F0F5FA" }}>
-        <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
-        <p className="text-sm" style={{ color: "#808285" }}>
-          Every article in this category is written in a structured format that explains the nail type, its composition, the application process, how long it lasts, and how it compares to similar options. Content cites reputable beauty sources including Byrdie, Allure, Refinery29, and Salon Success Academy.
-        </p>
+      <section className="py-10 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div
+            className="p-6 rounded-xl border"
+            style={{ background: "#F0F5FA", borderColor: "rgba(4,107,210,0.15)" }}
+          >
+            <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
+              Every article in this category is written in a structured format that explains the nail type, its composition, the application process, how long it lasts, and how it compares to similar options. Content cites reputable beauty sources including Byrdie, Allure, Refinery29, and Salon Success Academy.
+            </p>
+          </div>
+        </div>
       </section>
-    </div>
+    </>
   );
 }

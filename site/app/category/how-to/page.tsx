@@ -42,78 +42,87 @@ const careGuides = [
   "How To Push Back Cuticles",
 ];
 
+const subsections = [
+  { title: "Application Guides", guides: applicationGuides, color: "#046BD2" },
+  { title: "Removal Guides", guides: removalGuides, color: "#4169E1" },
+  { title: "Nail Care and Maintenance", guides: careGuides, color: "#045CB4" },
+];
+
 export default function HowToPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 py-14">
-      {/* Breadcrumb */}
-      <nav className="text-sm mb-6" style={{ color: "#808285" }}>
-        <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
-        <span className="mx-2">/</span>
-        <span>How To</span>
-      </nav>
-
-      <h1 className="text-3xl font-bold mb-3" style={{ color: "#1E293B" }}>
-        Nail How-To Guides
-      </h1>
-      <p className="mb-10 text-lg" style={{ color: "#808285" }}>
-        35+ step-by-step tutorials covering nail application, removal, shaping, and care. Written for DIY nail enthusiasts who want to do their nails at home or make more informed salon choices.
-      </p>
-
-      {/* Application */}
-      <section className="mb-12">
-        <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Application Guides</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {applicationGuides.map((title) => (
-            <div
-              key={title}
-              className="block p-4 rounded border border-gray-200 hover:border-blue-300 hover:shadow-sm transition cursor-pointer"
-            >
-              <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{title}</p>
-              <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
-            </div>
-          ))}
+    <>
+      {/* Hero banner */}
+      <section
+        className="py-14 px-4"
+        style={{ background: "linear-gradient(160deg, #EBF4FF 0%, #F0F5FA 60%, #ffffff 100%)" }}
+      >
+        <div className="max-w-5xl mx-auto">
+          <nav className="text-sm mb-5" style={{ color: "#808285" }}>
+            <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
+            <span className="mx-2">/</span>
+            <span>How To</span>
+          </nav>
+          <div
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-4 border"
+            style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
+          >
+            <span>🛠️</span>
+            <span>35+ Tutorials</span>
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
+            Nail How-To Guides
+          </h1>
+          <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
+            Step-by-step tutorials covering nail application, removal, shaping, and care. Written for DIY nail enthusiasts who want to do their nails at home or make more informed salon choices.
+          </p>
         </div>
       </section>
 
-      {/* Removal */}
-      <section className="mb-12">
-        <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Removal Guides</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {removalGuides.map((title) => (
-            <div
-              key={title}
-              className="block p-4 rounded border border-gray-200 hover:border-blue-300 hover:shadow-sm transition cursor-pointer"
-            >
-              <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{title}</p>
-              <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Care */}
-      <section className="mb-12">
-        <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Nail Care and Maintenance</h2>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {careGuides.map((title) => (
-            <div
-              key={title}
-              className="block p-4 rounded border border-gray-200 hover:border-blue-300 hover:shadow-sm transition cursor-pointer"
-            >
-              <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{title}</p>
-              <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
+      {/* Subsections */}
+      <section className="py-12 px-4">
+        <div className="max-w-5xl mx-auto space-y-14">
+          {subsections.map((sub) => (
+            <div key={sub.title}>
+              <div className="flex items-center gap-3 mb-5">
+                <div className="h-5 w-1 rounded-full" style={{ background: sub.color }}></div>
+                <h2 className="text-xl font-bold" style={{ color: "#1E293B" }}>{sub.title}</h2>
+              </div>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                {sub.guides.map((title) => (
+                  <div
+                    key={title}
+                    className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white cursor-pointer"
+                    style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
+                  >
+                    <div className="h-1 w-full" style={{ background: sub.color }}></div>
+                    <div className="p-4">
+                      <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{title}</p>
+                      <p className="text-xs mt-2 flex items-center gap-1" style={{ color: sub.color }}>
+                        Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
       </section>
 
       {/* About section */}
-      <section className="p-6 rounded border border-gray-200" style={{ background: "#F0F5FA" }}>
-        <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
-        <p className="text-sm" style={{ color: "#808285" }}>
-          Each how-to guide includes a full supply list, cost estimate, step-by-step instructions, and tips for common mistakes. Guides are written by Nancy Davidson and are framed for readers who want to do their nails at home.
-        </p>
+      <section className="py-10 px-4">
+        <div className="max-w-5xl mx-auto">
+          <div
+            className="p-6 rounded-xl border"
+            style={{ background: "#F0F5FA", borderColor: "rgba(4,107,210,0.15)" }}
+          >
+            <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
+            <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
+              Each how-to guide includes a full supply list, cost estimate, step-by-step instructions, and tips for common mistakes. Guides are written by Nancy Davidson and are framed for readers who want to do their nails at home.
+            </p>
+          </div>
+        </div>
       </section>
-    </div>
+    </>
   );
 }
