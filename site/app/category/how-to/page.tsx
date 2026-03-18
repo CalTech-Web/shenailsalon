@@ -116,6 +116,10 @@ const faqs = [
     q: "How do you do nails at home without a salon?",
     a: "Start with clean, dry nails. Push back cuticles with a wooden pusher. File to your preferred shape. Apply a base coat, two coats of color, and a topcoat. For gel results at home, a UV lamp and gel polish kit replicate most of what a salon does at a fraction of the cost.",
   },
+  {
+    q: "How do you paint your nails perfectly?",
+    a: "Start with a base coat to protect the nail and improve adhesion. Apply the first coat of color in three strokes: one down the center, then one on each side. Let it dry for 2 minutes. Apply a second thin coat the same way. Finish with a topcoat and run it along the tip of the nail to seal the edge. Thin coats dry faster and chip less than thick ones.",
+  },
 ];
 
 const faqSchema = {

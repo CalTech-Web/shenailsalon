@@ -64,7 +64,12 @@ const authorSchema = {
     "Dip powder nails",
     "Gel-X nails",
     "Builder gel nails",
-    "Nail care",
+    "Shellac manicures",
+    "Polygel nails",
+    "Nail shapes",
+    "Nail composition and keratin",
+    "Nail care and maintenance",
+    "DIY nail removal",
     "California nail salons",
   ],
 };
