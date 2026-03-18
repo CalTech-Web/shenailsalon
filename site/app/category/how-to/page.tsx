@@ -73,7 +73,7 @@ export default function HowToPage() {
             Nail How-To Guides
           </h1>
           <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
-            Step-by-step tutorials covering nail application, removal, shaping, and care. Written for DIY nail enthusiasts who want to do their nails at home or make more informed salon choices.
+            Applying nails at home is doable. Removing them without damage is harder. These 35 guides cover both, along with shaping, care, and the supplies you actually need before you start.
           </p>
         </div>
       </section>
@@ -118,7 +118,7 @@ export default function HowToPage() {
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
-              Each how-to guide includes a full supply list, cost estimate, step-by-step instructions, and tips for common mistakes. Guides are written by Nancy Davidson and are framed for readers who want to do their nails at home.
+              Each guide includes a supply list, an estimated cost, numbered steps, and a section on what tends to go wrong. Nancy Davidson wrote all 35 of them.
             </p>
           </div>
         </div>

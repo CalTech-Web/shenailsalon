@@ -78,7 +78,7 @@ export default function WhatArePage() {
             What Are Nail Guides
           </h1>
           <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
-            Educational explainers covering every nail type, what they are made of, how they compare to other options, and whether each type is right for you. Written by Nancy Davidson since late 2024.
+            Acrylic nails use polymer powder. Gel nails cure under UV light. Dip powder skips the lamp entirely. These 44 guides explain how each nail type works, what it costs, how long it lasts, and what it does to your natural nail underneath.
           </p>
         </div>
       </section>
@@ -115,7 +115,7 @@ export default function WhatArePage() {
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
-              Every article in this category is written in a structured format that explains the nail type, its composition, the application process, how long it lasts, and how it compares to similar options. Content cites reputable beauty sources including Byrdie, Allure, Refinery29, and Salon Success Academy.
+              Every article covers what the nail type is made of, how it is applied, how long it holds up, and how it compares to the closest alternatives. Sources include Byrdie, Allure, Refinery29, and Salon Success Academy. There are 44 published guides in this category.
             </p>
           </div>
         </div>

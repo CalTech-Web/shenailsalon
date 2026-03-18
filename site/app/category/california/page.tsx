@@ -84,7 +84,7 @@ export default function CaliforniaPage() {
             California Nail Salon Directory
           </h1>
           <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
-            Curated nail salon reviews for 50+ cities across California. Each city page highlights multiple salons with service descriptions and pricing information, written by Nancy Davidson.
+            Finding a good nail salon in California mostly comes down to knowing where to look. Nancy Davidson has reviewed salons across 50 cities, from Los Angeles to Salinas, each with service and pricing details.
           </p>
         </div>
       </section>
@@ -121,7 +121,7 @@ export default function CaliforniaPage() {
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About the California Directory</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
-              The California nail salon directory covers 50 published city pages. Each page includes curated recommendations with salon descriptions, services offered, and general pricing ranges. Content is regularly updated by Nancy Davidson to help California readers find the best nail salons near them.
+              50 published city pages across California. Each one lists multiple salons with a description of services offered and general price ranges. Nancy Davidson researched and wrote all of them.
             </p>
           </div>
         </div>

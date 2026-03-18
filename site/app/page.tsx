@@ -30,23 +30,23 @@ const californiaArticles = [
 const faqs = [
   {
     q: "What kinds of nail articles does the site cover?",
-    a: 'The site covers two main content types: educational "What Are" explainers about nail types and composition, and practical "How To" guides for applying, shaping, and removing nails. There are also California nail salon review pages for major cities.',
+    a: 'Nail explainers, step-by-step tutorials, and California salon reviews. The explainers break down what each nail type is made of and how it behaves. The how-to guides cover application and removal in numbered steps. The California section lists salons across 50 cities with pricing.',
   },
   {
     q: "Does shenailsalon.com offer nail services?",
-    a: "No. Despite its domain name, shenailsalon.com is an informational blog and nail salon directory. It is not a physical salon and does not book appointments or sell products directly.",
+    a: "No, despite the name. The site is an informational blog and California salon directory. There is no booking, no product store, and no physical location.",
   },
   {
     q: "Who writes the content?",
-    a: "All content on the site is attributed to Nancy Davidson. She writes in a conversational, first-person voice to make nail education accessible to everyone.",
+    a: "Nancy Davidson writes every article on this site. She started publishing in November 2024 and has written 129 articles since then. No other writers are listed.",
   },
   {
     q: "Which cities in California does the directory cover?",
-    a: "The directory covers 50+ California cities including Los Angeles, San Francisco, San Diego, Sacramento, Fresno, Long Beach, Oakland, Anaheim, Riverside, and many others.",
+    a: "More than 50 cities, ranging from Los Angeles, San Francisco, and San Diego down to Modesto, Visalia, Simi Valley, and Oxnard. If your city is missing, the nearest major city page is likely a useful starting point.",
   },
   {
     q: "When was the site launched?",
-    a: "The domain shenailsalon.com was registered on November 12, 2024. The first content was published in November 2024.",
+    a: "The domain was registered November 12, 2024. Nancy Davidson published her first articles the same month and has been adding content steadily since.",
   },
 ];
 
@@ -70,7 +70,7 @@ export default function Home() {
             Nail Salon Reviews and Products
           </h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: "#808285" }}>
-            Your go-to resource for nail salon reviews, nail care how-to guides, and product information across California.
+            Nancy Davidson has been writing about nails since 2024. Free guides on every nail type, plus curated salon reviews across 50 California cities. No sign-up required.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Link
@@ -123,7 +123,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mb-6" style={{ color: "#808285" }}>
-            Learn about every nail type, what it is made of, how it differs from other options, and whether it is right for you.
+            Acrylic, gel, dip, polygel, gel-x, builder gel. Each one works differently, costs differently, and affects your nails differently. These guides break it all down.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {whatAreArticles.map((a) => (
@@ -156,7 +156,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mb-6" style={{ color: "#808285" }}>
-            Step-by-step tutorials for applying, shaping, and removing nails at home. Written for beginners and enthusiasts alike.
+            Supplies, costs, numbered steps, and common mistakes. Whether you are applying dip at home or trying to remove gel without a drill, these guides cover what most tutorials skip.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {howToArticles.map((a) => (
@@ -189,7 +189,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mb-6" style={{ color: "#808285" }}>
-            Curated nail salon reviews for 50+ cities across California. Find the best nail salon near you.
+            50 California cities reviewed, with multiple salon recommendations per page. From Los Angeles to Salinas, if you need a local nail salon, start here.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {californiaArticles.map((a) => (
@@ -225,11 +225,11 @@ export default function Home() {
               style={{ left: "10%", right: "10%", background: "linear-gradient(90deg, #046BD2 0%, #4169E1 100%)", opacity: 0.2 }}
             ></div>
             {[
-              { step: "1", title: "Search", desc: "Find an article via Google on any nail topic you are curious about." },
-              { step: "2", title: "Read", desc: "Learn from structured guides with tables, step-by-step lists, and comparisons." },
-              { step: "3", title: "Explore", desc: "Follow internal links to discover related nail topics and techniques." },
-              { step: "4", title: "Find a Salon", desc: "Browse California city pages to find local nail salon recommendations." },
-              { step: "5", title: "Go Further", desc: "Explore cited sources like Byrdie, Allure, and wikiHow for even more depth." },
+              { step: "1", title: "Search", desc: "Most readers land here from Google. Search any nail question and one of 129 articles is likely to come up." },
+              { step: "2", title: "Read", desc: "Each article has a comparison table, step-by-step section, and FAQ. Skim or read the whole thing." },
+              { step: "3", title: "Explore", desc: "Articles link to related guides. Come in looking for dip powder, leave knowing more about gel-x too." },
+              { step: "4", title: "Find a Salon", desc: "When you want someone else to do the work, the California city pages list local salons with service and pricing details." },
+              { step: "5", title: "Go Further", desc: "Each article cites its sources. Byrdie, Allure, wikiHow, Salon Success Academy. Read the originals if you want to go deeper." },
             ].map((item) => (
               <div key={item.step} className="text-center relative z-10">
                 <div
@@ -253,49 +253,49 @@ export default function Home() {
             Why Nail Salon Reviews and Products?
           </h2>
           <p className="text-center text-sm mb-10" style={{ color: "#808285" }}>
-            Everything you need to learn about nails and find the best salon near you.
+            129 articles. 50 California cities. No paywall, no sign-up.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
             {[
               {
                 icon: "📚",
                 title: "Dual-Purpose Resource",
-                desc: "Combines educational nail guides with a California nail salon directory in one place.",
+                desc: "Most nail sites are either how-to blogs or salon finders. This one covers both. Learn what builder gel is and find a salon in Torrance on the same site.",
                 color: "#046BD2",
                 bg: "rgba(4,107,210,0.07)",
               },
               {
                 icon: "✍️",
                 title: "Single Author Voice",
-                desc: "All 129 articles are written by Nancy Davidson in a first-person, conversational style that feels personal and relatable.",
+                desc: "Nancy Davidson wrote every article on this site, all 129 of them. One voice, one perspective. You know what you are getting before you click.",
                 color: "#4169E1",
                 bg: "rgba(65,105,225,0.07)",
               },
               {
                 icon: "📋",
                 title: "Structured, Easy to Skim",
-                desc: "Every article includes comparison tables, step-by-step lists, and FAQ sections so you get the information you need fast.",
+                desc: "Every article has a comparison table, a step-by-step section, and a FAQ. If you just need one quick answer you can skip the intro entirely.",
                 color: "#046BD2",
                 bg: "rgba(4,107,210,0.07)",
               },
               {
                 icon: "🔗",
                 title: "Source-Backed Content",
-                desc: "Content cites reputable beauty sources including Byrdie, Allure, Refinery29, wikiHow, and Salon Success Academy.",
+                desc: "Claims are backed by sources you can check, including Byrdie, Allure, Refinery29, and Salon Success Academy. If something is disputed in the beauty world, the articles say so.",
                 color: "#4169E1",
                 bg: "rgba(65,105,225,0.07)",
               },
               {
                 icon: "📍",
                 title: "California Geographic Focus",
-                desc: "50+ city-specific salon review pages tailored for California readers looking for local recommendations.",
+                desc: "The salon directory covers 50 California cities, from San Francisco and Los Angeles down to Simi Valley and Visalia.",
                 color: "#046BD2",
                 bg: "rgba(4,107,210,0.07)",
               },
               {
                 icon: "🔓",
                 title: "Free, No Sign-Up Required",
-                desc: "No paywalls, no login, no email required. All content is freely accessible to everyone.",
+                desc: "No paywall. No pop-up asking for your email. No subscription. Read any article without creating an account.",
                 color: "#4169E1",
                 bg: "rgba(65,105,225,0.07)",
               },
