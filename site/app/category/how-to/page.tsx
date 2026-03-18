@@ -2,8 +2,33 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nail How-To Guides | Nail Salon Reviews and Products",
-  description: "35 nail tutorials covering application, removal, shaping, and care. Each guide includes a supply list, estimated cost, numbered steps, and a section on what tends to go wrong.",
+  title: "How To Apply and Remove Nails at Home | 35 Nail Tutorials",
+  description: "35 nail tutorials covering application, removal, shaping, and care. Acrylic, gel, dip, press-on, and more. Supply lists, cost estimates, and numbered steps.",
+  alternates: { canonical: "https://shenailsalon.com/category/how-to" },
+  openGraph: {
+    url: "https://shenailsalon.com/category/how-to",
+    title: "How To Apply and Remove Nails at Home | 35 Nail Tutorials",
+    description: "35 nail tutorials covering application, removal, shaping, and care. Acrylic, gel, dip, press-on, and more. Supply lists, cost estimates, and numbered steps.",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://shenailsalon.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "How-To Nail Guides",
+      item: "https://shenailsalon.com/category/how-to",
+    },
+  ],
 };
 
 const applicationGuides = [
@@ -66,6 +91,10 @@ const subsections = [
 export default function HowToPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero banner */}
       <section
         className="py-14 px-4"

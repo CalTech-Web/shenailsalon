@@ -2,8 +2,33 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "California Nail Salon Directory | Nail Salon Reviews and Products",
-  description: "Nancy Davidson reviewed nail salons in 50+ California cities. Each city page lists multiple salons with service descriptions and general pricing, from Los Angeles to Salinas.",
+  title: "Best Nail Salons in California | 50+ City Reviews",
+  description: "Nail salon reviews across 50+ California cities. Los Angeles, San Francisco, San Diego, Sacramento, and more. Each city page lists multiple salons with services and pricing.",
+  alternates: { canonical: "https://shenailsalon.com/category/california" },
+  openGraph: {
+    url: "https://shenailsalon.com/category/california",
+    title: "Best Nail Salons in California | 50+ City Reviews",
+    description: "Nail salon reviews across 50+ California cities. Los Angeles, San Francisco, San Diego, Sacramento, and more. Each city page lists multiple salons with services and pricing.",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://shenailsalon.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "California Nail Salon Directory",
+      item: "https://shenailsalon.com/category/california",
+    },
+  ],
 };
 
 const cities = [
@@ -62,6 +87,10 @@ const cities = [
 export default function CaliforniaPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero banner */}
       <section
         className="py-14 px-4"

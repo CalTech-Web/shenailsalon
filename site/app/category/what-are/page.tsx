@@ -2,8 +2,33 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "What Are Nail Guides | Nail Salon Reviews and Products",
-  description: "44 articles on every nail type from acrylic and gel to polygel and Russian manicures. Each guide covers what the nail is made of, how long it lasts, and how it compares to the alternatives.",
+  title: "What Are Acrylic, Gel, and Dip Nails? | 44 Nail Guides",
+  description: "44 guides covering what every nail type is made of, how long it lasts, and how it compares. Acrylic, gel, dip, polygel, shellac, gel-x, BIAB, and more.",
+  alternates: { canonical: "https://shenailsalon.com/category/what-are" },
+  openGraph: {
+    url: "https://shenailsalon.com/category/what-are",
+    title: "What Are Acrylic, Gel, and Dip Nails? | 44 Nail Guides",
+    description: "44 guides covering what every nail type is made of, how long it lasts, and how it compares. Acrylic, gel, dip, polygel, shellac, gel-x, BIAB, and more.",
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://shenailsalon.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "What Are Nail Guides",
+      item: "https://shenailsalon.com/category/what-are",
+    },
+  ],
 };
 
 const articles = [
@@ -56,6 +81,10 @@ const articles = [
 export default function WhatArePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* Hero banner */}
       <section
         className="py-14 px-4"

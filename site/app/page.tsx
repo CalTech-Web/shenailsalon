@@ -2,8 +2,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Nail Salon Reviews and Products | Nail Guides and California Salon Directory",
+  title: "Nail Guides and California Salon Directory | shenailsalon.com",
   description: "Nancy Davidson has written 129 articles on nail types, application, removal, and care, plus salon reviews across 50 California cities. No paywall.",
+  alternates: { canonical: "https://shenailsalon.com" },
+  openGraph: {
+    url: "https://shenailsalon.com",
+    title: "Nail Guides and California Salon Directory | shenailsalon.com",
+    description: "129 free nail guides and California salon reviews by Nancy Davidson. Acrylic, gel, dip, how-to tutorials, and salons in 50+ cities.",
+  },
 };
 
 const whatAreArticles = [
@@ -56,9 +62,37 @@ const faqs = [
   },
 ];
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Nail Salon Reviews and Products",
+  url: "https://shenailsalon.com",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Hero */}
       <section
         className="py-24 px-4 text-center"
