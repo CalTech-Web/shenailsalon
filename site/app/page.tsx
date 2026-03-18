@@ -67,6 +67,14 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "Nail Salon Reviews and Products",
   url: "https://shenailsalon.com",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://shenailsalon.com/?s={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 const faqSchema = {

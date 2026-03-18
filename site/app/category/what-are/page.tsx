@@ -78,6 +78,46 @@ const articles = [
   { title: "What Are Long Nails?", href: "/what-are/what-are-long-nails/" },
 ];
 
+const faqs = [
+  {
+    q: "What are shellac nails?",
+    a: "Shellac nails are a hybrid nail polish system developed by CND that combines regular nail polish with gel polish. They cure under a UV or LED lamp, last 2 to 4 weeks without chipping, and are removed by soaking in acetone. Unlike acrylics or gel extensions, shellac does not add length or thickness.",
+  },
+  {
+    q: "What are gel nails?",
+    a: "Gel nails use a gel formula that hardens under a UV or LED lamp. They can be applied as a polish over your natural nail or as a gel extension to add length. Gel nails are flexible, glossy, and chip-resistant. Most gel manicures last 2 to 3 weeks.",
+  },
+  {
+    q: "What are acrylic nails?",
+    a: "Acrylic nails are created by combining a liquid monomer with a powder polymer to form a paste that is shaped onto the nail and hardens in air. They are used to extend nail length and add strength. Acrylics are durable and typically last 2 to 3 weeks before needing a fill.",
+  },
+  {
+    q: "What are dip powder nails?",
+    a: "Dip powder nails (also called SNS nails) use a resin adhesive and a colored acrylic powder dipped in layers to build a durable coating. No UV or LED lamp is needed. Dip manicures last 3 to 4 weeks and are considered gentler on the natural nail than acrylics.",
+  },
+  {
+    q: "What are gel-x nails?",
+    a: "Gel-x nails are soft gel nail extensions developed by Aprés Nail. A full-cover soft gel tip is applied over the natural nail using a gel base coat and cured under a UV or LED lamp. Gel-x extensions are lighter and more flexible than acrylic extensions and last 3 to 4 weeks.",
+  },
+  {
+    q: "What are builder gel nails?",
+    a: "Builder gel (also called BIAB, builder in a bottle, or hard gel) is a thick, viscous gel used to strengthen, extend, or sculpt nails. It cures under a UV or LED lamp, providing a semi-rigid overlay that protects the natural nail while adding length and structure.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -102,6 +142,10 @@ export default function WhatArePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* Hero banner */}
       <section
@@ -149,6 +193,27 @@ export default function WhatArePage() {
                   </p>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section */}
+      <section className="py-12 px-4" style={{ background: "#F0F5FA" }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "#1E293B" }}>
+            Common Questions About Nail Types
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div
+                key={faq.q}
+                className="bg-white rounded-xl p-5 border border-gray-100"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
+              >
+                <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
