@@ -83,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/how-to/how-to-remove-gel-nails/",
     "/how-to/how-to-remove-dip-nails/",
     "/how-to/how-to-remove-gel-x-nails/",
+    "/how-to/how-to-remove-shellac-nails/",
     "/how-to/how-to-remove-press-on-nails/",
     "/how-to/how-to-remove-glue-on-nails/",
     "/how-to/how-to-remove-fake-nails/",

@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How To Remove Acrylic, Gel, and Dip Nails | 35 Nail Tutorials",
-  description: "35 nail tutorials covering removal, application, shaping, and care. How to remove acrylic nails, gel nails, dip nails, gel-x, and more. Supply lists, cost estimates, and numbered steps.",
+  title: "How To Paint, Shape, and Remove Nails | 35 Step-by-Step Guides",
+  description: "35 nail tutorials: how to paint your nails, how to shape nails, how to remove acrylic, gel, shellac, and dip nails. Supply lists, cost estimates, and numbered steps by Nancy Davidson.",
   alternates: { canonical: "https://shenailsalon.com/category/how-to" },
   openGraph: {
     url: "https://shenailsalon.com/category/how-to",
-    title: "How To Remove Acrylic, Gel, and Dip Nails | 35 Nail Tutorials",
-    description: "35 nail tutorials covering removal, application, shaping, and care. How to remove acrylic nails, gel nails, dip nails, gel-x, and more. Supply lists, cost estimates, and numbered steps.",
+    title: "How To Paint, Shape, and Remove Nails | 35 Step-by-Step Guides",
+    description: "35 nail tutorials: how to paint your nails, how to shape nails, how to remove acrylic, gel, shellac, and dip nails. Supply lists, cost estimates, and numbered steps by Nancy Davidson.",
   },
 };
 
@@ -49,6 +49,7 @@ const removalGuides = [
   { title: "How To Remove Gel Nails", href: "/how-to/how-to-remove-gel-nails/" },
   { title: "How To Remove Dip Powder Nails", href: "/how-to/how-to-remove-dip-nails/" },
   { title: "How To Remove Gel-X Nails", href: "/how-to/how-to-remove-gel-x-nails/" },
+  { title: "How To Remove Shellac Nails", href: "/how-to/how-to-remove-shellac-nails/" },
   { title: "How To Remove Press-On Nails", href: "/how-to/how-to-remove-press-on-nails/" },
   { title: "How To Remove Glue-On Nails", href: "/how-to/how-to-remove-glue-on-nails/" },
   { title: "How To Remove Fake Nails", href: "/how-to/how-to-remove-fake-nails/" },
@@ -90,6 +91,46 @@ const subsections = [
 
 const allGuides = [...applicationGuides, ...removalGuides, ...careGuides];
 
+const faqs = [
+  {
+    q: "How do you paint your nails at home?",
+    a: "Clean and dry your nails first. Apply a base coat and let it dry. Apply two thin coats of polish, waiting 2 minutes between coats. Finish with a topcoat. Avoid thick single coats, which cause smudging and uneven coverage.",
+  },
+  {
+    q: "How do you shape your nails?",
+    a: "File in one direction from the outer edge toward the center. Avoid sawing back and forth, which weakens the nail. The five main shapes are square, round, oval, almond, and coffin. Start with a coarse file to remove length, then switch to a fine-grit file to smooth the edge.",
+  },
+  {
+    q: "How do you remove shellac nails?",
+    a: "Buff the surface of the shellac lightly to break the seal. Soak a cotton ball in pure acetone and place it on the nail. Wrap each finger in foil and wait 10 to 15 minutes. The shellac should lift off easily. Never force or peel it, which can remove layers of the natural nail.",
+  },
+  {
+    q: "How do you file your nails correctly?",
+    a: "Use a fine-grit nail file and move in one direction from the side toward the center. Filing back and forth splits the nail edge. File at a slight angle to match your chosen shape, then finish with a buffer to smooth any roughness.",
+  },
+  {
+    q: "How do you remove acrylic nails at home?",
+    a: "File off the top coat and as much of the acrylic surface as possible. Soak nails in acetone for 20 to 30 minutes, either in a bowl or using acetone-soaked cotton wrapped in foil. Once the acrylic softens, push it off with a cuticle pusher. Do not force or rip it off.",
+  },
+  {
+    q: "How do you do nails at home without a salon?",
+    a: "Start with clean, dry nails. Push back cuticles with a wooden pusher. File to your preferred shape. Apply a base coat, two coats of color, and a topcoat. For gel results at home, a UV lamp and gel polish kit replicate most of what a salon does at a fraction of the cost.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -114,6 +155,10 @@ export default function HowToPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* Hero banner */}
       <section
@@ -172,6 +217,27 @@ export default function HowToPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ section */}
+      <section className="py-12 px-4" style={{ background: "#F0F5FA" }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "#1E293B" }}>
+            Common Nail How-To Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div
+                key={faq.q}
+                className="bg-white rounded-xl p-5 border border-gray-100"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
+              >
+                <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

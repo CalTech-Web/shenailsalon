@@ -84,6 +84,42 @@ const cities = [
   { city: "Santa Barbara", href: "/california/nail-salon-santa-barbara/" },
 ];
 
+const faqs = [
+  {
+    q: "How do I find a good nail salon in California?",
+    a: "Look for salons that display a current state board license. Read recent Google reviews, paying attention to comments about cleanliness and technique. Ask whether the salon uses new files and buffers per client or sanitizes between uses. This site covers 50 California cities with specific salon picks for each.",
+  },
+  {
+    q: "How much does a gel manicure cost in California?",
+    a: "Gel manicure prices in California typically range from $35 to $65 depending on the city and salon. Cities like Los Angeles, San Francisco, and Irvine tend to be on the higher end. Gel extensions and nail art add cost; a basic gel set with no art stays on the lower end of that range.",
+  },
+  {
+    q: "Which California cities have the best nail salons?",
+    a: "Los Angeles, San Francisco, Irvine, and Pasadena consistently have a wide selection of higher-end salons. Huntington Beach, San Diego, and Santa Barbara also have strong options. This directory covers 50 cities with individual salon picks for each.",
+  },
+  {
+    q: "What nail services do California salons typically offer?",
+    a: "Most California nail salons offer basic manicures and pedicures, gel polish, acrylic nail sets, dip powder, and gel extensions. Higher-end salons may offer gel-x, builder gel overlays, and Russian manicures. Prices vary significantly between budget salons and spa-style locations.",
+  },
+  {
+    q: "Are nail salons in California required to be licensed?",
+    a: "Yes. California nail technicians are licensed by the California Board of Barbering and Cosmetology. Salons must display their establishment license and individual technician licenses. You can verify a license at the California Department of Consumer Affairs website.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -108,6 +144,10 @@ export default function CaliforniaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* Hero banner */}
       <section
@@ -155,6 +195,27 @@ export default function CaliforniaPage() {
                   </p>
                 </div>
               </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ section */}
+      <section className="py-12 px-4" style={{ background: "#F0F5FA" }}>
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8" style={{ color: "#1E293B" }}>
+            California Nail Salon Questions
+          </h2>
+          <div className="space-y-4">
+            {faqs.map((faq, i) => (
+              <div
+                key={faq.q}
+                className="bg-white rounded-xl p-5 border border-gray-100"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
+              >
+                <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
+                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+              </div>
             ))}
           </div>
         </div>
