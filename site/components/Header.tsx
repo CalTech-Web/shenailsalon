@@ -39,10 +39,10 @@ export default function Header() {
           ))}
           <Link
             href="/category/california"
-            className="text-sm font-semibold px-4 py-1.5 rounded-full text-white transition-shadow hover:shadow-md ml-2"
-            style={{ background: "#046BD2" }}
+            className="text-sm font-semibold px-4 py-1.5 rounded-full transition-shadow hover:shadow-md ml-2"
+            style={{ background: "#046BD2", color: "#ffffff" }}
           >
-            📍 CA Salons
+            <span style={{ color: "#ffffff" }}>CA Salons</span>
           </Link>
         </nav>
 
@@ -74,11 +74,11 @@ export default function Header() {
           ))}
           <Link
             href="/category/california"
-            className="text-sm font-semibold w-fit px-4 py-1.5 rounded-full text-white"
-            style={{ background: "#046BD2" }}
+            className="text-sm font-semibold w-fit px-4 py-1.5 rounded-full"
+            style={{ background: "#046BD2", color: "#ffffff" }}
             onClick={() => setOpen(false)}
           >
-            📍 CA Salons
+            <span style={{ color: "#ffffff" }}>CA Salons</span>
           </Link>
         </nav>
       )}

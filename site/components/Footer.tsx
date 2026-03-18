@@ -7,6 +7,9 @@ export default function Footer() {
         <p className="text-sm" style={{ color: "#707070" }}>
           Copyright 2026 Nail Salon Reviews and Products. All Rights Reserved.
         </p>
+        <p className="text-xs mt-2" style={{ color: "#707070" }}>
+          Powered by <a href="https://caltechweb.com" style={{ color: "#046BD2" }} className="hover:underline">Caltechweb</a>
+        </p>
         <div className="mt-3 flex justify-center gap-6 text-sm">
           <Link href="/category/what-are" style={{ color: "#046BD2" }} className="hover:underline">
             What Are

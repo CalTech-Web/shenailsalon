@@ -171,7 +171,7 @@ export default function WhatArePage() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-4 border"
             style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
           >
-            <span>💅</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             <span>45+ Guides</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
@@ -229,7 +229,7 @@ export default function WhatArePage() {
       </section>
 
       {/* About section */}
-      <section className="py-10 px-4">
+      <section className="py-10 px-4 border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
           <div
             className="p-6 rounded-xl border"

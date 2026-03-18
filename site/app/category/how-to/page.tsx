@@ -179,7 +179,7 @@ export default function HowToPage() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-4 border"
             style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
           >
-            <span>🛠️</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/></svg>
             <span>35+ Tutorials</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
@@ -198,7 +198,7 @@ export default function HowToPage() {
             <div key={sub.title}>
               <div className="flex items-center gap-3 mb-2">
                 <div className="h-5 w-1 rounded-full" style={{ background: sub.color }}></div>
-                <h2 className="text-xl font-bold" style={{ color: "#1E293B" }}>{sub.title}</h2>
+                <h2 className="text-2xl font-bold" style={{ color: "#1E293B" }}>{sub.title}</h2>
               </div>
               <p className="text-sm mb-5" style={{ color: "#707070" }}>{sub.desc}</p>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -246,13 +246,13 @@ export default function HowToPage() {
       </section>
 
       {/* About section */}
-      <section className="py-10 px-4">
+      <section className="py-10 px-4 border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
           <div
             className="p-6 rounded-xl border"
             style={{ background: "#F0F5FA", borderColor: "rgba(4,107,210,0.15)" }}
           >
-            <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
+            <h2 className="text-2xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>
               Each guide includes a supply list, an estimated cost, numbered steps, and a section on what tends to go wrong. Nancy Davidson wrote all 35 of them.
             </p>

@@ -164,7 +164,7 @@ export default function CaliforniaPage() {
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold mb-4 border"
             style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
           >
-            <span>📍</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
             <span>50+ California Cities</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
@@ -179,19 +179,22 @@ export default function CaliforniaPage() {
       {/* City grid */}
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 items-stretch">
             {cities.map((entry) => (
               <Link
                 key={entry.city}
                 href={entry.href}
-                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
+                className="group flex flex-col rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white h-full"
                 style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
               >
                 <div className="h-1 w-full" style={{ background: "#045CB4" }}></div>
-                <div className="p-4">
-                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>Best Nail Salons in {entry.city}</p>
+                <div className="p-4 flex flex-col flex-1">
+                  <p className="font-medium text-sm leading-snug flex-1" style={{ color: "#1E293B" }}>
+                    Best Nail Salons in {entry.city}
+                  </p>
                   <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#045CB4" }}>
-                    View salons <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
+                    <span>View salons</span>
+                    <span aria-hidden="true" className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
                   </p>
                 </div>
               </Link>
@@ -222,7 +225,7 @@ export default function CaliforniaPage() {
       </section>
 
       {/* About section */}
-      <section className="py-10 px-4">
+      <section className="py-10 px-4 border-t border-gray-200">
         <div className="max-w-5xl mx-auto">
           <div
             className="p-6 rounded-xl border"
