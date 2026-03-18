@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #046BD2;
+  --primary-dark: #045CB4;
+  --accent: #4169E1;
+  --body-text: #808285;
+  --heading: #808285;
+  --dark-text: #1E293B;
+  --dark-text-2: #334155;
+  --bg-light: #F0F5FA;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--body-text);
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--dark-text);
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
