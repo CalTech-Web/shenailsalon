@@ -162,7 +162,7 @@ export default function WhatArePage() {
         style={{ background: "linear-gradient(160deg, #EBF4FF 0%, #F0F5FA 60%, #ffffff 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
-          <nav className="text-sm mb-5" style={{ color: "#808285" }}>
+          <nav className="text-sm mb-5" style={{ color: "#707070" }}>
             <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
             <span className="mx-2">/</span>
             <span>What Are</span>
@@ -177,7 +177,7 @@ export default function WhatArePage() {
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
             What Are Nail Guides
           </h1>
-          <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
+          <p className="text-lg max-w-2xl" style={{ color: "#707070" }}>
             Acrylic nails use polymer powder. Gel nails cure under UV light. Dip powder skips the lamp entirely. These 44 guides explain how each nail type works, what it costs, how long it lasts, and what it does to your natural nail underneath.
           </p>
         </div>
@@ -221,7 +221,7 @@ export default function WhatArePage() {
                 style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
               >
                 <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>{faq.a}</p>
               </div>
             ))}
           </div>
@@ -236,7 +236,7 @@ export default function WhatArePage() {
             style={{ background: "#F0F5FA", borderColor: "rgba(4,107,210,0.15)" }}
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
-            <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>
               Nancy Davidson wrote all 45 of these guides, covering everything from acrylic and gel to BIAB, polygel, and Russian manicures. Each article explains what the nail is made of, how long it holds, and how it compares to the closest alternative. Sources include Byrdie, Allure, Refinery29, and Salon Success Academy.
             </p>
           </div>

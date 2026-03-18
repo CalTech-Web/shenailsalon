@@ -170,7 +170,7 @@ export default function HowToPage() {
         style={{ background: "linear-gradient(160deg, #EBF4FF 0%, #F0F5FA 60%, #ffffff 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
-          <nav className="text-sm mb-5" style={{ color: "#808285" }}>
+          <nav className="text-sm mb-5" style={{ color: "#707070" }}>
             <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
             <span className="mx-2">/</span>
             <span>How To</span>
@@ -185,7 +185,7 @@ export default function HowToPage() {
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
             Nail How-To Guides
           </h1>
-          <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
+          <p className="text-lg max-w-2xl" style={{ color: "#707070" }}>
             Applying nails at home is doable. Removing them without damage is harder. These 35 guides cover both, along with shaping, care, and the supplies you actually need before you start.
           </p>
         </div>
@@ -200,7 +200,7 @@ export default function HowToPage() {
                 <div className="h-5 w-1 rounded-full" style={{ background: sub.color }}></div>
                 <h2 className="text-xl font-bold" style={{ color: "#1E293B" }}>{sub.title}</h2>
               </div>
-              <p className="text-sm mb-5" style={{ color: "#808285" }}>{sub.desc}</p>
+              <p className="text-sm mb-5" style={{ color: "#707070" }}>{sub.desc}</p>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {sub.guides.map((guide) => (
                   <Link
@@ -238,7 +238,7 @@ export default function HowToPage() {
                 style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
               >
                 <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>{faq.a}</p>
               </div>
             ))}
           </div>
@@ -253,7 +253,7 @@ export default function HowToPage() {
             style={{ background: "#F0F5FA", borderColor: "rgba(4,107,210,0.15)" }}
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
-            <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>
               Each guide includes a supply list, an estimated cost, numbered steps, and a section on what tends to go wrong. Nancy Davidson wrote all 35 of them.
             </p>
           </div>

@@ -155,7 +155,7 @@ export default function CaliforniaPage() {
         style={{ background: "linear-gradient(160deg, #EBF4FF 0%, #F0F5FA 60%, #ffffff 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
-          <nav className="text-sm mb-5" style={{ color: "#808285" }}>
+          <nav className="text-sm mb-5" style={{ color: "#707070" }}>
             <Link href="/" style={{ color: "#046BD2" }} className="hover:underline">Home</Link>
             <span className="mx-2">/</span>
             <span>California Salons</span>
@@ -170,7 +170,7 @@ export default function CaliforniaPage() {
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
             California Nail Salon Directory
           </h1>
-          <p className="text-lg max-w-2xl" style={{ color: "#808285" }}>
+          <p className="text-lg max-w-2xl" style={{ color: "#707070" }}>
             Finding a good nail salon in California mostly comes down to knowing where to look. Nancy Davidson has reviewed salons across 50 cities, from Los Angeles to Salinas, each with service and pricing details.
           </p>
         </div>
@@ -214,7 +214,7 @@ export default function CaliforniaPage() {
                 style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
               >
                 <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>{faq.a}</p>
               </div>
             ))}
           </div>
@@ -229,7 +229,7 @@ export default function CaliforniaPage() {
             style={{ background: "#F0F5FA", borderColor: "rgba(4,107,210,0.15)" }}
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About the California Directory</h2>
-            <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
+            <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>
               50 city pages across California. Each one names specific salons, describes what they offer, and includes a general price range. Nancy Davidson researched and wrote all of them.
             </p>
           </div>

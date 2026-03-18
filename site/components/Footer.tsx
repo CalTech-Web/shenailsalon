@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-200 mt-16">
       <div className="max-w-5xl mx-auto px-4 py-8 text-center">
-        <p className="text-sm" style={{ color: "#808285" }}>
+        <p className="text-sm" style={{ color: "#707070" }}>
           Copyright 2026 Nail Salon Reviews and Products. All Rights Reserved.
         </p>
         <div className="mt-3 flex justify-center gap-6 text-sm">

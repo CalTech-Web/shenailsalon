@@ -117,14 +117,14 @@ export default function Home() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: "#1E293B" }}>
             Nail Salon Reviews and Products
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: "#808285" }}>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: "#707070" }}>
             Nancy Davidson has been writing about nails since 2024. Free guides on every nail type, plus curated salon reviews across 50 California cities. No sign-up required.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/category/what-are"
               className="px-8 py-3 rounded-full text-white font-semibold text-sm transition-shadow"
-              style={{ background: "#046BD2", boxShadow: "0 4px 14px rgba(4,107,210,0.35)" }}
+              style={{ background: "#045CB4", boxShadow: "0 4px 14px rgba(4,92,180,0.35)" }}
             >
               Browse Nail Guides
             </Link>
@@ -155,7 +155,7 @@ export default function Home() {
             >
               <div className="text-xl mb-1">{stat.icon}</div>
               <p className="text-3xl font-bold" style={{ color: "#046BD2" }}>{stat.value}</p>
-              <p className="text-xs mt-1 font-medium" style={{ color: "#808285" }}>{stat.label}</p>
+              <p className="text-xs mt-1 font-medium" style={{ color: "#707070" }}>{stat.label}</p>
             </div>
           ))}
         </div>
@@ -170,7 +170,7 @@ export default function Home() {
               View all
             </Link>
           </div>
-          <p className="mb-6" style={{ color: "#808285" }}>
+          <p className="mb-6" style={{ color: "#707070" }}>
             Acrylic, gel, dip, polygel, gel-x, builder gel. Same category, very different chemistry. These 44 guides cover what each type is made of, how long it holds, and what it costs to maintain.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -203,7 +203,7 @@ export default function Home() {
               View all
             </Link>
           </div>
-          <p className="mb-6" style={{ color: "#808285" }}>
+          <p className="mb-6" style={{ color: "#707070" }}>
             Supplies, costs, numbered steps, and common mistakes. Whether you are applying dip at home or trying to remove gel without a drill, these guides cover what most tutorials skip.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -236,7 +236,7 @@ export default function Home() {
               View all
             </Link>
           </div>
-          <p className="mb-6" style={{ color: "#808285" }}>
+          <p className="mb-6" style={{ color: "#707070" }}>
             50 California cities, each with multiple salon picks, service descriptions, and general pricing. Pick your city.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -287,7 +287,7 @@ export default function Home() {
                   {item.step}
                 </div>
                 <h3 className="font-semibold text-sm mb-1" style={{ color: "#1E293B" }}>{item.title}</h3>
-                <p className="text-xs" style={{ color: "#808285" }}>{item.desc}</p>
+                <p className="text-xs" style={{ color: "#707070" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -300,7 +300,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-2 text-center" style={{ color: "#1E293B" }}>
             Why Nail Salon Reviews and Products?
           </h2>
-          <p className="text-center text-sm mb-10" style={{ color: "#808285" }}>
+          <p className="text-center text-sm mb-10" style={{ color: "#707070" }}>
             129 articles. 50 California cities. No paywall, no sign-up.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
@@ -360,7 +360,7 @@ export default function Home() {
                   {item.icon}
                 </div>
                 <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{item.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{item.desc}</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -382,7 +382,7 @@ export default function Home() {
               >
                 <div className="flex-1">
                   <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>{faq.a}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>{faq.a}</p>
                 </div>
               </div>
             ))}
