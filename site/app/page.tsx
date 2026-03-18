@@ -125,10 +125,16 @@ export default function Home() {
               <Link
                 key={a.title}
                 href={a.href}
-                className="block p-4 rounded border border-gray-200 hover:border-blue-300 hover:shadow-sm transition"
+                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
               >
-                <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{a.title}</p>
-                <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
+                <div className="h-1 w-full" style={{ background: "#046BD2" }}></div>
+                <div className="p-4">
+                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{a.title}</p>
+                  <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#046BD2" }}>
+                    Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
@@ -152,10 +158,16 @@ export default function Home() {
               <Link
                 key={a.title}
                 href={a.href}
-                className="block p-4 rounded border border-gray-200 bg-white hover:border-blue-300 hover:shadow-sm transition"
+                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
               >
-                <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{a.title}</p>
-                <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
+                <div className="h-1 w-full" style={{ background: "#4169E1" }}></div>
+                <div className="p-4">
+                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{a.title}</p>
+                  <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#4169E1" }}>
+                    Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
@@ -179,10 +191,16 @@ export default function Home() {
               <Link
                 key={a.title}
                 href={a.href}
-                className="block p-4 rounded border border-gray-200 hover:border-blue-300 hover:shadow-sm transition"
+                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
               >
-                <p className="font-medium text-sm" style={{ color: "#1E293B" }}>{a.title}</p>
-                <p className="text-xs mt-1" style={{ color: "#046BD2" }}>Read more</p>
+                <div className="h-1 w-full" style={{ background: "#045CB4" }}></div>
+                <div className="p-4">
+                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{a.title}</p>
+                  <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#045CB4" }}>
+                    Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
@@ -195,7 +213,12 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-center mb-10" style={{ color: "#1E293B" }}>
             How It Works
           </h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="relative grid sm:grid-cols-2 md:grid-cols-5 gap-6">
+            {/* Connector line visible on desktop */}
+            <div
+              className="hidden md:block absolute top-5 h-0.5 pointer-events-none"
+              style={{ left: "10%", right: "10%", background: "linear-gradient(90deg, #046BD2 0%, #4169E1 100%)", opacity: 0.2 }}
+            ></div>
             {[
               { step: "1", title: "Search", desc: "Find an article via Google on any nail topic you are curious about." },
               { step: "2", title: "Read", desc: "Learn from structured guides with tables, step-by-step lists, and comparisons." },
@@ -203,10 +226,10 @@ export default function Home() {
               { step: "4", title: "Find a Salon", desc: "Browse California city pages to find local nail salon recommendations." },
               { step: "5", title: "Go Further", desc: "Explore cited sources like Byrdie, Allure, and wikiHow for even more depth." },
             ].map((item) => (
-              <div key={item.step} className="text-center">
+              <div key={item.step} className="text-center relative z-10">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm mx-auto mb-3"
-                  style={{ background: "#046BD2" }}
+                  style={{ background: "#046BD2", boxShadow: "0 0 0 4px rgba(4,107,210,0.15)" }}
                 >
                   {item.step}
                 </div>
