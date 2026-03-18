@@ -13,30 +13,30 @@ export const metadata: Metadata = {
 };
 
 const whatAreArticles = [
-  { title: "What Are Acrylic Nails?", href: "#" },
-  { title: "What Are Gel Nails?", href: "#" },
-  { title: "What Are Dip Nails?", href: "#" },
-  { title: "What Are Press-On Nails?", href: "#" },
-  { title: "What Are Gel-X Nails?", href: "#" },
-  { title: "What Are Polygel Nails?", href: "#" },
+  { title: "What Are Gel-X Nails?", href: "/what-are/what-are-gel-x-nails/" },
+  { title: "What Are Gel Nails?", href: "/what-are/what-are-gel-nails/" },
+  { title: "What Are Dip Nails?", href: "/what-are/what-are-dip-nails/" },
+  { title: "What Are Builder Gel Nails?", href: "/what-are/what-are-builder-gel-nails/" },
+  { title: "What Are Shellac Nails?", href: "/what-are/what-are-shellac-nails/" },
+  { title: "What Are Acrylic Nails?", href: "/what-are/what-are-acrylic-nails/" },
 ];
 
 const howToArticles = [
-  { title: "How To Apply Acrylic Nails at Home", href: "#" },
-  { title: "How To Remove Gel Nails Safely", href: "#" },
-  { title: "How To Apply Press-On Nails", href: "#" },
-  { title: "How To Shape Your Nails", href: "#" },
-  { title: "How To Make Nails Grow Faster", href: "#" },
-  { title: "How To Stop Biting Your Nails", href: "#" },
+  { title: "How To Remove Acrylic Nails", href: "/how-to/how-to-remove-acrylic-nails/" },
+  { title: "How To Remove Gel-X Nails", href: "/how-to/how-to-remove-gel-x-nails/" },
+  { title: "How To Remove Dip Nails", href: "/how-to/how-to-remove-dip-nails/" },
+  { title: "How To Remove Gel Nails", href: "/how-to/how-to-remove-gel-nails/" },
+  { title: "How To Shape Your Nails", href: "/how-to/how-to-shape-nails/" },
+  { title: "How To Paint Your Nails", href: "/how-to/how-to-paint-nails/" },
 ];
 
 const californiaArticles = [
-  { title: "Best Nail Salons in Los Angeles", href: "#" },
-  { title: "Best Nail Salons in San Francisco", href: "#" },
-  { title: "Best Nail Salons in San Diego", href: "#" },
-  { title: "Best Nail Salons in Sacramento", href: "#" },
-  { title: "Best Nail Salons in Irvine", href: "#" },
-  { title: "Best Nail Salons in Pasadena", href: "#" },
+  { title: "Best Nail Salons in Los Angeles", href: "/california/nail-salon-los-angeles/" },
+  { title: "Best Nail Salons in San Francisco", href: "/california/nail-salon-san-francisco/" },
+  { title: "Best Nail Salons in San Diego", href: "/california/nail-salon-san-diego/" },
+  { title: "Best Nail Salons in Sacramento", href: "/california/nail-salon-sacramento/" },
+  { title: "Best Nail Salons in Irvine", href: "/california/nail-salon-irvine/" },
+  { title: "Best Nail Salons in Pasadena", href: "/california/nail-salon-pasadena/" },
 ];
 
 const faqs = [

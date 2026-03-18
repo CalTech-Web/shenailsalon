@@ -32,57 +32,71 @@ const breadcrumbSchema = {
 };
 
 const cities = [
-  "Los Angeles",
-  "San Francisco",
-  "San Diego",
-  "San Jose",
-  "Sacramento",
-  "Fresno",
-  "Long Beach",
-  "Oakland",
-  "Anaheim",
-  "Santa Ana",
-  "Riverside",
-  "Stockton",
-  "Irvine",
-  "Chula Vista",
-  "Corona",
-  "Santa Clarita",
-  "Fontana",
-  "Moreno Valley",
-  "Rancho Cucamonga",
-  "Ontario",
-  "Santa Rosa",
-  "Bakersfield",
-  "Modesto",
-  "Fremont",
-  "Huntington Beach",
-  "Glendale",
-  "Palmdale",
-  "Salinas",
-  "Hayward",
-  "Oxnard",
-  "Visalia",
-  "Simi Valley",
-  "Torrance",
-  "Sunnyvale",
-  "San Bernardino",
-  "Escondido",
-  "Orange",
-  "Roseville",
-  "Fullerton",
-  "Santa Clara",
-  "Pasadena",
-  "Concord",
-  "Thousand Oaks",
-  "Victorville",
-  "Pomona",
-  "Lancaster",
-  "Garden Grove",
-  "Elk Grove",
-  "Oceanside",
-  "Santa Barbara",
+  { city: "Los Angeles", href: "/california/nail-salon-los-angeles/" },
+  { city: "San Francisco", href: "/california/nail-salon-san-francisco/" },
+  { city: "San Diego", href: "/california/nail-salon-san-diego/" },
+  { city: "San Jose", href: "/california/nail-salon-san-jose/" },
+  { city: "Sacramento", href: "/california/nail-salon-sacramento/" },
+  { city: "Fresno", href: "/california/nail-salon-fresno/" },
+  { city: "Long Beach", href: "/california/nail-salon-long-beach/" },
+  { city: "Oakland", href: "/california/nail-salon-oakland/" },
+  { city: "Anaheim", href: "/california/nail-salon-anaheim/" },
+  { city: "Santa Ana", href: "/california/nail-salon-santa-ana/" },
+  { city: "Riverside", href: "/california/nail-salon-riverside/" },
+  { city: "Stockton", href: "/california/nail-salon-stockton/" },
+  { city: "Irvine", href: "/california/nail-salon-irvine/" },
+  { city: "Chula Vista", href: "/california/nail-salon-chula-vista/" },
+  { city: "Corona", href: "/california/nail-salon-corona/" },
+  { city: "Santa Clarita", href: "/california/nail-salon-santa-clarita/" },
+  { city: "Fontana", href: "/california/nail-salon-fontana/" },
+  { city: "Moreno Valley", href: "/california/nail-salon-moreno-valley/" },
+  { city: "Rancho Cucamonga", href: "/california/nail-salon-rancho-cucamonga/" },
+  { city: "Ontario", href: "/california/nail-salon-ontario/" },
+  { city: "Santa Rosa", href: "/california/nail-salon-santa-rosa/" },
+  { city: "Bakersfield", href: "/california/nail-salon-bakersfield/" },
+  { city: "Modesto", href: "/california/nail-salon-modesto/" },
+  { city: "Fremont", href: "/california/nail-salon-fremont/" },
+  { city: "Huntington Beach", href: "/california/nail-salon-huntington-beach/" },
+  { city: "Glendale", href: "/california/nail-salon-glendale/" },
+  { city: "Palmdale", href: "/california/nail-salon-palmdale/" },
+  { city: "Salinas", href: "/california/nail-salon-salinas/" },
+  { city: "Hayward", href: "/california/nail-salon-hayward/" },
+  { city: "Oxnard", href: "/california/nail-salon-oxnard/" },
+  { city: "Visalia", href: "/california/nail-salon-visalia/" },
+  { city: "Simi Valley", href: "/california/nail-salon-simi-valley/" },
+  { city: "Torrance", href: "/california/nail-salon-torrance/" },
+  { city: "Sunnyvale", href: "/california/nail-salon-sunnyvale/" },
+  { city: "San Bernardino", href: "/california/nail-salon-san-bernardino/" },
+  { city: "Escondido", href: "/california/nail-salon-escondido/" },
+  { city: "Orange", href: "/california/nail-salon-orange/" },
+  { city: "Roseville", href: "/california/nail-salon-roseville/" },
+  { city: "Fullerton", href: "/california/nail-salon-fullerton/" },
+  { city: "Santa Clara", href: "/california/nail-salon-santa-clara/" },
+  { city: "Pasadena", href: "/california/nail-salon-pasadena/" },
+  { city: "Concord", href: "/california/nail-salon-concord/" },
+  { city: "Thousand Oaks", href: "/california/nail-salon-thousand-oaks/" },
+  { city: "Victorville", href: "/california/nail-salon-victorville/" },
+  { city: "Pomona", href: "/california/nail-salon-pomona/" },
+  { city: "Lancaster", href: "/california/nail-salon-lancaster/" },
+  { city: "Garden Grove", href: "/california/nail-salon-garden-grove/" },
+  { city: "Elk Grove", href: "/california/nail-salon-elk-grove/" },
+  { city: "Oceanside", href: "/california/nail-salon-oceanside/" },
+  { city: "Santa Barbara", href: "/california/nail-salon-santa-barbara/" },
 ];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Best Nail Salons in California by City",
+  url: "https://shenailsalon.com/category/california",
+  numberOfItems: cities.length,
+  itemListElement: cities.map((entry, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: `Best Nail Salons in ${entry.city}`,
+    url: `https://shenailsalon.com${entry.href}`,
+  })),
+};
 
 export default function CaliforniaPage() {
   return (
@@ -90,6 +104,10 @@ export default function CaliforniaPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       {/* Hero banner */}
       <section
@@ -122,20 +140,21 @@ export default function CaliforniaPage() {
       <section className="py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
-            {cities.map((city) => (
-              <div
-                key={city}
-                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white cursor-pointer"
+            {cities.map((entry) => (
+              <Link
+                key={entry.city}
+                href={entry.href}
+                className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
                 style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
               >
                 <div className="h-1 w-full" style={{ background: "#045CB4" }}></div>
                 <div className="p-4">
-                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>Best Nail Salons in {city}</p>
+                  <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>Best Nail Salons in {entry.city}</p>
                   <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#045CB4" }}>
                     View salons <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -40,10 +40,33 @@ const organizationSchema = {
   url: "https://shenailsalon.com",
   description: "A California-focused nail content blog with educational guides on nail types, application techniques, and curated nail salon recommendations.",
   foundingDate: "2024",
-  author: {
+  founder: {
     "@type": "Person",
     name: "Nancy Davidson",
   },
+};
+
+const authorSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Nancy Davidson",
+  url: "https://shenailsalon.com/author/snsadmin/",
+  worksFor: {
+    "@type": "Organization",
+    name: "Nail Salon Reviews and Products",
+    url: "https://shenailsalon.com",
+  },
+  jobTitle: "Author and Editor",
+  description: "Nancy Davidson has written 129 nail care articles covering acrylic, gel, dip, polygel, and more, plus curated reviews of nail salons across 50 California cities since 2024.",
+  knowsAbout: [
+    "Acrylic nails",
+    "Gel nails",
+    "Dip powder nails",
+    "Gel-X nails",
+    "Builder gel nails",
+    "Nail care",
+    "California nail salons",
+  ],
 };
 
 export default function RootLayout({
@@ -57,6 +80,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }}
         />
       </head>
       <body className="antialiased flex flex-col min-h-screen">

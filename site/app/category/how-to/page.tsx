@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How To Apply and Remove Nails at Home | 35 Nail Tutorials",
-  description: "35 nail tutorials covering application, removal, shaping, and care. Acrylic, gel, dip, press-on, and more. Supply lists, cost estimates, and numbered steps.",
+  title: "How To Remove Acrylic, Gel, and Dip Nails | 35 Nail Tutorials",
+  description: "35 nail tutorials covering removal, application, shaping, and care. How to remove acrylic nails, gel nails, dip nails, gel-x, and more. Supply lists, cost estimates, and numbered steps.",
   alternates: { canonical: "https://shenailsalon.com/category/how-to" },
   openGraph: {
     url: "https://shenailsalon.com/category/how-to",
-    title: "How To Apply and Remove Nails at Home | 35 Nail Tutorials",
-    description: "35 nail tutorials covering application, removal, shaping, and care. Acrylic, gel, dip, press-on, and more. Supply lists, cost estimates, and numbered steps.",
+    title: "How To Remove Acrylic, Gel, and Dip Nails | 35 Nail Tutorials",
+    description: "35 nail tutorials covering removal, application, shaping, and care. How to remove acrylic nails, gel nails, dip nails, gel-x, and more. Supply lists, cost estimates, and numbered steps.",
   },
 };
 
@@ -32,39 +32,39 @@ const breadcrumbSchema = {
 };
 
 const applicationGuides = [
-  "How To Apply Acrylic Nails at Home",
-  "How To Apply Gel Nails at Home",
-  "How To Apply Dip Powder Nails",
-  "How To Apply Press-On Nails",
-  "How To Apply Polygel Nails",
-  "How To Apply Builder Gel",
-  "How To Apply Gel-X Nails",
-  "How To Apply Nail Wraps",
-  "How To Apply Shellac",
-  "How To Apply Paper Nails",
+  { title: "How To Apply Acrylic Nails at Home", href: "/how-to/how-to-apply-acrylic-nails/" },
+  { title: "How To Apply Gel Nails at Home", href: "/how-to/how-to-apply-gel-nails/" },
+  { title: "How To Apply Dip Powder Nails", href: "/how-to/how-to-apply-dip-powder-nails/" },
+  { title: "How To Apply Press-On Nails", href: "/how-to/how-to-apply-press-on-nails/" },
+  { title: "How To Apply Polygel Nails", href: "/how-to/how-to-apply-polygel-nails/" },
+  { title: "How To Apply Builder Gel", href: "/how-to/how-to-apply-builder-gel/" },
+  { title: "How To Apply Gel-X Nails", href: "/how-to/how-to-apply-gel-x-nails/" },
+  { title: "How To Apply Nail Wraps", href: "/how-to/how-to-apply-nail-wraps/" },
+  { title: "How To Apply Shellac", href: "/how-to/how-to-apply-shellac/" },
+  { title: "How To Apply Paper Nails", href: "/how-to/how-to-apply-paper-nails/" },
 ];
 
 const removalGuides = [
-  "How To Remove Acrylic Nails",
-  "How To Remove Gel Nails",
-  "How To Remove Dip Powder Nails",
-  "How To Remove Gel-X Nails",
-  "How To Remove Press-On Nails",
-  "How To Remove Glue-On Nails",
-  "How To Remove Fake Nails",
-  "How To Remove Nail Wraps",
+  { title: "How To Remove Acrylic Nails", href: "/how-to/how-to-remove-acrylic-nails/" },
+  { title: "How To Remove Gel Nails", href: "/how-to/how-to-remove-gel-nails/" },
+  { title: "How To Remove Dip Powder Nails", href: "/how-to/how-to-remove-dip-nails/" },
+  { title: "How To Remove Gel-X Nails", href: "/how-to/how-to-remove-gel-x-nails/" },
+  { title: "How To Remove Press-On Nails", href: "/how-to/how-to-remove-press-on-nails/" },
+  { title: "How To Remove Glue-On Nails", href: "/how-to/how-to-remove-glue-on-nails/" },
+  { title: "How To Remove Fake Nails", href: "/how-to/how-to-remove-fake-nails/" },
+  { title: "How To Remove Nail Wraps", href: "/how-to/how-to-remove-nail-wraps/" },
 ];
 
 const careGuides = [
-  "How To Shape Your Nails",
-  "How To Paint Your Nails",
-  "How To Strengthen Your Nails",
-  "How To Make Your Nails Grow Faster",
-  "How To Stop Biting Your Nails",
-  "How To Fix a Broken Nail",
-  "How To Keep Nails Healthy",
-  "How To File Nails Correctly",
-  "How To Push Back Cuticles",
+  { title: "How To Shape Your Nails", href: "/how-to/how-to-shape-nails/" },
+  { title: "How To Paint Your Nails", href: "/how-to/how-to-paint-nails/" },
+  { title: "How To Strengthen Your Nails", href: "/how-to/how-to-strengthen-nails/" },
+  { title: "How To Make Your Nails Grow Faster", href: "/how-to/how-to-make-nails-grow-faster/" },
+  { title: "How To Stop Biting Your Nails", href: "/how-to/how-to-stop-biting-nails/" },
+  { title: "How To Fix a Broken Nail", href: "/how-to/how-to-fix-a-broken-nail/" },
+  { title: "How To Keep Nails Healthy", href: "/how-to/how-to-keep-nails-healthy/" },
+  { title: "How To File Nails Correctly", href: "/how-to/how-to-file-nails/" },
+  { title: "How To Push Back Cuticles", href: "/how-to/how-to-push-back-cuticles/" },
 ];
 
 const subsections = [
@@ -88,12 +88,32 @@ const subsections = [
   },
 ];
 
+const allGuides = [...applicationGuides, ...removalGuides, ...careGuides];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "How-To Nail Guides",
+  url: "https://shenailsalon.com/category/how-to",
+  numberOfItems: allGuides.length,
+  itemListElement: allGuides.map((guide, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: guide.title,
+    url: `https://shenailsalon.com${guide.href}`,
+  })),
+};
+
 export default function HowToPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       {/* Hero banner */}
       <section
@@ -133,20 +153,21 @@ export default function HowToPage() {
               </div>
               <p className="text-sm mb-5" style={{ color: "#808285" }}>{sub.desc}</p>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-                {sub.guides.map((title) => (
-                  <div
-                    key={title}
-                    className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white cursor-pointer"
+                {sub.guides.map((guide) => (
+                  <Link
+                    key={guide.title}
+                    href={guide.href}
+                    className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
                     style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
                   >
                     <div className="h-1 w-full" style={{ background: sub.color }}></div>
                     <div className="p-4">
-                      <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{title}</p>
+                      <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{guide.title}</p>
                       <p className="text-xs mt-2 flex items-center gap-1" style={{ color: sub.color }}>
                         Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
