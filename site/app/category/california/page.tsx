@@ -121,7 +121,7 @@ export default function CaliforniaPage() {
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About the California Directory</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
-              50 published city pages across California. Each one lists multiple salons with a description of services offered and general price ranges. Nancy Davidson researched and wrote all of them.
+              50 city pages across California. Each one names specific salons, describes what they offer, and includes a general price range. Nancy Davidson researched and wrote all of them.
             </p>
           </div>
         </div>

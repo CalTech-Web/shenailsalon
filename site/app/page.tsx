@@ -195,7 +195,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mb-6" style={{ color: "#808285" }}>
-            50 California cities reviewed, with multiple salon recommendations per page. From Los Angeles to Salinas, if you need a local nail salon, start here.
+            50 California cities, each with multiple salon picks, service descriptions, and general pricing. Pick your city.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {californiaArticles.map((a) => (
