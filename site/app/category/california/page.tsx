@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "California Nail Salon Directory | Nail Salon Reviews and Products",
-  description: "Curated nail salon reviews for 50+ cities across California. Find the best nail salon near you with detailed reviews, service descriptions, and pricing.",
+  description: "Nancy Davidson reviewed nail salons in 50+ California cities. Each city page lists multiple salons with service descriptions and general pricing, from Los Angeles to Salinas.",
 };
 
 const cities = [

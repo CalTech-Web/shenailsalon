@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Nail How-To Guides | Nail Salon Reviews and Products",
-  description: "Step-by-step nail tutorials for applying, removing, shaping, and caring for your nails at home. 35+ DIY guides by Nancy Davidson.",
+  description: "35 nail tutorials covering application, removal, shaping, and care. Each guide includes a supply list, estimated cost, numbered steps, and a section on what tends to go wrong.",
 };
 
 const applicationGuides = [

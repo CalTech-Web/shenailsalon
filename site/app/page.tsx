@@ -1,4 +1,10 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Nail Salon Reviews and Products | Nail Guides and California Salon Directory",
+  description: "Nancy Davidson has written 129 articles on nail types, application, removal, and care, plus salon reviews across 50 California cities. No paywall.",
+};
 
 const whatAreArticles = [
   { title: "What Are Acrylic Nails?", href: "#" },
@@ -123,7 +129,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mb-6" style={{ color: "#808285" }}>
-            Acrylic, gel, dip, polygel, gel-x, builder gel. Each one works differently, costs differently, and affects your nails differently. These guides break it all down.
+            Acrylic, gel, dip, polygel, gel-x, builder gel. Same category, very different chemistry. These 44 guides cover what each type is made of, how long it holds, and what it costs to maintain.
           </p>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {whatAreArticles.map((a) => (

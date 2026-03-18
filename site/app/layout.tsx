@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Nail Salon Reviews and Products",
-  description: "Your go-to resource for nail salon reviews, nail care how-to guides, and product information across California.",
+  description: "Nancy Davidson writes about nails. 129 published articles covering nail types, how-to guides, and salon reviews across 50 California cities.",
 };
 
 export default function RootLayout({
