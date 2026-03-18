@@ -54,25 +54,35 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="py-20 px-4 text-center" style={{ background: "#F0F5FA" }}>
+      <section
+        className="py-24 px-4 text-center"
+        style={{ background: "linear-gradient(160deg, #EBF4FF 0%, #F0F5FA 55%, #ffffff 100%)" }}
+      >
         <div className="max-w-3xl mx-auto">
+          <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 border"
+            style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
+          >
+            <span>💅</span>
+            <span>California&apos;s Go-To Nail Guide</span>
+          </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: "#1E293B" }}>
             Nail Salon Reviews and Products
           </h1>
-          <p className="text-lg md:text-xl" style={{ color: "#808285" }}>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: "#808285" }}>
             Your go-to resource for nail salon reviews, nail care how-to guides, and product information across California.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
             <Link
               href="/category/what-are"
-              className="px-6 py-3 rounded text-white font-semibold text-sm"
-              style={{ background: "#046BD2" }}
+              className="px-8 py-3 rounded-full text-white font-semibold text-sm transition-shadow"
+              style={{ background: "#046BD2", boxShadow: "0 4px 14px rgba(4,107,210,0.35)" }}
             >
               Browse Nail Guides
             </Link>
             <Link
               href="/category/california"
-              className="px-6 py-3 rounded font-semibold text-sm border"
+              className="px-8 py-3 rounded-full font-semibold text-sm border-2 hover:bg-blue-50 transition-colors"
               style={{ color: "#046BD2", borderColor: "#046BD2" }}
             >
               Find California Salons
