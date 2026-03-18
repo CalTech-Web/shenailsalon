@@ -78,7 +78,7 @@ const subsections = [
   {
     title: "Removal Guides",
     guides: removalGuides,
-    color: "#4169E1",
+    color: "#3A5FCC",
     desc: "Removal is where most at-home mistakes happen. These guides focus on getting it off without wrecking the nail bed.",
   },
   {
@@ -235,7 +235,7 @@ export default function HowToPage() {
               <div
                 key={faq.q}
                 className="bg-white rounded-xl p-5 border border-gray-100"
-                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#3A5FCC"}` }}
               >
                 <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
                 <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>{faq.a}</p>

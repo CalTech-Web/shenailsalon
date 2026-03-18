@@ -18,7 +18,7 @@ export default function Header() {
       {/* Top gradient accent bar */}
       <div
         className="h-0.5 w-full"
-        style={{ background: "linear-gradient(90deg, #046BD2 0%, #4169E1 50%, #045CB4 100%)" }}
+        style={{ background: "linear-gradient(90deg, #046BD2 0%, #3A5FCC 50%, #045CB4 100%)" }}
       />
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-xl font-bold" style={{ color: "#046BD2" }}>

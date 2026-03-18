@@ -214,10 +214,10 @@ export default function Home() {
                 className="group block rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 hover:shadow-md transition-all bg-white"
                 style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.05)" }}
               >
-                <div className="h-1 w-full" style={{ background: "#4169E1" }}></div>
+                <div className="h-1 w-full" style={{ background: "#3A5FCC" }}></div>
                 <div className="p-4">
                   <p className="font-medium text-sm leading-snug" style={{ color: "#1E293B" }}>{a.title}</p>
-                  <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#4169E1" }}>
+                  <p className="text-xs mt-2 flex items-center gap-1" style={{ color: "#3A5FCC" }}>
                     Read more <span className="inline-block group-hover:translate-x-0.5 transition-transform">→</span>
                   </p>
                 </div>
@@ -270,7 +270,7 @@ export default function Home() {
             {/* Connector line visible on desktop */}
             <div
               className="hidden md:block absolute top-5 h-0.5 pointer-events-none"
-              style={{ left: "10%", right: "10%", background: "linear-gradient(90deg, #046BD2 0%, #4169E1 100%)", opacity: 0.2 }}
+              style={{ left: "10%", right: "10%", background: "linear-gradient(90deg, #046BD2 0%, #3A5FCC 100%)", opacity: 0.2 }}
             ></div>
             {[
               { step: "1", title: "Search", desc: "Most readers land here from Google. Search any nail question and one of 129 articles is likely to come up." },
@@ -316,7 +316,7 @@ export default function Home() {
                 icon: "✍️",
                 title: "Single Author Voice",
                 desc: "Nancy Davidson wrote every article on this site, all 129 of them. One voice, one perspective. You know what you are getting before you click.",
-                color: "#4169E1",
+                color: "#3A5FCC",
                 bg: "rgba(65,105,225,0.07)",
               },
               {
@@ -330,7 +330,7 @@ export default function Home() {
                 icon: "🔗",
                 title: "Source-Backed Content",
                 desc: "Claims are backed by sources you can check, including Byrdie, Allure, Refinery29, and Salon Success Academy. If something is disputed in the beauty world, the articles say so.",
-                color: "#4169E1",
+                color: "#3A5FCC",
                 bg: "rgba(65,105,225,0.07)",
               },
               {
@@ -344,7 +344,7 @@ export default function Home() {
                 icon: "🔓",
                 title: "Free, No Sign-Up Required",
                 desc: "No paywall. No pop-up asking for your email. No subscription. Read any article without creating an account.",
-                color: "#4169E1",
+                color: "#3A5FCC",
                 bg: "rgba(65,105,225,0.07)",
               },
             ].map((item) => (
@@ -378,7 +378,7 @@ export default function Home() {
               <div
                 key={faq.q}
                 className="bg-white rounded-xl p-5 border border-gray-100 flex gap-4"
-                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#4169E1"}` }}
+                style={{ boxShadow: "0 1px 4px rgba(0,0,0,0.04)", borderLeft: `3px solid ${i % 2 === 0 ? "#046BD2" : "#3A5FCC"}` }}
               >
                 <div className="flex-1">
                   <h3 className="font-semibold text-sm mb-2" style={{ color: "#1E293B" }}>{faq.q}</h3>
