@@ -115,7 +115,7 @@ export default function WhatArePage() {
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#808285" }}>
-              Every article covers what the nail type is made of, how it is applied, how long it holds up, and how it compares to the closest alternatives. Sources include Byrdie, Allure, Refinery29, and Salon Success Academy. There are 44 published guides in this category.
+              The guides span the full range, from acrylic and gel to polygel, BIAB, and chrome finishes. Each article covers what the nail is made of, how long it holds, and how it compares to the closest alternative. Sources include Byrdie, Allure, Refinery29, and Salon Success Academy.
             </p>
           </div>
         </div>

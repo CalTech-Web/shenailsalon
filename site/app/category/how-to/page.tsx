@@ -43,9 +43,24 @@ const careGuides = [
 ];
 
 const subsections = [
-  { title: "Application Guides", guides: applicationGuides, color: "#046BD2" },
-  { title: "Removal Guides", guides: removalGuides, color: "#4169E1" },
-  { title: "Nail Care and Maintenance", guides: careGuides, color: "#045CB4" },
+  {
+    title: "Application Guides",
+    guides: applicationGuides,
+    color: "#046BD2",
+    desc: "Each guide lists every supply you need and a realistic cost estimate before step one.",
+  },
+  {
+    title: "Removal Guides",
+    guides: removalGuides,
+    color: "#4169E1",
+    desc: "Removal is where most at-home mistakes happen. These guides focus on getting it off without wrecking the nail bed.",
+  },
+  {
+    title: "Nail Care and Maintenance",
+    guides: careGuides,
+    color: "#045CB4",
+    desc: "Between appointments or going fully DIY, these cover the basics from filing and shaping to cuticle care.",
+  },
 ];
 
 export default function HowToPage() {
@@ -83,10 +98,11 @@ export default function HowToPage() {
         <div className="max-w-5xl mx-auto space-y-14">
           {subsections.map((sub) => (
             <div key={sub.title}>
-              <div className="flex items-center gap-3 mb-5">
+              <div className="flex items-center gap-3 mb-2">
                 <div className="h-5 w-1 rounded-full" style={{ background: sub.color }}></div>
                 <h2 className="text-xl font-bold" style={{ color: "#1E293B" }}>{sub.title}</h2>
               </div>
+              <p className="text-sm mb-5" style={{ color: "#808285" }}>{sub.desc}</p>
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {sub.guides.map((title) => (
                   <div

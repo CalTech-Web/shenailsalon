@@ -56,7 +56,7 @@ const cities = [
   "Garden Grove",
   "Elk Grove",
   "Oceanside",
-  "Corona",
+  "Santa Barbara",
 ];
 
 export default function CaliforniaPage() {
