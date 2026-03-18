@@ -12,8 +12,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/category/california`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 
-  // All "What Are" articles (45 total)
+  // All "What Are" articles (49 total)
   const whatAreArticles: MetadataRoute.Sitemap = [
+    "/what-are/what-are-nails-made-of/",
+    "/what-are/what-are-finger-nails-made-of/",
+    "/what-are/what-are-toe-nails-made-of/",
+    "/what-are/what-are-dipped-nails/",
     "/what-are/what-are-acrylic-nails/",
     "/what-are/what-are-gel-nails/",
     "/what-are/what-are-dip-nails/",
