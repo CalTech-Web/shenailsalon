@@ -64,3 +64,36 @@ Done. Here's a summary of what was done:
 
 **Deployed:** Production build confirmed Ready on Vercel (site-1ottbnwd1-brandon-7928s-projects.vercel.app).
 [2026-03-17 18:43:47] Run #2 finished
+Run #2 complete. Here's what was done:
+
+**Ahrefs findings:** 21 organic keywords, 0 traffic. Keyword research revealed massive low-KD opportunities: "gel x nails" (102K/mo, KD=0), "builder gel nails" (37K/mo, KD=0), "how to remove acrylic nails" (22K/mo, KD=1).
+
+**SEO improvements shipped (commit `71a9655`):**
+
+| Change | Impact |
+|---|---|
+| All `href="#"` and bare `div` cards → `Link` to real article URLs | Google can now crawl all 44 what-are, 27 how-to, and 50 California article pages from the hub |
+| `ItemList` JSON-LD on all 3 category pages | Eligible for article list SERP features |
+| `Person` schema for Nancy Davidson | E-E-A-T signal: establishes author expertise with `knowsAbout`, `jobTitle`, `worksFor` |
+| Sitemap expanded: 4 → 39 URLs | Covers top TP articles so Google discovers them via sitemap |
+| Homepage reordered by traffic potential | Gel-X (TP=39K) and builder gel (TP=15K) now prominent |
+| How-To meta title targets removal queries | Captures "how to remove acrylic nails" (22K/mo, KD=1) intent |
+[2026-03-17 18:56:04] Run #2 finished
+[2026-03-17 18:56:09] Run #3 starting (model: sonnet)
+
+---
+
+## Run #3 - 2026-03-17
+
+**Ahrefs findings:**
+- 28 organic keywords (up from 21), still 0 traffic, all positions 40-96
+- Key low-KD opportunities ranking closest to page 1: "shellac nails" (pos 61, KD=1, vol 1300), "how to paint your nails" (pos 64, KD=0, vol 1200), "shellac manicure" (pos 82, KD=0, vol 1600), "how to shape nails" (pos 82, KD=1, vol 1900)
+- Critical gap: sitemap had only 39 URLs despite 129 total articles — Google could not discover 86 articles via sitemap
+
+**Changes made (commit 57506f5):**
+- Expanded `sitemap.ts`: 39 → 125 URLs, now includes all 44 what-are, 27 how-to, and 50 California article URLs
+- Added `SearchAction` potentialAction to WebSite JSON-LD schema on homepage (enables Sitelinks Searchbox in Google results)
+- Added FAQPage JSON-LD schema to what-are category page targeting 6 nail type queries (shellac, gel, acrylic, dip, gel-x, builder gel) — all KD 0-1, currently ranking pos 61-90
+- Added visible FAQ section to what-are category page matching FAQPage schema content
+
+**Deployed:** Production build confirmed Ready on Vercel (site-9v4o2m68r-brandon-7928s-projects.vercel.app).
