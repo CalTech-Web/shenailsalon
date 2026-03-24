@@ -76,6 +76,7 @@ const articles = [
   { title: "What Are Marble Nails?", href: "/what-are/what-are-marble-nails/" },
   { title: "What Are Holographic Nails?", href: "/what-are/what-are-holographic-nails/" },
   { title: "What Are 3D Nails?", href: "/what-are/what-are-3d-nails/" },
+  { title: "Gel Nail Designs: Ideas and Styles", href: "/what-are/what-are-gel-nail-designs/" },
   { title: "What Are French Tip Nails?", href: "/what-are/what-are-french-tip-nails/" },
   { title: "What Are Reverse French Nails?", href: "/what-are/what-are-reverse-french-nails/" },
   { title: "What Are Half-Moon Nails?", href: "/what-are/what-are-half-moon-nails/" },
@@ -137,7 +138,7 @@ const itemListSchema = {
   "@type": "ItemList",
   name: "What Are Nail Guides",
   url: "https://shenailsalon.com/category/what-are",
-  numberOfItems: 50,
+  numberOfItems: 51,
   itemListElement: articles.map((article, index) => ({
     "@type": "ListItem",
     position: index + 1,

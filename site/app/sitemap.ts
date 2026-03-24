@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/what-are/what-are-marble-nails/",
     "/what-are/what-are-holographic-nails/",
     "/what-are/what-are-3d-nails/",
+    "/what-are/what-are-gel-nail-designs/",
     "/what-are/what-are-french-tip-nails/",
     "/what-are/what-are-reverse-french-nails/",
     "/what-are/what-are-half-moon-nails/",
