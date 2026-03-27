@@ -1,3 +1,39 @@
+## Run #32 - 2026-03-27
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on hub/sitemap audit
+- `how-to-fix-a-broken-nail` is listed in the how-to hub and sitemap but had no static page
+- "How to fix a broken nail" is a high-volume, urgent informational query with strong text-based SERP intent
+- Primary: "how to fix a broken nail", "how to fix a cracked nail", "how to repair a broken nail"
+- Also targets: "how to fix a broken nail at home", "how to fix a broken nail without nail glue", "how to fix a nail that broke halfway", "how to fix a broken acrylic nail", "how to fix a split nail"
+
+**Changes made:**
+- Created `site/app/how-to/how-to-fix-a-broken-nail/page.tsx` — comprehensive static article
+  - Break types comparison table (5 rows: clean break, partial break/crack, vertical split, break below quick, broken acrylic extension with cause/attachment/best fix/time columns)
+  - 8-item supplies table (nail glue, tea bag, base coat, scissors, file, buffer, cuticle oil, polish)
+  - 7-step nail glue method (clean, trim jagged edges, apply drop, press and hold, cure, file, seal)
+  - 6-step tea bag patch method (cut patch, base coat while wet, second coat, dry, buff, finish)
+  - Gel overlay method section (5 steps for long-term protection)
+  - Press-on cover method (instant cosmetic fix)
+  - Cut-it-short method (when break is at/below quick)
+  - 6-row methods comparison table (nail glue, tea bag, nail glue + tea bag, gel overlay, cut short with best-for/hold/difficulty/supplies/notes)
+  - Prevention section (6 bullet tips: cuticle oil, gloves, manageable length, file one direction, strengthener, diet/biotin)
+  - 6-row common mistakes table (pulling the piece, super glue, too much glue, oily nail, aggressive filing, ignoring below-quick break)
+  - FAQPage schema with 6 Q&As targeting: "how to fix at home", "without nail glue", "nail broke halfway", "how long to grow back", "broken acrylic nail", "cut vs fix"
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-strengthen-nails, how-to-make-nails-grow-faster, how-to-shape-nails, what-are-press-on-nails
+
+**Expected impact:**
+- URL already in hub and sitemap; static page replaces the generic WordPress fallback
+- Urgent, action-oriented query cluster — users search at the moment of the break; informational intent perfectly served by text content
+- Five-method coverage targets multiple sub-queries (tea bag, nail glue, gel overlay, without nail glue, acrylic break)
+- FAQPage schema eligible for People Also Ask rich snippets across multiple break scenarios
+- Prevention section adds topical depth and targets "how to stop nails from breaking" cluster
+
+**Deployment:** success (commit `106cb90`)
+
+---
+
 ## Run #31 - 2026-03-25
 
 **Selection rationale:**
@@ -1657,3 +1693,43 @@ Created `site/app/what-are/what-are-nail-extensions/page.tsx` targeting the **na
 [2026-03-27 01:09:02] Max loops: 2 (0=infinite)
 [2026-03-27 01:09:02] ==========================================
 [2026-03-27 01:09:02] Run #1 starting (model: sonnet)
+
+---
+
+## Run #34 - 2026-03-27
+
+**Selection rationale:**
+- Audit of static page directories vs hub/sitemap revealed that `/what-are/what-are-nail-art/` had full static content (TP=77K per run #4 of 2026-03-23 session) but was absent from both the what-are hub article list AND the sitemap.xml
+- The page was deployed but getting zero internal PageRank from the hub and not being submitted via sitemap
+- Adding it to both is a zero-content-work, high-value SEO fix: the hard work (writing the article) was already done
+
+**Changes made:**
+- Added `{ title: "What Are Nail Art? Types, Designs and Ideas", href: "/what-are/what-are-nail-art/" }` to the what-are hub articles array (position 44, before "Gel Nail Designs")
+- Updated `numberOfItems` in ItemList schema: 51 → 52
+- Updated metadata title: "50 Guides" → "52 Guides"
+- Updated all on-page count references from 50 to 52
+- Added `/what-are/what-are-nail-art/` to `sitemap.ts` (between 3d-nails and gel-nail-designs)
+- Updated sitemap comment: "(50 total)" → "(52 total)"
+
+**Expected impact:**
+- "nail art" (44K/mo, KD=4, TP=77K) and "nail art designs" (14K/mo, KD=7, TP=70K) now have internal PageRank flowing from the hub
+- sitemap.xml now submits the URL to Google for crawl prioritization
+- ItemList JSON-LD schema now includes nail art, helping Google understand the page as part of the what-are content cluster
+- Same pattern that improved all other articles: hub link + sitemap = faster/higher ranking
+
+**Deployment:** success (commit `51da742`)
+
+**Run #34 complete. Deployment: success (commit `51da742`).**
+
+**What was done:**
+
+The nail art page (`/what-are/what-are-nail-art/`) was fully written and deployed in a prior run (TP=77K — one of the highest on the site) but was never added to the hub or sitemap. It was getting zero internal PageRank and wasn't being submitted to Google via sitemap.
+
+| Change | Impact |
+|---|---|
+| Added nail art to what-are hub | "nail art" (44K/mo, KD=4, TP=77K) now receives internal PageRank from the hub |
+| Added to sitemap.xml | Google will crawl and index it with sitemap priority |
+| ItemList schema updated: 51 → 52 | Schema accurately reflects the full article set |
+| All count references updated: 50 → 52 | Metadata, hero text, and about section now consistent |
+[2026-03-27 01:15:33] Run #1 finished
+[2026-03-27 01:15:38] Run #2 starting (model: sonnet)
