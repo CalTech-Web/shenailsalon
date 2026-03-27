@@ -12,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/category/california`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
   ];
 
-  // All "What Are" articles (50 total)
+  // All "What Are" articles (52 total)
   const whatAreArticles: MetadataRoute.Sitemap = [
     "/what-are/what-are-nail-shapes/",
     "/what-are/what-are-nails-made-of/",
@@ -58,6 +58,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/what-are/what-are-marble-nails/",
     "/what-are/what-are-holographic-nails/",
     "/what-are/what-are-3d-nails/",
+    "/what-are/what-are-nail-art/",
     "/what-are/what-are-gel-nail-designs/",
     "/what-are/what-are-french-tip-nails/",
     "/what-are/what-are-reverse-french-nails/",

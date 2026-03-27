@@ -2,13 +2,13 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "What Are Nails Made Of? Acrylic, Gel, Dip and More | 50 Guides",
-  description: "50 guides covering what fingernails are made of (keratin), and what every nail type is made of, how long it lasts, and how it compares. Covers acrylic, gel, dip, shellac, gel-x, BIAB, and more.",
+  title: "What Are Nails Made Of? Acrylic, Gel, Dip and More | 52 Guides",
+  description: "52 guides covering what fingernails are made of (keratin), and what every nail type is made of, how long it lasts, and how it compares. Covers acrylic, gel, dip, shellac, gel-x, BIAB, nail art, and more.",
   alternates: { canonical: "https://shenailsalon.com/category/what-are" },
   openGraph: {
     url: "https://shenailsalon.com/category/what-are",
-    title: "What Are Nails Made Of? Acrylic, Gel, Dip and More | 50 Guides",
-    description: "50 guides covering what fingernails are made of (keratin), and what every nail type is made of, how long it lasts, and how it compares. Covers acrylic, gel, dip, shellac, gel-x, BIAB, and more.",
+    title: "What Are Nails Made Of? Acrylic, Gel, Dip and More | 52 Guides",
+    description: "52 guides covering what fingernails are made of (keratin), and what every nail type is made of, how long it lasts, and how it compares. Covers acrylic, gel, dip, shellac, gel-x, BIAB, nail art, and more.",
   },
 };
 
@@ -76,6 +76,7 @@ const articles = [
   { title: "What Are Marble Nails?", href: "/what-are/what-are-marble-nails/" },
   { title: "What Are Holographic Nails?", href: "/what-are/what-are-holographic-nails/" },
   { title: "What Are 3D Nails?", href: "/what-are/what-are-3d-nails/" },
+  { title: "What Are Nail Art? Types, Designs and Ideas", href: "/what-are/what-are-nail-art/" },
   { title: "Gel Nail Designs: Ideas and Styles", href: "/what-are/what-are-gel-nail-designs/" },
   { title: "What Are French Tip Nails?", href: "/what-are/what-are-french-tip-nails/" },
   { title: "What Are Reverse French Nails?", href: "/what-are/what-are-reverse-french-nails/" },
@@ -138,7 +139,7 @@ const itemListSchema = {
   "@type": "ItemList",
   name: "What Are Nail Guides",
   url: "https://shenailsalon.com/category/what-are",
-  numberOfItems: 51,
+  numberOfItems: 52,
   itemListElement: articles.map((article, index) => ({
     "@type": "ListItem",
     position: index + 1,
@@ -178,13 +179,13 @@ export default function WhatArePage() {
             style={{ background: "rgba(4,107,210,0.07)", color: "#046BD2", borderColor: "rgba(4,107,210,0.2)" }}
           >
             <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            <span>50+ Guides</span>
+            <span>52+ Guides</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-bold mb-3" style={{ color: "#1E293B" }}>
             What Are Nail Guides
           </h1>
           <p className="text-lg max-w-2xl" style={{ color: "#707070" }}>
-            Fingernails are made of keratin, the same protein as hair. Acrylic nails use polymer powder. Gel nails cure under UV light. Dip powder skips the lamp entirely. These 50 guides explain what nails are made of, how each enhancement type works, what it costs, and how long it lasts.
+            Fingernails are made of keratin, the same protein as hair. Acrylic nails use polymer powder. Gel nails cure under UV light. Dip powder skips the lamp entirely. These 52 guides explain what nails are made of, how each enhancement type works, what it costs, and how long it lasts.
           </p>
         </div>
       </section>
@@ -243,7 +244,7 @@ export default function WhatArePage() {
           >
             <h2 className="text-xl font-bold mb-3" style={{ color: "#1E293B" }}>About These Guides</h2>
             <p className="text-sm leading-relaxed" style={{ color: "#707070" }}>
-              Nancy Davidson wrote all 50 of these guides, covering everything from acrylic and gel to BIAB, polygel, and Russian manicures. Each article explains what the nail is made of, how long it holds, and how it compares to the closest alternative. Sources include Byrdie, Allure, Refinery29, and Salon Success Academy.
+              Nancy Davidson wrote all 52 of these guides, covering everything from acrylic and gel to BIAB, polygel, Russian manicures, and nail art. Each article explains what the nail is made of, how long it holds, and how it compares to the closest alternative. Sources include Byrdie, Allure, Refinery29, and Salon Success Academy.
             </p>
           </div>
         </div>
