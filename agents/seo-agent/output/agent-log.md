@@ -1,3 +1,36 @@
+## Run #36 - 2026-03-28
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on hub/sitemap audit
+- `how-to-keep-nails-healthy` is in the how-to hub and sitemap but has no static Next.js page
+- "Nail health" and "how to keep nails healthy" are evergreen, high-intent informational queries with strong text-based SERP intent
+- Completes the nail care cluster: strengthen, grow faster, stop biting, fix broken are all live; nail health is the foundational companion topic
+
+**Changes made:**
+- Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — comprehensive static article
+  - Primary targets: "how to keep nails healthy", "healthy nails", "nail health"
+  - Also targets: "how to have healthy nails", "signs of healthy nails", "nail care tips", "vitamins for nails", "how to maintain healthy nails", "how to take care of your nails"
+  - Signs of healthy vs unhealthy nails table (7 rows: color, surface, texture, layers, growth rate, cuticles, nail bed)
+  - 10-tip guide with numbered callout boxes (cuticle oil, one-direction filing, gloves for water, no peeling enhancements, manageable length, no tools, base coat, breaks from enhancements, protein/biotin diet, moisturize after washing)
+  - What damages nails most table (6 rows: peeling enhancements, water exposure, back-and-forth filing, acetone without moisturizing, using nails as tools, cutting cuticles)
+  - Best vitamins and nutrients table (5 rows: biotin, protein, zinc, iron, vitamin E — with why, food sources, and deficiency signs)
+  - Daily nail care routine (morning, after washing, before bed, weekly, monthly cadence)
+  - Recovery timeline after enhancements table (days 1-7 through weeks 6-8)
+  - Common mistakes table (6 rows: cutting cuticles, skipping base coat, soaking before manicure, filing wet nails, biotin when not deficient, ignoring white spots)
+  - FAQPage schema with 6 Q&As targeting: "how do you keep nails healthy", "signs of healthy nails", "vitamins for nail health", "keep nails healthy after acrylics", "what damages nails most", "how often to take breaks from enhancements"
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-strengthen-nails, how-to-make-nails-grow-faster, how-to-stop-biting-nails, what-are-white-spots-on-nails
+
+**Expected impact:**
+- URL already in hub and sitemap; static page replaces the generic WordPress fallback
+- "Nail health" is a foundational evergreen query cluster with strong informational intent — text content is exactly what ranks
+- Completes the nail care how-to cluster, strengthening topical authority across the entire how-to section
+- FAQPage schema eligible for People Also Ask rich snippets across multiple sub-queries
+
+**Deployment:** success (commit `e44b37f`)
+
+---
+
 ## Run #35 - 2026-03-28
 
 **Selection rationale:**
@@ -1786,3 +1819,23 @@ The nail art page (`/what-are/what-are-nail-art/`) was fully written and deploye
 [2026-03-28 01:09:01] Max loops: 2 (0=infinite)
 [2026-03-28 01:09:01] ==========================================
 [2026-03-28 01:09:01] Run #1 starting (model: sonnet)
+**Run #35 complete. Deployment: success (commit `5fee12a`).**
+
+**What was done:**
+
+Created `site/app/how-to/how-to-remove-shellac-nails/page.tsx` — the shellac removal guide that has been in the hub and sitemap since the very first run (March 17) but never had a static page.
+
+| Element | Detail |
+|---|---|
+| Primary targets | "how to remove shellac nails" (KD=0), "how to remove shellac nails at home", "how to remove shellac nail polish" |
+| Key differentiator | Explains *why* shellac needs acetone (UV-cured cross-linking) — not just "use acetone" |
+| 10-step foil-wrap guide | Full workflow from buffing the seal through post-removal cuticle oil |
+| Bowl-soak alternative | 5-step method with plastic bowl warning |
+| Methods comparison table | 5 methods with damage ratings (foil wrap, bowl soak, clips, filing, peeling) |
+| Recovery timeline table | Days 1-3 through weeks 3-4 |
+| Common mistakes table | 6 rows covering peeling, wrong remover, skipping buff, etc. |
+| FAQPage schema | 6 Q&As targeting "without acetone", "regular remover", "how long", "damage risk", "best way" |
+
+**Rationale:** Completes the shellac cluster. `what-are-shellac-nails` is already live and ranking. This is the natural companion page that was always in the hub but never built.
+[2026-03-28 01:14:43] Run #1 finished
+[2026-03-28 01:14:48] Run #2 starting (model: sonnet)
