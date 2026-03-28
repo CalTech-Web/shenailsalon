@@ -1,3 +1,37 @@
+## Run #35 - 2026-03-28
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on hub/sitemap audit
+- `how-to-remove-shellac-nails` has been in the hub and sitemap since Run #4 (2026-03-17) but has never had a static Next.js page
+- "How to remove shellac nails" was explicitly called out as KD=0, TP=900 in Run #4 and added as a FAQ entry on the how-to category page, but a full dedicated article was never created
+- Completing the shellac content cluster: `what-are-shellac-nails` is already live and ranking; the removal guide is the natural companion
+
+**Changes made:**
+- Created `site/app/how-to/how-to-remove-shellac-nails/page.tsx` — comprehensive static article
+  - Primary targets: "how to remove shellac nails", "how to remove shellac nails at home", "how to remove shellac nail polish"
+  - Also targets: "how long does shellac take to remove", "can you remove shellac without acetone", "best way to remove shellac nails", "does removing shellac damage nails"
+  - Why-acetone-is-required section (explains UV-cured cross-linking, contrasts with regular polish)
+  - 8-item supplies table (acetone, cotton balls, foil, 180-grit file, cuticle pusher, cuticle oil, buffer, petroleum jelly)
+  - 10-step foil-wrap removal guide (prep, buff seal, skin protection, soak cotton, wrap foil, wait 10-15 min, slide off, cuticle pusher, buff, cuticle oil)
+  - Bowl-soak alternative method (5 steps, includes plastic bowl warning)
+  - 5-row removal methods comparison table (foil wrap, bowl soak, acetone clips, filing, peeling with damage ratings)
+  - Shellac-vs-gel removal comparison section (explains soak time differences)
+  - 4-row aftercare recovery timeline (days 1-3 through weeks 3-4)
+  - 6-row common mistakes table (peeling, acetone-free remover, skipping buff, not waiting, bowl soak, skipping aftercare)
+  - FAQPage schema with 6 Q&As targeting: "how to remove at home", "how long it takes", "without acetone", "does it damage nails", "can you use regular remover", "best way"
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-shellac-nails, how-to-remove-gel-nails, how-to-strengthen-nails, how-to-paint-nails
+
+**Expected impact:**
+- URL was in hub and sitemap since day 1 of the project but had no static page (11 days of missed indexing signals)
+- Completes the shellac content cluster: what-are-shellac-nails + how-to-remove-shellac-nails now both live
+- FAQPage schema eligible for People Also Ask rich snippets
+- Static prerendered page replaces WordPress fallback, improving TTFB
+
+**Deployment:** success (commit `5fee12a`)
+
+---
+
 ## Run #32 - 2026-03-27
 
 **Selection rationale:**
@@ -1733,3 +1767,22 @@ The nail art page (`/what-are/what-are-nail-art/`) was fully written and deploye
 | All count references updated: 50 → 52 | Metadata, hero text, and about section now consistent |
 [2026-03-27 01:15:33] Run #1 finished
 [2026-03-27 01:15:38] Run #2 starting (model: sonnet)
+**Run #32 complete.**
+
+**Change made:** Created `/how-to/how-to-fix-a-broken-nail/` as a full static article.
+
+**Selection rationale:** The URL was already in the hub and sitemap but had no static page. "How to fix a broken nail" is a high-volume, urgent query with strong text-based SERP intent, no indication of prior rejection in the logs, and naturally serves users at the exact moment they need help.
+
+**Content:** 5-method guide (nail glue, tea bag patch, gel overlay, press-on cover, cut it short), break-type comparison table, supplies table, methods comparison table, 6-item prevention tips, common mistakes table, and FAQPage schema with 6 Q&As targeting the full cluster.
+
+**Deployment:** Success.
+[2026-03-27 01:22:27] Run #2 finished
+[2026-03-27 01:22:27] Reached max loops (2). Stopping.
+[2026-03-28 01:09:01] ==========================================
+[2026-03-28 01:09:01] Agent: Seo Agent
+[2026-03-28 01:09:01] Model: sonnet
+[2026-03-28 01:09:01] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-03-28 01:09:01] Stop on complete: false
+[2026-03-28 01:09:01] Max loops: 2 (0=infinite)
+[2026-03-28 01:09:01] ==========================================
+[2026-03-28 01:09:01] Run #1 starting (model: sonnet)
