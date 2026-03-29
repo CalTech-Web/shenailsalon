@@ -1,3 +1,38 @@
+## Run #37 - 2026-03-29
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on hub/sitemap audit
+- `how-to-file-nails` is listed in the sitemap but has no static Next.js page
+- "How to file nails" is a high-volume foundational nail care query with strong informational intent
+- `how-to-shape-nails` already has a live internal link pointing to `/how-to/how-to-file-nails/`, so this page already has one inbound link waiting
+- Completes the nail technique cluster alongside shape, paint, strengthen, fix broken, keep healthy
+
+**Changes made:**
+- Created `site/app/how-to/how-to-file-nails/page.tsx` — comprehensive static article
+  - Primary targets: "how to file nails", "how to file nails properly", "how to file nails at home", "correct way to file nails"
+  - Also targets: "which direction to file nails", "best nail file for natural nails", "how to file nails without splitting", "how to use a nail file", "should you file nails wet or dry", "what grit nail file for natural nails"
+  - Highlighted rule callout box (one-direction filing as the #1 rule)
+  - 5-row file types comparison table (emery board, glass/crystal, metal, acrylic, buffer block — grit, best use, notes)
+  - 9-step filing technique guide (start dry, clip first, choose grit, angle, one direction, check symmetry, shape tip, buffer edge, cuticle oil)
+  - Filing direction deep-dive section (keratin layer science, why sawing causes micro-tears)
+  - Wet vs. dry section (hygroscopic keratin explanation, when to wait)
+  - 4-row nail type guide table (natural, gel, acrylic, press-on — grit, direction, key tips)
+  - 6-row common mistakes table (sawing, filing wet, wrong grit, skipping buffer, aggressive pressure, filing one side only)
+  - FAQPage schema with 6 Q&As targeting: "which direction to file", "wet or dry", "best grit for natural nails", "prevent splitting", "file acrylic at home", "how often to file"
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-shape-nails, how-to-keep-nails-healthy, how-to-fix-a-broken-nail, how-to-strengthen-nails
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic WordPress fallback
+- Receives an inbound internal link from the already-live how-to-shape-nails page
+- "How to file nails" is searched by beginners learning any nail technique — high funnel reach
+- FAQPage schema eligible for People Also Ask rich snippets on direction, grit, and wet/dry queries
+- Completes the nail care technique cluster, strengthening topical authority across the how-to section
+
+**Deployment:** success (commit `e0e7471`)
+
+---
+
 ## Run #36 - 2026-03-28
 
 **Selection rationale:**
@@ -1839,3 +1874,32 @@ Created `site/app/how-to/how-to-remove-shellac-nails/page.tsx` — the shellac r
 **Rationale:** Completes the shellac cluster. `what-are-shellac-nails` is already live and ranking. This is the natural companion page that was always in the hub but never built.
 [2026-03-28 01:14:43] Run #1 finished
 [2026-03-28 01:14:48] Run #2 starting (model: sonnet)
+**Run #36 complete. Deployment: success (commit `e44b37f`).**
+
+**What was done:**
+
+Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive static article targeting the **nail health** cluster.
+
+| Element | Detail |
+|---|---|
+| Primary targets | "how to keep nails healthy", "healthy nails", "nail health" |
+| Cluster coverage | "signs of healthy nails", "vitamins for nails", "nail care tips", "how to maintain healthy nails", "nail health after acrylics" |
+| Signs table | 7-row healthy vs unhealthy nail comparison (color, surface, texture, layers, growth rate, cuticles, nail bed) |
+| 10-tip guide | Cuticle oil, one-direction filing, gloves for water, no peeling enhancements, manageable length, no nails-as-tools, base coat, enhancement breaks, protein/biotin, moisturize after washing |
+| Damage causes table | 6 rows covering peeling, water, back-and-forth filing, acetone, tools, cutting cuticles |
+| Vitamins table | 5 rows: biotin, protein, zinc, iron, vitamin E with food sources and deficiency signs |
+| Recovery timeline | Days 1-7 through weeks 6-8 after enhancement removal |
+| FAQPage schema | 6 Q&As for People Also Ask eligibility |
+| Internal links | Strengthen nails, grow faster, stop biting, white spots |
+
+**Rationale:** The URL was already in the hub and sitemap with no static content. This completes the nail care how-to cluster (strengthen, grow faster, stop biting, fix broken are all live), and "nail health" is a high-intent evergreen informational query with a text-friendly SERP.
+[2026-03-28 01:22:51] Run #2 finished
+[2026-03-28 01:22:51] Reached max loops (2). Stopping.
+[2026-03-29 01:09:00] ==========================================
+[2026-03-29 01:09:00] Agent: Seo Agent
+[2026-03-29 01:09:00] Model: sonnet
+[2026-03-29 01:09:00] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-03-29 01:09:00] Stop on complete: false
+[2026-03-29 01:09:00] Max loops: 2 (0=infinite)
+[2026-03-29 01:09:00] ==========================================
+[2026-03-29 01:09:00] Run #1 starting (model: sonnet)
