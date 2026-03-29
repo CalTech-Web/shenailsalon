@@ -1,3 +1,39 @@
+## Run #38 - 2026-03-29
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on hub/sitemap audit
+- `how-to-push-back-cuticles` is listed in the sitemap but has no static Next.js page
+- "How to push back cuticles" is a high-intent informational query with evergreen demand
+- Completes the nail care cluster: shape, paint, strengthen, grow faster, stop biting, fix broken, keep healthy, file are all live; cuticle care is the natural companion
+- The already-live `how-to-keep-nails-healthy` page now internally links to this new page
+
+**Changes made:**
+- Created `site/app/how-to/how-to-push-back-cuticles/page.tsx` — comprehensive static article
+  - Primary targets: "how to push back cuticles", "how to push back cuticles at home"
+  - Also targets: "should you push back cuticles", "how to soften cuticles before pushing back", "cuticle pusher vs orangewood stick", "what does cuticle remover do", "how often to push back cuticles", "is it bad to cut cuticles"
+  - Key rule callout (push back, never cut — the cuticle is a protective seal)
+  - 5-row tools table (cuticle pusher, orangewood stick, cuticle remover gel, cuticle oil, warm water bowl)
+  - 8-step technique guide (remove polish, soften, pat dry, 45-degree angle, circular motions, wipe loosened skin, repeat, finish with cuticle oil)
+  - Cuticle remover section (how it works, potassium/sodium hydroxide mechanism, when to use)
+  - 2-row cuticle pusher vs. orangewood stick comparison table
+  - How often section (every 1 to 2 weeks; daily oil maintenance)
+  - 6-row common mistakes table (dry cuticles, too much force, cutting the cuticle, skipping oil after, sharp tool, pushing too far)
+  - FAQPage schema with 6 Q&As: should you push back cuticles, wet or dry, best tool, how often, is it bad to cut, what does cuticle remover do
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-keep-nails-healthy, how-to-file-nails, how-to-shape-nails, how-to-strengthen-nails
+- Updated `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — added internal link to new page in related articles section
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- "How to push back cuticles" is a specific, high-intent query with consistent search volume
+- Completes the nail care technique cluster, strengthening topical authority across the how-to section
+- FAQPage schema eligible for People Also Ask rich snippets on cut vs. push, tool choice, and cuticle remover queries
+- Gains one inbound internal link immediately from the already-live how-to-keep-nails-healthy page
+
+**Deployment:** pending
+
+---
+
 ## Run #37 - 2026-03-29
 
 **Selection rationale:**
@@ -1903,3 +1939,14 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-03-29 01:09:00] Max loops: 2 (0=infinite)
 [2026-03-29 01:09:00] ==========================================
 [2026-03-29 01:09:00] Run #1 starting (model: sonnet)
+**Run #37 complete.**
+
+**Change made:** Created `/how-to/how-to-file-nails/` — a new static article targeting "how to file nails", "how to file nails properly", "which direction to file nails", and related queries.
+
+**Why this page:** It was in the sitemap but had no static page, and the already-live `how-to-shape-nails` page has a direct internal link pointing to it. Filing is a foundational skill that surfaces early in search funnels for beginners starting any nail technique.
+
+**Content:** File types table, 9-step technique guide, filing direction science explainer, wet vs. dry section, nail type grit guide (natural/gel/acrylic/press-on), mistakes table, and 6-question FAQPage schema targeting People Also Ask slots.
+
+**Deployment:** success.
+[2026-03-29 01:13:25] Run #1 finished
+[2026-03-29 01:13:30] Run #2 starting (model: sonnet)

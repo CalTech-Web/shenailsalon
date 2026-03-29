@@ -450,7 +450,7 @@ export default function HowToKeepNailsHealthyPage() {
               {[
                 { title: "How To Strengthen Nails", href: "/how-to/how-to-strengthen-nails/" },
                 { title: "How To Make Nails Grow Faster", href: "/how-to/how-to-make-nails-grow-faster/" },
-                { title: "How To Stop Biting Your Nails", href: "/how-to/how-to-stop-biting-nails/" },
+                { title: "How To Push Back Cuticles", href: "/how-to/how-to-push-back-cuticles/" },
                 { title: "What Causes White Spots on Nails?", href: "/what-are/what-are-white-spots-on-nails/" },
               ].map((link) => (
                 <li key={link.href}>
