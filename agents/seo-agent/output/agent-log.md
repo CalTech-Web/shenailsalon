@@ -30,7 +30,7 @@
 - FAQPage schema eligible for People Also Ask rich snippets on cut vs. push, tool choice, and cuticle remover queries
 - Gains one inbound internal link immediately from the already-live how-to-keep-nails-healthy page
 
-**Deployment:** pending
+**Deployment:** success (commit `6392ba2`)
 
 ---
 
