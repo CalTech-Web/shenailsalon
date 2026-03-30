@@ -1,3 +1,42 @@
+## Run #39 - 2026-03-30
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on hub/sitemap audit
+- `what-are-polygel-nails` is listed in the sitemap but has no static Next.js page
+- PolyGel is a trending hybrid nail enhancement (gel + acrylic chemistry) with strong informational search volume
+- The already-live `what-are-builder-gel-nails` page already internally links to `/what-are/what-are-polygel-nails/`, so the new page will have an inbound internal link from day one
+- PolyGel is a natural topical complement to the existing builder gel, gel-x, and acrylic coverage
+
+**Changes made:**
+- Created `site/app/what-are/what-are-polygel-nails/page.tsx` — comprehensive static article
+  - Primary targets: "what are polygel nails", "what is polygel", "polygel nails"
+  - Also targets: "what is polygel made of", "how long do polygel nails last", "polygel vs acrylic", "polygel vs builder gel", "polygel nails pros and cons", "how much do polygel nails cost", "are polygel nails good", "polygel nail kit"
+  - First-person intro explaining the no-rush workability of polygel paste
+  - What is polygel made of section (oligomers + acrylic powder fillers, no liquid monomer, why there is no odor)
+  - Wear time by scenario table (6 rows: proper prep, skipped dehydrator, too-thick application, frequent water exposure, extension, overlay)
+  - Cost table (7 rows: starter kit, single tube, slip solution, LED lamp, per-set DIY, salon extensions CA, salon overlay CA)
+  - 8-step application overview with numbered cards (prep, primer, squeeze paste, slip solution, shape, cure, file, top coat)
+  - Link to companion `/how-to/how-to-apply-polygel-nails/` page (in sitemap, no static page yet)
+  - 9-row Polygel vs Acrylic comparison table (application form, odor, curing, flexibility, weight, beginner difficulty, wear, repairability, cost)
+  - 8-row Polygel vs Builder Gel comparison table (texture, application, best for, curing, wear, odor, removal, cost)
+  - Pros (7) / Cons (6) cards
+  - Two removal methods (file off, acetone soak with foil) with a "never peel" warning
+  - FAQPage schema with 6 Q&As: what is polygel, what is it made of, how long it lasts, cost, vs acrylic, vs builder gel
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-apply-polygel-nails, what-are-builder-gel-nails, what-are-acrylic-nails, what-are-gel-x-nails
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Inbound internal link already in place from what-are-builder-gel-nails page (zero delay on link equity flow)
+- "What are polygel nails" is an evergreen informational query with consistent volume from DIY nail enthusiasts
+- No-odor / beginner-friendly angle targets the growing at-home nail segment
+- FAQPage schema eligible for People Also Ask rich snippets on composition, comparison, and cost queries
+- Polygel vs acrylic and polygel vs builder gel tables target high-intent comparison sub-queries
+
+**Deployment:** pending
+
+---
+
 ## Run #38 - 2026-03-29
 
 **Selection rationale:**
@@ -1950,3 +1989,22 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Deployment:** success.
 [2026-03-29 01:13:25] Run #1 finished
 [2026-03-29 01:13:30] Run #2 starting (model: sonnet)
+**Run #38 complete.**
+
+**Change made:** Created `site/app/how-to/how-to-push-back-cuticles/page.tsx` — a full static article targeting "how to push back cuticles" and related queries (wet vs. dry, best tool, cuticle remover, how often, cut vs. push).
+
+**Content:** 8-step technique guide, tools table, cuticle pusher vs. orangewood stick comparison, cuticle remover explainer, common mistakes table, FAQPage schema with 6 Q&As, full JSON-LD (BreadcrumbList + Article). Internal links to the nail care cluster.
+
+**Also updated:** `how-to-keep-nails-healthy` related links section now points to the new page, giving it one inbound internal link immediately.
+
+**Deployment:** success (`6392ba2`).
+[2026-03-29 01:18:29] Run #2 finished
+[2026-03-29 01:18:29] Reached max loops (2). Stopping.
+[2026-03-30 01:09:04] ==========================================
+[2026-03-30 01:09:04] Agent: Seo Agent
+[2026-03-30 01:09:04] Model: sonnet
+[2026-03-30 01:09:04] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-03-30 01:09:04] Stop on complete: false
+[2026-03-30 01:09:04] Max loops: 2 (0=infinite)
+[2026-03-30 01:09:04] ==========================================
+[2026-03-30 01:09:04] Run #1 starting (model: sonnet)
