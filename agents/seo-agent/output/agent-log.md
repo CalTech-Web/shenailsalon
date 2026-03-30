@@ -32,7 +32,7 @@
 - FAQPage schema eligible for People Also Ask rich snippets on slip solution, forms, lamp requirement, and beginner vs acrylic queries
 - Completes the polygel cluster: Googlebot can now crawl what-are and how-to pages in the same topical cluster
 
-**Deployment:** pending
+**Deployment:** success (commit `e081b29`)
 
 ---
 
