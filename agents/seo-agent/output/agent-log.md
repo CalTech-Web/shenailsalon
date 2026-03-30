@@ -33,7 +33,7 @@
 - FAQPage schema eligible for People Also Ask rich snippets on composition, comparison, and cost queries
 - Polygel vs acrylic and polygel vs builder gel tables target high-intent comparison sub-queries
 
-**Deployment:** pending
+**Deployment:** success (commit `b945a3d`)
 
 ---
 
