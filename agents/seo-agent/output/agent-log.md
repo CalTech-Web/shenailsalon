@@ -1,3 +1,41 @@
+## Run #40 - 2026-03-30
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and inbound link analysis
+- `how-to-apply-polygel-nails` is listed in the sitemap but has no static Next.js page
+- The already-live `what-are-polygel-nails` page (run #39) links directly to `/how-to/how-to-apply-polygel-nails/`, giving the new page an inbound internal link from day one
+- "How to apply polygel nails" is a high-intent application query from DIY nail enthusiasts; the what-are article captures awareness-stage readers and the how-to article captures action-stage readers
+- Completes the polygel content cluster: what it is + how to apply it
+
+**Changes made:**
+- Created `site/app/how-to/how-to-apply-polygel-nails/page.tsx` — comprehensive static application guide
+  - Primary targets: "how to apply polygel nails", "how to apply polygel nails at home", "polygel nails step by step"
+  - Also targets: "what is slip solution for polygel", "how to use polygel without forms", "polygel vs acrylic application", "how long do polygel nails last", "polygel nail kit", "how long does polygel application take"
+  - Intro explaining polygel's key advantage: workable until cured, no time pressure
+  - Link to companion `what-are-polygel-nails` page
+  - 3-way comparison table: Polygel vs Acrylic vs Builder Gel (9 rows: curing method, application form, odor, working time, slip solution, nail forms, extensions, beginner difficulty, wear time)
+  - 12-row supplies table (dehydrator, primer, base coat, polygel paste, slip solution, dual-ended brush, lamp, nail forms, file, buffer, top coat, cuticle oil)
+  - Slip solution explainer table (4 scenarios: dry brush, too much, no slip solution, polygel shrinks)
+  - 11-step application guide (prep, base coat cure, nail form prep, bead squeeze, spread with slip solution, extension shaping, cure, form removal, file and shape, buff, top coat)
+  - 8-row wear time table (proper prep, overlay, extension, dehydrator skipped, too much slip solution, under-cured, frequent water, base coat on skin)
+  - 7-row cost table (starter kit, single tube, slip solution, LED lamp, per-set DIY, salon overlay CA, salon extensions CA)
+  - 7-row common mistakes table (skipping dehydrator, no slip solution, too much slip solution, too close to cuticle, under-curing, too much paste, skipping top coat)
+  - FAQPage schema with 7 Q&As: step by step application, slip solution, UV lamp requirement, no forms overlay, how long it lasts, supplies needed, beginner vs acrylic
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-polygel-nails, how-to-apply-builder-gel, how-to-apply-gel-nails, how-to-strengthen-nails
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Inbound internal link already in place from what-are-polygel-nails page (zero delay on link equity flow)
+- Targets distinct action-stage queries that the what-are page does not rank for
+- Slip solution content targets a specific sub-query ("what is slip solution for polygel") with no dedicated coverage on existing pages
+- FAQPage schema eligible for People Also Ask rich snippets on slip solution, forms, lamp requirement, and beginner vs acrylic queries
+- Completes the polygel cluster: Googlebot can now crawl what-are and how-to pages in the same topical cluster
+
+**Deployment:** pending
+
+---
+
 ## Run #39 - 2026-03-30
 
 **Selection rationale:**
@@ -2008,3 +2046,14 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-03-30 01:09:04] Max loops: 2 (0=infinite)
 [2026-03-30 01:09:04] ==========================================
 [2026-03-30 01:09:04] Run #1 starting (model: sonnet)
+**Run #39 complete.** Deployment: success.
+
+**What was done:** Created `/what-are/what-are-polygel-nails/` — a comprehensive static article targeting "what are polygel nails", "what is polygel", "polygel vs acrylic", "polygel vs builder gel", and related queries.
+
+**Key SEO signals:**
+- URL was already in the sitemap with no static page (replacing the [slug] fallback)
+- The already-live `what-are-builder-gel-nails` page had a pre-existing internal link pointing to this URL, so the new page gets immediate link equity from day one
+- FAQPage schema covers composition, cost, comparison, and wear-time queries eligible for People Also Ask snippets
+- Two comparison tables (vs acrylic, vs builder gel) target high-intent decision-layer sub-queries
+[2026-03-30 01:16:13] Run #1 finished
+[2026-03-30 01:16:18] Run #2 starting (model: sonnet)
