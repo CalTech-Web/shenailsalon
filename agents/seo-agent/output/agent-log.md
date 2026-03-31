@@ -1,3 +1,41 @@
+## Run #41 - 2026-03-31
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and gap analysis
+- `how-to-apply-shellac` is listed in the sitemap but has no static Next.js page
+- The already-live `what-are-shellac-nails` and `how-to-remove-shellac-nails` pages both provide immediate inbound internal links, giving the new page link equity from day one
+- "How to apply shellac nails" and "shellac manicure at home" are high-intent queries from the large DIY nail segment
+- Completes the shellac content cluster: what it is, how to apply it, and how to remove it all now have static pages
+
+**Changes made:**
+- Created `site/app/how-to/how-to-apply-shellac/page.tsx` — comprehensive static application guide
+  - Primary targets: "how to apply shellac nails", "how to apply shellac at home", "shellac manicure at home", "how to do shellac nails at home"
+  - Also targets: "shellac nails step by step", "do shellac nails need UV light", "how long does shellac last", "shellac vs gel nails application", "shellac nail supplies", "how much does a shellac manicure cost", "can you apply shellac without buffing"
+  - First-person intro framing shellac's key benefit: no dry time, use hands immediately after curing
+  - 9-row comparison table: Shellac/Gel Polish vs Regular Polish vs Hard Gel (UV lamp, dry time, chip resistance, thickness, adds strength, adds length, removal time, beginner-friendly, best for)
+  - 10-row supplies table (dehydrator, base coat, color, top coat, UV/LED lamp, nail buffer, cuticle pusher, lint-free wipes, isopropyl alcohol, acetone)
+  - 9-step application guide (shape + push cuticles, buff, dehydrate, base coat cure, first color coat cure, second color coat cure, top coat + seal free edge, remove inhibition layer, cuticle oil)
+  - 8-row wear time table (proper prep, dehydrator skipped, cuticle skin not pushed, thick coat, free edge not sealed, frequent water, daily cuticle oil, under-cured)
+  - 7-row cost table (starter kit, CND Shellac professional set, LED lamp, individual color, per-set DIY, salon CA, salon removal only)
+  - 7-row common mistakes table (skip dehydrator, too thick coats, touch cuticle/sidewall skin, not sealing free edge, peeling off, not wiping inhibition layer, cutting lamp time short)
+  - FAQPage schema with 7 Q&As: step by step application, UV lamp required, shellac vs gel, how long it lasts, home cost, applying without buffing, removal
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-shellac-nails, how-to-remove-shellac-nails, how-to-apply-gel-nails, how-to-keep-nails-healthy
+- Updated `site/app/what-are/what-are-shellac-nails/page.tsx` — added inbound link to the new how-to-apply-shellac page and how-to-remove-shellac-nails in the Related Guides section
+- Updated `site/app/how-to/how-to-remove-shellac-nails/page.tsx` — added inbound link to the new how-to-apply-shellac page in the Related Guides section
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two inbound internal links already in place from day one (zero delay on link equity flow)
+- "How to apply shellac" is a high-volume evergreen query; no-dry-time and chip-resistance angles target the DIY nail segment
+- Inhibition layer explainer and free-edge sealing content targets specific sub-queries ("why is my shellac still sticky", "shellac chipping at tips") with no dedicated coverage on existing pages
+- FAQPage schema eligible for People Also Ask rich snippets on UV lamp, shellac vs gel, cost, and removal queries
+- Completes the shellac cluster: Googlebot can now crawl what-are, how-to-apply, and how-to-remove pages in the same topical cluster
+
+**Deployment:** success (commit `db0f847`)
+
+---
+
 ## Run #40 - 2026-03-30
 
 **Selection rationale:**
@@ -2057,3 +2095,30 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 - Two comparison tables (vs acrylic, vs builder gel) target high-intent decision-layer sub-queries
 [2026-03-30 01:16:13] Run #1 finished
 [2026-03-30 01:16:18] Run #2 starting (model: sonnet)
+**Run #40 complete.**
+
+**Change:** Created `/how-to/how-to-apply-polygel-nails/` — a full static application guide replacing the generic `[slug]` fallback.
+
+**Why this page:** The `what-are-polygel-nails` page published in Run #39 already links directly to this URL, so it received an inbound internal link from day one with no extra work. This completes the polygel content cluster.
+
+**Page covers:**
+- Polygel vs Acrylic vs Builder Gel comparison table (application-focused)
+- 12-item supplies table including slip solution
+- Slip solution explainer (the most-asked beginner question)
+- 11-step application guide (overlay and extension paths)
+- Wear time by scenario (8 rows)
+- Cost table (DIY vs salon, CA pricing)
+- 7 common mistakes table
+- FAQPage schema with 7 Q&As (slip solution, forms, lamp, beginner difficulty, wear, supplies, time)
+
+**Deployment:** success (`e081b29`)
+[2026-03-30 01:23:34] Run #2 finished
+[2026-03-30 01:23:34] Reached max loops (2). Stopping.
+[2026-03-31 01:09:02] ==========================================
+[2026-03-31 01:09:02] Agent: Seo Agent
+[2026-03-31 01:09:02] Model: sonnet
+[2026-03-31 01:09:02] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-03-31 01:09:02] Stop on complete: false
+[2026-03-31 01:09:02] Max loops: 2 (0=infinite)
+[2026-03-31 01:09:02] ==========================================
+[2026-03-31 01:09:02] Run #1 starting (model: sonnet)
