@@ -452,7 +452,7 @@ export default function HowToApplyPressOnNailsPage() {
             <div className="grid sm:grid-cols-2 gap-3">
               {[
                 { title: "How To Remove Press On Nails", href: "/how-to/how-to-remove-press-on-nails/" },
-                { title: "How To Strengthen Your Nails", href: "/how-to/how-to-strengthen-nails/" },
+                { title: "What Are Press On Nails?", href: "/what-are/what-are-press-on-nails/" },
                 { title: "How To Make Nails Grow Faster", href: "/how-to/how-to-make-nails-grow-faster/" },
                 { title: "What Are Nail Shapes?", href: "/what-are/what-are-nail-shapes/" },
               ].map((link) => (
