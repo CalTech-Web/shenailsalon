@@ -1,3 +1,44 @@
+## Run #42 - 2026-03-31
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and gap analysis
+- `what-are-press-on-nails` is listed in the sitemap but has no static Next.js page
+- Press-on nails are among the most searched nail topics; extremely high evergreen volume
+- Two inbound links available immediately from day one: `how-to-apply-press-on-nails` and `how-to-remove-press-on-nails` (the remove page already linked to this URL)
+- Completes the press-on content cluster: what they are, how to apply, how to remove all now have static pages
+
+**Changes made:**
+- Created `site/app/what-are/what-are-press-on-nails/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are press on nails", "what are press on nails made of", "are press on nails bad for your nails"
+  - Also targets: "how long do press on nails last", "press on nails vs acrylic", "press on nails with glue vs tabs", "how much do press on nails cost", "can you reuse press on nails", "do press on nails work on short nails"
+  - First-person intro using Nancy Davidson's established voice ("I love how easy they are to apply...")
+  - ABS plastic composition explainer (same material as LEGO bricks, phone cases; why it is flexible and durable)
+  - Cyanoacrylate nail glue vs adhesive tab chemistry explained
+  - 7-row wear time table (nail glue + proper prep, tabs + proper prep, glue on oily nail, tabs on oily nail, frequent water, correct sizing, too-wide overhang)
+  - 8-row cost table (budget kit, mid-range, premium, nail glue, adhesive tabs, per-set DIY reuse, salon acrylic CA, salon gel CA)
+  - 6-step application overview with numbered cards (size, buff, alcohol clean, adhesive, 45-degree press, hold 30s)
+  - Adhesive tabs vs nail glue 6-row comparison table (hold strength, wear time, removal, reusability, nail damage, best for)
+  - Press on vs Acrylic vs Gel 9-row comparison table (application, location, wear time, removal, UV lamp, damage risk, reusable, cost, best for)
+  - Pros (8) / Cons (6) cards
+  - Two removal methods (warm soapy water for reuse; cuticle oil or acetone for glue) with never-force warning
+  - FAQPage schema with 7 Q&As: what they are, how long they last, are they bad for nails, can you reuse them, vs acrylic, cost, short nails
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-apply-press-on-nails, how-to-remove-press-on-nails, what-are-nail-stickers, what-are-acrylic-nails
+- Updated `site/app/how-to/how-to-apply-press-on-nails/page.tsx` — replaced "How To Strengthen Your Nails" related link with "What Are Press On Nails?" link to create bidirectional cluster linking
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two inbound internal links active from day one (how-to-apply and how-to-remove pages)
+- "What are press on nails" is an extremely high-volume evergreen query; press-ons are one of the fastest-growing nail segments
+- ABS plastic composition content targets specific sub-query ("what are press on nails made of") with no existing coverage on the site
+- Adhesive tabs vs glue comparison targets "how long do press on nails last with glue vs tabs" queries
+- FAQPage schema eligible for People Also Ask rich snippets on damage risk, reusability, and vs-acrylic queries
+- Completes the press-on cluster: Googlebot can now crawl what-are, how-to-apply, and how-to-remove pages in the same topical cluster
+
+**Deployment:** success (commit `1cc2eed`)
+
+---
+
 ## Run #41 - 2026-03-31
 
 **Selection rationale:**
@@ -2122,3 +2163,18 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-03-31 01:09:02] Max loops: 2 (0=infinite)
 [2026-03-31 01:09:02] ==========================================
 [2026-03-31 01:09:02] Run #1 starting (model: sonnet)
+**Run #41 complete.** Here's what was done:
+
+**Page created:** `how-to-apply-shellac` — a full application guide targeting "how to apply shellac nails at home", "shellac manicure at home", and related queries.
+
+**Key content:**
+- 9-step application walkthrough (cuticle prep through cuticle oil finish)
+- Shellac vs Gel Polish vs Regular Polish comparison table
+- Supplies table, wear time table, cost table, common mistakes table
+- 7-question FAQPage schema (UV lamp, shellac vs gel, how long it lasts, cost, removal)
+
+**Internal linking:** Both `what-are-shellac-nails` and `how-to-remove-shellac-nails` now link to the new page, giving it inbound link equity from day one and completing the shellac topical cluster (what it is / how to apply / how to remove).
+
+**Deployment:** success.
+[2026-03-31 01:17:14] Run #1 finished
+[2026-03-31 01:17:19] Run #2 starting (model: sonnet)
