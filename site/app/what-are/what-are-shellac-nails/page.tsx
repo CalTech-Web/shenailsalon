@@ -345,10 +345,10 @@ export default function ShelacNailsPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { title: "How To Apply Shellac Nails at Home", href: "/how-to/how-to-apply-shellac/" },
+                { title: "How To Remove Shellac Nails at Home", href: "/how-to/how-to-remove-shellac-nails/" },
                 { title: "What Are Gel Nails?", href: "/what-are/what-are-gel-nails/" },
                 { title: "What Are Acrylic Nails?", href: "/what-are/what-are-acrylic-nails/" },
-                { title: "What Are Dip Nails (SNS)?", href: "/what-are/what-are-dip-nails/" },
-                { title: "What Are Gel-X Nails?", href: "/what-are/what-are-gel-x-nails/" },
               ].map((link) => (
                 <Link
                   key={link.href}

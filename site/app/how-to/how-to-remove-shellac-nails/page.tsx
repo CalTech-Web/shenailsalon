@@ -382,10 +382,10 @@ export default function HowToRemoveShelacNailsPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { title: "How To Apply Shellac Nails at Home", href: "/how-to/how-to-apply-shellac/" },
                 { title: "What Are Shellac Nails?", href: "/what-are/what-are-shellac-nails/" },
                 { title: "How To Remove Gel Nails", href: "/how-to/how-to-remove-gel-nails/" },
                 { title: "How To Strengthen Nails", href: "/how-to/how-to-strengthen-nails/" },
-                { title: "How To Paint Your Nails", href: "/how-to/how-to-paint-nails/" },
               ].map((link) => (
                 <Link
                   key={link.href}
