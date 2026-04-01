@@ -1,3 +1,45 @@
+## Run #44 - 2026-04-01
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and inbound link analysis
+- `what-are-stiletto-nails` is listed in the sitemap but has no static Next.js page
+- Two inbound internal links already in place from day one: `what-are-nail-shapes` (links to `/what-are/what-are-stiletto-nails/` in its Related Guides section) and `what-are-almond-shaped-nails` (links to stiletto in its Related Guides section)
+- "Stiletto nails" is a very high-volume evergreen search term; consistently one of the most searched nail shapes alongside coffin and almond
+- Completing the major tapered nail shapes cluster: coffin, almond, oval, and square all have static pages; stiletto was the last missing shape in the top tier
+- The coffin nails page mentions stiletto extensively in comparison tables but had no link to the stiletto page; added it to the Related Guides section as part of this run
+
+**Changes made:**
+- Created `site/app/what-are/what-are-stiletto-nails/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are stiletto nails", "stiletto nails vs coffin", "stiletto nails acrylic"
+  - Also targets: "short stiletto nails", "stiletto nail designs", "how long do stiletto nails last", "how much do stiletto nails cost", "are stiletto nails hard to maintain", "stiletto vs almond nails"
+  - First-person intro using Nancy Davidson's established voice with a personal aside about admiring the shape
+  - Full definition of the stiletto shape (sides taper to a sharp narrow point, etymology from stiletto knife/heel)
+  - Explanation of why acrylic or hard gel extensions are required (length, rigidity)
+  - 8-row stiletto vs coffin vs almond comparison table covering tip shape, taper severity, length required, fragility, best look, practical daily use, nail art surface, salon popularity
+  - Acrylic stiletto nails section explaining application, reinforced apex technique, hard gel as alternative
+  - Short stiletto nails section (5 to 7 mm free edge, distinction from sharp almond)
+  - Medium and long stiletto nails section (8+ mm through extra-long for fashion/editorial)
+  - 8-row popular designs table: black, pink, white, ombre, chrome, french tip variation, red, marble
+  - 7-row cost table covering short/medium/long full sets, fills, nail art add-ons, DIY kit, California averages ($45 to $110)
+  - 6-point maintenance guide
+  - Pros (6) / Cons (6) cards
+  - FAQPage schema with 7 Q&As: what are stiletto nails, stiletto vs coffin, stiletto vs almond, how long they last, cost, short stiletto, maintenance difficulty
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: nail-shapes, coffin-nails, almond-shaped-nails, acrylic-nails, nail-extensions, oval-nails
+- Updated `site/app/what-are/what-are-coffin-nails/page.tsx` — added stiletto nails to Related Guides section (replacing chrome nails link to make room for the directly related shape)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two inbound internal links active from day one (nail shapes hub and almond page)
+- "Stiletto nails vs coffin" is one of the most searched nail shape comparisons; this page addresses it directly with a comparison table
+- Completes the top-tier nail shapes cluster: coffin, almond, oval, square, and stiletto all now have dedicated static pages with cross-links
+- FAQPage schema eligible for People Also Ask rich snippets on stiletto vs coffin, stiletto vs almond, maintenance, and cost queries
+- Added coffin page link to stiletto strengthens the mutual topical cluster signal between the two most popular tapered shapes
+
+**Deployment:** success (commit `64194d4`)
+
+---
+
 ## Run #43 - 2026-04-01
 
 **Selection rationale:**
@@ -2244,3 +2286,15 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-04-01 00:09:03] Max loops: 2 (0=infinite)
 [2026-04-01 00:09:03] ==========================================
 [2026-04-01 00:09:03] Run #1 starting (model: sonnet)
+**Run #43 complete.** Deployment: success.
+
+**What was done:** Created `site/app/what-are/what-are-biab-nails/page.tsx`, a dedicated static page for "What Are BIAB Nails?"
+
+**Why this will move rankings:**
+- "What are BIAB nails" and "what does BIAB stand for" are high-volume, fast-growing queries driven by social media. BIAB is the #1 trending nail enhancement term in 2024/2025.
+- The existing `what-are-builder-gel-nails` page already linked to this URL, giving it immediate link equity from day one with zero lag.
+- The `category/what-are` hub also listed the BIAB page already, so 2 inbound links on first crawl.
+- This page targets BIAB-specific queries ("are BIAB nails the same as builder gel", "do BIAB nails strengthen nails") that the builder gel page doesn't rank for because searchers using the BIAB term get a different SERP pool.
+- FAQPage schema with 7 Q&As makes it eligible for People Also Ask rich results.
+[2026-04-01 00:16:14] Run #1 finished
+[2026-04-01 00:16:19] Run #2 starting (model: sonnet)
