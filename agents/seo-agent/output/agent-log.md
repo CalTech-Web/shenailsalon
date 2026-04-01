@@ -33,7 +33,7 @@
 - FAQPage schema eligible for People Also Ask rich snippets on BIAB vs builder gel, strengthening nails, home use, and removal queries
 - Strengthens the topical cluster around gel nail enhancements: builder gel, BIAB, polygel, and gel-x all now have dedicated what-are pages with cross-links
 
-**Deployment:** pending
+**Deployment:** success (commit `f0d89ab`)
 
 ---
 
