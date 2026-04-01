@@ -1,3 +1,42 @@
+## Run #43 - 2026-04-01
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and inbound link analysis
+- `what-are-biab-nails` is listed in the sitemap but has no static Next.js page
+- Two inbound internal links already in place from day one: `what-are-builder-gel-nails` (links to `/what-are/what-are-biab-nails/` in its Related Nail Guides section) and `category/what-are` (lists "What Are BIAB Nails?" in its article index)
+- BIAB (Builder In A Bottle) is one of the fastest-growing nail searches; the term trended heavily on social media in 2024 and 2025 and continues to grow as more salons adopt it
+- Distinct from the existing `what-are-builder-gel-nails` page: this page targets BIAB-specific queries ("what does BIAB stand for", "are BIAB nails the same as builder gel", "do BIAB nails strengthen nails") that users searching specifically for "BIAB" rather than "builder gel" are asking
+
+**Changes made:**
+- Created `site/app/what-are/what-are-biab-nails/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are BIAB nails", "what does BIAB stand for", "BIAB nails explained"
+  - Also targets: "are BIAB nails the same as builder gel", "how long do BIAB nails last", "do BIAB nails strengthen nails", "can BIAB nails be done at home", "BIAB vs acrylic", "BIAB vs gel polish", "BIAB nail cost", "how to remove BIAB nails"
+  - First-person intro using Nancy Davidson's established voice with a personal anecdote about switching to BIAB
+  - "What Does BIAB Stand For?" section explaining the Builder In A Bottle brand origin (The Gel Bottle Inc.) and how the term is now generic
+  - "How BIAB Nails Work" section explaining photopolymerization and the overlay vs extension distinction
+  - 9-row BIAB vs Builder Gel (pot) vs Gel Polish comparison table covering format, thickness, strength, length, curing, wear time, removal, at-home use
+  - 10-row BIAB vs Acrylic comparison table covering application, odor, flexibility, strengthening, length, wear time, removal, damage risk, at-home use, cost
+  - 8-row wear time table covering conditions that affect how long BIAB lasts (proper prep, overlay, extension, skipped dehydrator, flooded cuticle, thick coat, water exposure, cuticle oil)
+  - Cost section covering salon prices ($45 to $80) and at-home kit pricing ($50 to $80)
+  - 8-step application guide (prep, dehydrate, prime, base coat cure, BIAB bead application, cure, file, top coat)
+  - Two removal methods: file + acetone soak (20 to 30 min) and full file-off (pro only)
+  - Pros (8) / Cons (6) cards
+  - FAQPage schema with 7 Q&As: what are BIAB nails, what does BIAB stand for, are BIAB nails the same as builder gel, how long do BIAB nails last, do BIAB nails strengthen nails, can BIAB be done at home, how are BIAB nails removed
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-builder-gel-nails, how-to-apply-builder-gel, what-are-gel-x-nails, what-are-polygel-nails
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two inbound internal links active from day one (builder gel what-are page and category hub)
+- "What are BIAB nails" and "what does BIAB stand for" are high-volume queries with clear informational intent; no existing static page on the site addressed them directly
+- The builder gel page explains BIAB in a section, but this dedicated page captures searchers who specifically use the term "BIAB" rather than "builder gel"
+- FAQPage schema eligible for People Also Ask rich snippets on BIAB vs builder gel, strengthening nails, home use, and removal queries
+- Strengthens the topical cluster around gel nail enhancements: builder gel, BIAB, polygel, and gel-x all now have dedicated what-are pages with cross-links
+
+**Deployment:** pending
+
+---
+
 ## Run #42 - 2026-03-31
 
 **Selection rationale:**
@@ -2178,3 +2217,30 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Deployment:** success.
 [2026-03-31 01:17:14] Run #1 finished
 [2026-03-31 01:17:19] Run #2 starting (model: sonnet)
+**Run #42 complete.** Here's what was done:
+
+**Page created:** `what-are-press-on-nails` — the highest-volume gap in the sitemap with no static page.
+
+**Why this page:** Press-on nails are one of the most searched nail topics. The site already had `how-to-apply-press-on-nails` and `how-to-remove-press-on-nails` as static pages, but the foundational "what are" page was missing. The remove page was already linking to this URL (broken link resolved), and I added a link from the apply page too, so the new page has two strong inbound links from day one.
+
+**Content structure:**
+- ABS plastic composition explainer (targets "what are press on nails made of")
+- Adhesive tabs vs nail glue comparison table (targets "how long do press on nails last with glue")
+- Press On vs Acrylic vs Gel 9-row comparison table
+- Wear time by scenario table (7 rows)
+- Cost table (budget to premium, vs salon)
+- 6-step application overview with link to full how-to guide
+- Two removal methods with link to removal guide
+- FAQPage schema (7 Q&As covering damage risk, reusability, vs acrylic, short nails)
+
+**Deployment:** success
+[2026-03-31 01:23:33] Run #2 finished
+[2026-03-31 01:23:33] Reached max loops (2). Stopping.
+[2026-04-01 00:09:03] ==========================================
+[2026-04-01 00:09:03] Agent: Seo Agent
+[2026-04-01 00:09:03] Model: sonnet
+[2026-04-01 00:09:03] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-01 00:09:03] Stop on complete: false
+[2026-04-01 00:09:03] Max loops: 2 (0=infinite)
+[2026-04-01 00:09:03] ==========================================
+[2026-04-01 00:09:03] Run #1 starting (model: sonnet)
