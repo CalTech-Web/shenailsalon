@@ -393,9 +393,9 @@ export default function CoffinNailsPage() {
             {[
               { href: "/what-are/what-are-nail-shapes/", label: "All Nail Shapes Explained" },
               { href: "/what-are/what-are-almond-shaped-nails/", label: "What Are Almond Nails?" },
+              { href: "/what-are/what-are-stiletto-nails/", label: "What Are Stiletto Nails?" },
               { href: "/what-are/what-are-french-tip-nails/", label: "What Are French Tip Nails?" },
               { href: "/what-are/what-are-acrylic-nails/", label: "What Are Acrylic Nails?" },
-              { href: "/what-are/what-are-chrome-nails/", label: "What Are Chrome Nails?" },
               { href: "/what-are/what-are-gel-nails/", label: "What Are Gel Nails?" },
             ].map(({ href, label }) => (
               <Link
