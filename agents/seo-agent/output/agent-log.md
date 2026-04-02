@@ -1,3 +1,47 @@
+## Run #45 - 2026-04-02
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and gap analysis
+- `what-are-ballerina-nails` is listed in the sitemap but has no static Next.js page
+- Ballerina nails and coffin nails are the same shape; "ballerina nails" is the preferred term in Europe and among many nail technicians, and is a high-volume evergreen search in its own right
+- The coffin nails page already mentions ballerina as an alternate name and has an FAQ answer explaining they are the same shape, but there was no dedicated page to capture searchers specifically using the "ballerina nails" query
+- Two strong inbound link opportunities available immediately: coffin nails page (already discussed ballerina extensively) and nail shapes page (already listed coffin/ballerina in its shape section)
+- "Ballerina nails vs coffin" is one of the most searched nail shape comparisons; a dedicated page addresses it directly and captures both name variants
+
+**Changes made:**
+- Created `site/app/what-are/what-are-ballerina-nails/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are ballerina nails", "ballerina nails vs coffin", "are ballerina nails the same as coffin nails"
+  - Also targets: "ballerina nail designs", "short ballerina nails", "ballerina nails acrylic", "how long do ballerina nails last", "ballerina nails cost", "ballerina nails vs stiletto", "ballerina nails vs almond"
+  - First-person intro using Nancy Davidson's established voice calling ballerina nails the "perfect middle ground" between almond and stiletto
+  - Full definition of ballerina nails (tapered sides ending in a flat, squared-off tip resembling a pointe shoe toe box)
+  - Dedicated section confirming ballerina and coffin are the same shape, with a note on regional naming conventions
+  - 8-row comparison table: ballerina/coffin vs stiletto vs almond (tip shape, taper, length required, fragility, best look, practical use, nail art canvas, salon popularity)
+  - Acrylic application section explaining the shaping process including the deliberate horizontal filing pass for the flat tip, and hard gel as alternative
+  - Info callout on tip width variation (narrow to wide, one-third to one-half of nail width at base)
+  - Short ballerina nails section (5 to 7 mm, challenges at very short lengths, small extension usually needed)
+  - Medium and long ballerina nails section (8 to 12 mm for full shape; 13+ mm for statement length; 20+ mm for editorial/art)
+  - 8-row popular designs table: nude, french tip, ombre, pink, black, chrome, marble, complex nail art
+  - 7-row cost table covering short/medium/long full sets, fills, nail art add-ons, DIY kit, California averages ($45 to $100)
+  - 6-point maintenance guide
+  - Pros (6) / Cons (6) cards
+  - FAQPage schema with 7 Q&As: what are ballerina nails, are they the same as coffin, vs stiletto, vs almond, how long they last, cost, short ballerina
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: coffin-nails, nail-shapes, stiletto-nails, almond-shaped-nails, acrylic-nails, nail-extensions
+- Updated `site/app/what-are/what-are-coffin-nails/page.tsx` — added ballerina nails to Related Guides section (replaced french tip link to make room for the directly related alternate-name page)
+- Updated `site/app/what-are/what-are-nail-shapes/page.tsx` — added ballerina nails to Related Nail Guides section
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two strong inbound links from day one: coffin nails page (topically identical, FAQ already discussed ballerina) and nail shapes hub
+- "What are ballerina nails" and "are ballerina nails the same as coffin nails" are high-volume informational queries with no existing static page on the site addressing them
+- The dedicated page captures searchers who use the "ballerina" term instead of "coffin," which is a large segment of European and nail-community searches
+- FAQPage schema eligible for People Also Ask rich snippets on ballerina vs coffin, vs stiletto, vs almond, cost, and short ballerina queries
+- Strengthens the nail shapes cluster: coffin, almond, stiletto, oval, square, and now ballerina all have dedicated what-are pages with cross-links
+
+**Deployment:** success (commit `5979724`)
+
+---
+
 ## Run #44 - 2026-04-01
 
 **Selection rationale:**
@@ -2337,3 +2381,16 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 - Internal links to all 6 removal guides + strengthen nails + keep nails healthy + what-are-fake-nails (future page)
 
 [2026-04-02 00:09:05] Run #1 finished
+**Run #45 complete.** Deployment confirmed success (commit `2ca22a6`).
+
+**What was done:** Created `/how-to/how-to-remove-fake-nails/` — a comprehensive umbrella removal guide.
+
+**Why this will move rankings:**
+- "Fake nails" is the most broadly searched colloquial term for all artificial nail enhancements. This page captures the full cluster including "how to remove fake nails without acetone", "how long does it take to remove fake nails", and "best way to remove fake nails"
+- The URL was already linked from the how-to hub, so it picks up immediate internal PageRank with no extra work
+- All 6 individual removal guides already published on the site are cross-linked, boosting the topical authority cluster
+- FAQPage schema with 6 Q&As makes it eligible for People Also Ask rich snippets
+
+**Key content:** 7-type nail identification table, per-type step-by-step removal guides, 8-row methods comparison table, common mistakes table, recovery timeline, and FAQ section.
+[2026-04-02 00:18:45] Run #1 finished
+[2026-04-02 00:18:50] Run #2 starting (model: sonnet)
