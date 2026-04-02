@@ -477,6 +477,7 @@ export default function NailShapesPage() {
                 { title: "How to Shape Nails", href: "/how-to/how-to-shape-nails/" },
                 { title: "What Are Almond-Shaped Nails?", href: "/what-are/what-are-almond-shaped-nails/" },
                 { title: "What Are Coffin Nails?", href: "/what-are/what-are-coffin-nails/" },
+                { title: "What Are Ballerina Nails?", href: "/what-are/what-are-ballerina-nails/" },
                 { title: "What Are Stiletto Nails?", href: "/what-are/what-are-stiletto-nails/" },
               ].map((link) => (
                 <Link

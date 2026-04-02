@@ -391,10 +391,10 @@ export default function CoffinNailsPage() {
           <h2 className="text-xl font-bold mb-6" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: "/what-are/what-are-ballerina-nails/", label: "What Are Ballerina Nails?" },
               { href: "/what-are/what-are-nail-shapes/", label: "All Nail Shapes Explained" },
               { href: "/what-are/what-are-almond-shaped-nails/", label: "What Are Almond Nails?" },
               { href: "/what-are/what-are-stiletto-nails/", label: "What Are Stiletto Nails?" },
-              { href: "/what-are/what-are-french-tip-nails/", label: "What Are French Tip Nails?" },
               { href: "/what-are/what-are-acrylic-nails/", label: "What Are Acrylic Nails?" },
               { href: "/what-are/what-are-gel-nails/", label: "What Are Gel Nails?" },
             ].map(({ href, label }) => (
