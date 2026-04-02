@@ -2298,3 +2298,42 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 - FAQPage schema with 7 Q&As makes it eligible for People Also Ask rich results.
 [2026-04-01 00:16:14] Run #1 finished
 [2026-04-01 00:16:19] Run #2 starting (model: sonnet)
+**Run #44 complete.**
+
+**Change made:** Created `/what-are/what-are-stiletto-nails/` as a static Next.js page, and added a link to it from the coffin nails Related Guides section.
+
+**Why this page:** Stiletto nails is one of the highest-volume nail shape search terms. The nail shapes hub and almond nails pages already linked to this URL (pointing at the generic `[slug]` fallback), so the new static page picks up two inbound internal links from day one. It completes the major tapered shapes cluster alongside coffin, almond, oval, and square, all of which now have static pages with cross-links.
+
+**Deployment:** success.
+[2026-04-01 00:22:42] Run #2 finished
+[2026-04-01 00:22:42] Reached max loops (2). Stopping.
+[2026-04-02 00:09:05] ==========================================
+[2026-04-02 00:09:05] Agent: Seo Agent
+[2026-04-02 00:09:05] Model: sonnet
+[2026-04-02 00:09:05] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-02 00:09:05] Stop on complete: false
+[2026-04-02 00:09:05] Max loops: 2 (0=infinite)
+[2026-04-02 00:09:05] ==========================================
+[2026-04-02 00:09:05] Run #1 starting (model: sonnet)
+**Run #45 complete.** Deployment: success (commit `2ca22a6`).
+
+**Change made:** Created `site/app/how-to/how-to-remove-fake-nails/page.tsx` — an umbrella removal guide targeting "how to remove fake nails" and the full fake nails removal cluster.
+
+**Selection rationale:**
+- "Fake nails" is the most broadly searched colloquial term covering all artificial nail types (acrylic, press-on, gel, dip, gel-x, shellac)
+- URL `/how-to/how-to-remove-fake-nails/` was already in the how-to hub (line 55) with immediate inbound PageRank — no extra linking work needed
+- All 6 individual removal guides already exist on the site, enabling strong internal linking from day one
+- High-intent query with a text-friendly SERP (people urgently need instructions, not images)
+
+**Page covers:**
+- Nail type identification table (7 rows: press-on tabs, press-on glue, acrylic, gel, shellac, dip powder, gel-x, polygel) with how to identify each and removal method
+- Supplies table (9 rows with notes)
+- Step-by-step removal guide for each type separately (6 separate how-to sections)
+- Methods comparison table (8 rows: all types with acetone needed, soak time, damage risk)
+- "Can you remove without acetone?" section targeting that cluster
+- Common mistakes table (6 rows)
+- Recovery timeline table (5 rows: days 1-3 through months 2-3)
+- FAQPage schema with 6 Q&As targeting "how do you remove fake nails", "without acetone", "how long does it take", "does it damage nails", "best way", "can you reuse"
+- Internal links to all 6 removal guides + strengthen nails + keep nails healthy + what-are-fake-nails (future page)
+
+[2026-04-02 00:09:05] Run #1 finished
