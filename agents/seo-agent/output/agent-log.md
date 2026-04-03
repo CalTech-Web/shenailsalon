@@ -1,3 +1,44 @@
+## Run #46 - 2026-04-03
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and inbound link analysis
+- `what-are-fake-nails` is listed in the sitemap but has no static Next.js page
+- Strong inbound link already in place from day one: `how-to-remove-fake-nails` (line 551 of that page already links to `/what-are/what-are-fake-nails/`)
+- "What are fake nails" is the highest-volume umbrella query for nail enhancements; covers all types (acrylic, gel, press-on, dip, shellac, gel-x, polygel, builder gel) in one article
+- No page on the site currently addresses the umbrella "fake nails" query directly; the existing pages are type-specific
+- Natural hub page that links to all existing nail enhancement pages, strengthening the cluster
+
+**Changes made:**
+- Created `site/app/what-are/what-are-fake-nails/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are fake nails", "types of fake nails", "are fake nails bad for your nails"
+  - Also targets: "how long do fake nails last", "how much do fake nails cost", "can you do fake nails at home", "how do you remove fake nails", "what are fake nails made of", "best fake nails"
+  - First-person intro using Nancy Davidson's established voice with personal anecdote about trying many types
+  - Full umbrella definition of fake nails as any nail enhancement worn over natural nails
+  - 8-row types comparison table covering acrylic, gel, dip, shellac/gel polish, gel-x, press-on, polygel, builder gel (application, UV lamp, wear time, best for, home use)
+  - Individual section for each of the 8 nail types with definition, key facts, and links to dedicated pages
+  - 8-row wear time table by type and key condition affecting longevity
+  - 8-row cost table covering all types from drugstore press-ons ($5 to $25) to full acrylic sets ($45 to $100)
+  - "How to choose" section with 6 scenario cards (length, color, temporary, strengthening, no filing, natural look)
+  - Pros (7) / Cons (6) cards
+  - FAQPage schema with 7 Q&As: what are fake nails, types, are they bad, how long they last, cost, home use, removal
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-acrylic-nails, what-are-gel-nails, what-are-dip-nails, what-are-shellac-nails, what-are-gel-x-nails, what-are-press-on-nails, what-are-polygel-nails, what-are-builder-gel-nails, what-are-biab-nails, what-are-nail-extensions, how-to-remove-fake-nails
+- Updated `site/app/what-are/what-are-press-on-nails/page.tsx` — added "What Are Fake Nails?" to Related Nail Guides section (bidirectional link to the new umbrella page)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- One strong inbound link active from day one: how-to-remove-fake-nails (line 551 already linked to this URL)
+- Additional inbound link added from press-on nails page (topically direct: press-ons are a subset of fake nails)
+- "What are fake nails" is an extremely high-volume evergreen query with no existing static page on the site
+- Hub page structure naturally links to all 8 existing nail enhancement pages, reinforcing the topical cluster
+- "Types of fake nails" section targets navigational queries from users who are comparing options before visiting a salon
+- FAQPage schema eligible for People Also Ask rich snippets on types, safety, wear time, cost, and home use queries
+- The umbrella page anchors the entire nail enhancement cluster: visitors can land on "fake nails" and discover every subtype with links
+
+**Deployment:** success (commit `9cdfc13`)
+
+---
+
 ## Run #45 - 2026-04-02
 
 **Selection rationale:**
@@ -2394,3 +2435,20 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Key content:** 7-type nail identification table, per-type step-by-step removal guides, 8-row methods comparison table, common mistakes table, recovery timeline, and FAQ section.
 [2026-04-02 00:18:45] Run #1 finished
 [2026-04-02 00:18:50] Run #2 starting (model: sonnet)
+**Run #45 complete.**
+
+**Change:** Created `what-are/what-are-ballerina-nails/page.tsx`, a comprehensive static page targeting "what are ballerina nails," "ballerina nails vs coffin," and related queries.
+
+**Rationale:** Ballerina nails and coffin nails are the same shape, but a large segment of searchers (especially European and nail-community traffic) uses "ballerina" rather than "coffin." The sitemap listed this URL but it had no static page. Added cross-links from the coffin nails and nail shapes pages for immediate inbound authority.
+
+**Deployment:** success (commit `5979724`)
+[2026-04-02 00:26:56] Run #2 finished
+[2026-04-02 00:26:56] Reached max loops (2). Stopping.
+[2026-04-03 00:09:00] ==========================================
+[2026-04-03 00:09:00] Agent: Seo Agent
+[2026-04-03 00:09:00] Model: sonnet
+[2026-04-03 00:09:00] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-03 00:09:00] Stop on complete: false
+[2026-04-03 00:09:00] Max loops: 2 (0=infinite)
+[2026-04-03 00:09:00] ==========================================
+[2026-04-03 00:09:00] Run #1 starting (model: sonnet)
