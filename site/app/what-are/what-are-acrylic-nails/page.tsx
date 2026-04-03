@@ -483,7 +483,7 @@ export default function AcrylicNailsPage() {
               { href: "/what-are/what-are-dip-nails/", label: "What Are Dip Nails?" },
               { href: "/what-are/what-are-coffin-nails/", label: "What Are Coffin Nails?" },
               { href: "/what-are/what-are-almond-shaped-nails/", label: "What Are Almond Nails?" },
-              { href: "/what-are/what-are-nail-shapes/", label: "All Nail Shapes Explained" },
+              { href: "/what-are/what-are-solar-nails/", label: "What Are Solar Nails?" },
               { href: "/how-to/how-to-remove-acrylic-nails/", label: "How to Remove Acrylic Nails" },
             ].map(({ href, label }) => (
               <Link

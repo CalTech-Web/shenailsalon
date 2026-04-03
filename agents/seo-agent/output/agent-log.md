@@ -1,3 +1,43 @@
+## Run #47 - 2026-04-03
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and gap analysis
+- `what-are-solar-nails` is listed in the sitemap but has no static Next.js page
+- Solar Nails is a Creative Nail Design (CND) acrylic brand widely advertised in salons; "what are solar nails" and "solar nails vs acrylic" are high-volume comparison queries
+- The acrylic nails page is the logical inbound link source: solar nails are a type of acrylic, and the acrylic page's Related Guides section had an open slot
+- The fake nails umbrella page (run #46) links to the acrylic nails page, creating a short inbound path from a recently added high-authority hub
+
+**Changes made:**
+- Created `site/app/what-are/what-are-solar-nails/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are solar nails", "solar nails vs acrylic", "are solar nails acrylic"
+  - Also targets: "solar nails vs gel nails", "how long do solar nails last", "solar nail designs", "solar nails cost", "are solar nails better than acrylic", "solar pink and white nails", "how to remove solar nails"
+  - First-person intro using Nancy Davidson's established voice with a personal anecdote about seeing a "Solar Nails" sign and not knowing what made them different
+  - Full definition of solar nails as a CND acrylic system with built-in pink and white color (permanent French manicure effect)
+  - 8-row comparison table: Solar Nails vs Standard Acrylic vs Gel Nails (chemistry, UV lamp, color system, application method, odor, removal, wear time, cost)
+  - Section clarifying the common source of confusion: many salons use "solar nails" as a generic term for any pink and white acrylic set even when using non-CND products
+  - Dedicated section on Solar Nails vs Gel Nails (flexibility, odor, removal differences)
+  - 6-row designs table covering classic pink and white, all-pink, soft ombre, colored polish overlay, glitter, and nail art options
+  - How Long Do Solar Nails Last? section (3 to 4 weeks between fills, longer than standard acrylic)
+  - 6-row cost table covering full sets, fills, nail art, removal, at-home kit, California averages ($45 to $90)
+  - Pros (6) / Cons (6) cards
+  - Removal section explaining why acetone soak-off does not work and the file-down process required
+  - FAQPage schema with 7 Q&As: what are solar nails, are they acrylic, solar vs regular acrylic, how long they last, cost, acetone removal, are they better than acrylic
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-acrylic-nails, what-are-gel-nails, what-are-dip-nails, what-are-fake-nails, what-are-nail-extensions, how-to-remove-acrylic-nails
+- Updated `site/app/what-are/what-are-acrylic-nails/page.tsx` — replaced "All Nail Shapes Explained" in Related Nail Guides with "What Are Solar Nails?" (direct topical connection: solar nails are a type of acrylic)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- One strong inbound link from day one: acrylic nails page (topically direct, solar nails are a subtype of acrylic)
+- "What are solar nails" and "solar nails vs acrylic" are high-volume queries that have no existing static page on the site
+- The acetone-resistance / file-off removal is a frequently searched subtopic unique to solar nails; the section on removal targets "how to remove solar nails" and "can you soak off solar nails"
+- FAQPage schema eligible for People Also Ask rich snippets on solar vs acrylic, removal, cost, and wear time queries
+- Strengthens the nail enhancement cluster: acrylic, gel, dip, shellac, gel-x, press-on, polygel, builder gel, BIAB, fake nails umbrella, and now solar nails all have dedicated what-are pages
+
+**Deployment:** pending
+
+---
+
 ## Run #46 - 2026-04-03
 
 **Selection rationale:**
@@ -2452,3 +2492,18 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-04-03 00:09:00] Max loops: 2 (0=infinite)
 [2026-04-03 00:09:00] ==========================================
 [2026-04-03 00:09:00] Run #1 starting (model: sonnet)
+**Run #46 complete.**
+
+**Change made:** Created `/what-are/what-are-fake-nails/` — a comprehensive umbrella guide covering all 8 types of fake nails (acrylic, gel, dip, shellac, gel-x, press-on, polygel, builder gel).
+
+**Why this page:** "What are fake nails" is a high-volume evergreen query with no dedicated static page on the site. Crucially, `how-to-remove-fake-nails` already had a broken link to this URL at line 551 — creating the page activates that inbound link immediately. Also added a second inbound link from the press-on nails page.
+
+**Expected SEO impact:**
+- Activates an existing inbound link from `how-to-remove-fake-nails`
+- Acts as a hub linking to all 8 nail enhancement pages, strengthening the topical cluster
+- FAQPage schema targets People Also Ask slots for types, safety, wear time, cost, and home use queries
+- Captures the high-volume umbrella term "what are fake nails" that the type-specific pages don't cover
+
+**Deployment:** success
+[2026-04-03 00:24:11] Run #1 finished
+[2026-04-03 00:24:16] Run #2 starting (model: sonnet)
