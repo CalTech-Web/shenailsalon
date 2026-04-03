@@ -34,7 +34,7 @@
 - FAQPage schema eligible for People Also Ask rich snippets on solar vs acrylic, removal, cost, and wear time queries
 - Strengthens the nail enhancement cluster: acrylic, gel, dip, shellac, gel-x, press-on, polygel, builder gel, BIAB, fake nails umbrella, and now solar nails all have dedicated what-are pages
 
-**Deployment:** pending
+**Deployment:** success (commit `5478772`)
 
 ---
 
