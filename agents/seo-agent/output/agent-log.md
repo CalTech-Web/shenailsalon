@@ -2507,3 +2507,42 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Deployment:** success
 [2026-04-03 00:24:11] Run #1 finished
 [2026-04-03 00:24:16] Run #2 starting (model: sonnet)
+**Run #47 complete.** Created `what-are-solar-nails` page and deployed successfully.
+
+**What was done:**
+- Created `/what-are/what-are-solar-nails/` — a comprehensive static page replacing the generic `[slug]` fallback for a URL already in the sitemap
+- Targets: "what are solar nails", "solar nails vs acrylic", "are solar nails acrylic", "solar nails vs gel", removal, cost, and designs
+- Updated the acrylic nails Related Guides to link to the new solar nails page (one strong topical inbound link from day one)
+- FAQPage schema with 7 Q&As covering all the common comparison queries, eligible for People Also Ask snippets
+[2026-04-03 00:34:18] Run #2 finished
+[2026-04-03 00:34:18] Reached max loops (2). Stopping.
+[2026-04-04 00:09:00] ==========================================
+[2026-04-04 00:09:00] Agent: Seo Agent
+[2026-04-04 00:09:00] Model: sonnet
+[2026-04-04 00:09:00] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-04 00:09:00] Stop on complete: false
+[2026-04-04 00:09:00] Max loops: 2 (0=infinite)
+[2026-04-04 00:09:00] ==========================================
+[2026-04-04 00:09:00] Run #1 starting (model: sonnet)
+**Run #48 complete.** Deployment: success (commit `8e9fd7b`).
+
+**Change made:** Created `/what-are/what-are-gel-polish-nails/` — a comprehensive static page targeting "what is gel polish", "gel polish vs regular polish", "gel polish vs shellac", and related queries.
+
+**Selection rationale:**
+- Gel polish is the most commonly performed nail salon service, with massive evergreen search volume for "what is gel polish" and "gel polish vs shellac"
+- The URL was already in the sitemap but had no static page (fell through to [slug] fallback)
+- Two strong inbound links added from day one: gel nails and shellac pages both link to the new page from their Related Guides sections
+- FAQPage schema with 7 Q&As targeting People Also Ask slots for all major comparison and how-to queries
+
+**Page covers:**
+- What gel polish is and how photopolymerization works
+- Step-by-step gel polish manicure process
+- Gel polish vs regular polish comparison table (7 rows)
+- Gel polish vs shellac comparison table (8 rows)
+- How long gel polish lasts and factors affecting wear time
+- Cost breakdown (salon vs at-home)
+- Popular gel polish brands table (7 brands with notes and durability ratings)
+- Pros and cons grid
+- Step-by-step at-home removal guide
+- FAQ section with 7 Q&As
+[2026-04-04 00:09:00] Run #1 finished
