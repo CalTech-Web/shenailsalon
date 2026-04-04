@@ -469,6 +469,7 @@ export default function PressOnNailsPage() {
                 { title: "How to Apply Press On Nails", href: "/how-to/how-to-apply-press-on-nails/" },
                 { title: "How to Remove Press On Nails", href: "/how-to/how-to-remove-press-on-nails/" },
                 { title: "What Are Nail Stickers?", href: "/what-are/what-are-nail-stickers/" },
+                { title: "What Are Nail Wraps?", href: "/what-are/what-are-nail-wraps/" },
                 { title: "What Are Acrylic Nails?", href: "/what-are/what-are-acrylic-nails/" },
                 { title: "What Are Fake Nails?", href: "/what-are/what-are-fake-nails/" },
               ].map((link) => (
