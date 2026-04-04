@@ -438,6 +438,7 @@ export default function GelNailsPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { title: "What Is Gel Polish?", href: "/what-are/what-are-gel-polish-nails/" },
                 { title: "What Are Gel-X Nails?", href: "/what-are/what-are-gel-x-nails/" },
                 { title: "What Are Builder Gel Nails?", href: "/what-are/what-are-builder-gel-nails/" },
                 { title: "What Are Shellac Nails?", href: "/what-are/what-are-shellac-nails/" },
