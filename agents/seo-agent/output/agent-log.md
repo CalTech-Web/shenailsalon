@@ -1,3 +1,49 @@
+## Run #49 - 2026-04-04
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap audit and inbound link analysis
+- `what-are-nail-wraps` is listed in the sitemap but has no static Next.js page
+- Nail wraps already had 2 live inbound links before the page existed: the nail stickers page (line 435 links to `/what-are/what-are-nail-wraps/`) and the category/what-are page
+- "What are nail wraps" is a high-volume informational query for a growing at-home nail category popularized by Sally Hansen Salon Effects, Dashing Diva, and semi-cured gel strip brands
+- Nail wraps are distinct from nail stickers (full-cover vs. accent) and from gel nails (no brush skill, pre-designed patterns) — the comparison queries "nail wraps vs nail stickers" and "nail wraps vs gel nails" are both high-value targets
+- The "silk nail wraps" subtopic (repair tool used by nail technicians) adds a second search cluster with no current coverage on the site
+
+**Changes made:**
+- Created `site/app/what-are/what-are-nail-wraps/page.tsx` — comprehensive static explainer
+  - Primary targets: "what are nail wraps", "nail wraps", "are nail wraps the same as nail stickers"
+  - Also targets: "nail wraps vs nail stickers", "nail wraps vs gel nails", "how long do nail wraps last", "how to apply nail wraps", "how to remove nail wraps", "are nail wraps bad for your nails", "what are silk nail wraps", "nail polish film wraps", "semi-cured gel nail wraps"
+  - First-person intro using Nancy Davidson's established voice with personal anecdote about trying nail wraps to achieve a nail art design she couldn't paint freehand
+  - Full definition distinguishing nail wraps (full-cover strips) from nail stickers (decorative accents) and from silk/fiberglass repair wraps (nail technician repair tool)
+  - 5-row types comparison table: nail polish film wraps, gel nail wraps, vinyl nail wraps, silk wraps, fiberglass wraps (material, lamp needed, wear time, best for)
+  - Dedicated section on nail polish film wraps (Sally Hansen Salon Effects, Incoco) — the original at-home wrap format
+  - Dedicated section on gel nail wraps (semi-cured gel, how UV curing works, removal requirements)
+  - Dedicated section on silk and fiberglass wraps (repair purpose, resin application, salon-only product)
+  - 12-step application table covering nail prep through optional top coat with curing step for gel wraps
+  - 5-row wear time table (type, average wear, wear with top coat, removal method)
+  - 7-row nail wraps vs nail stickers comparison table (coverage, purpose, material, lamp, wear, removal, cost)
+  - 9-row nail wraps vs gel nails comparison table (application method, skill, time, design options, wear, chip resistance, removal, at-home cost, salon cost)
+  - "Are nail wraps good for nails?" section covering film wrap gentleness, gel wrap acetone considerations, and the critical warning against dry peeling
+  - Pros (7) / Cons (6) cards
+  - Removal section covering all three removal methods (film wraps, gel wraps, silk/fiberglass salon-only)
+  - FAQPage schema with 7 Q&As: what are nail wraps, same as stickers, how long they last, are they bad for nails, UV lamp needed, what are silk wraps, top coat use
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-nail-stickers, what-are-gel-nails, what-are-press-on-nails, how-to-apply-nail-wraps, how-to-remove-nail-wraps, what-are-shellac-nails
+- Updated `site/app/what-are/what-are-press-on-nails/page.tsx` — added "What Are Nail Wraps?" to Related Nail Guides section (bidirectional link; press-ons and nail wraps are closely related at-home nail enhancement categories)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links active from day one: nail stickers page (topically direct — nail stickers page explicitly compares stickers vs wraps and links to this URL) and category/what-are hub page
+- Third inbound link added from press-on nails page (both are at-home alternatives to salon nail services)
+- "What are nail wraps" is a high-volume evergreen query with no existing static page on the site
+- "Nail wraps vs nail stickers" targets navigational queries from users comparing the two most popular at-home nail formats
+- Silk nail wraps section captures a distinct repair-tool search cluster; "what are silk nail wraps" and "silk nail wraps vs acrylic" are niche but consistent queries
+- FAQPage schema eligible for People Also Ask rich snippets on comparison, wear time, safety, and lamp-requirement queries
+- Strengthens the at-home nail enhancement cluster: press-on, gel, shellac, nail stickers, and now nail wraps all have dedicated what-are pages with bidirectional links
+
+**Deployment:** success (commit `32b66b5`)
+
+---
+
 ## Run #47 - 2026-04-03
 
 **Selection rationale:**
@@ -2546,3 +2592,14 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 - Step-by-step at-home removal guide
 - FAQ section with 7 Q&As
 [2026-04-04 00:09:00] Run #1 finished
+**Run #48 complete.** Deployment: success.
+
+**What was done:** Created `/what-are/what-are-gel-polish-nails/` — a full static page replacing the [slug] fallback for a URL already in the sitemap.
+
+**Why this will move rankings:**
+- "What is gel polish" is one of the highest-volume nail queries, with enormous evergreen demand from salon clients trying to understand the difference between gel polish, shellac, and regular polish
+- The page was already in the sitemap (Google was finding the URL), but serving only generic fallback content. A rich static page with structured data and comparison tables will sharply improve dwell time and topical signals
+- Added inbound links from two of the site's strongest pages (gel nails and shellac) for immediate internal PageRank flow
+- FAQPage schema with 7 Q&As targets People Also Ask positions for "gel polish vs shellac", "how long does gel polish last", "can you do gel polish at home", and more
+[2026-04-04 00:15:53] Run #1 finished
+[2026-04-04 00:15:58] Run #2 starting (model: sonnet)
