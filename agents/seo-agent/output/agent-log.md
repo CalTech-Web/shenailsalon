@@ -1,3 +1,43 @@
+## Run #51 - 2026-04-05
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis and inbound link availability
+- `how-to-remove-nail-wraps` is in the sitemap but has no static Next.js page; currently handled by the [slug] fallback
+- Two live inbound links already active before the page existed: how-to-apply-nail-wraps (run #50, line 555) and what-are-nail-wraps (run #49, line 503) both link to this URL
+- Identified in run #50 log as the natural next gap in the nail wraps cluster
+- "How to remove nail wraps" is the natural follow-on query for anyone who has applied them; also targets "how to remove gel nail wraps", "can you peel off nail wraps", "how to remove nail wraps without acetone", "do nail wraps damage nails"
+- Removal is a distinct user intent from application; covering it completes the nail wraps content cluster (what-are, apply, remove)
+
+**Changes made:**
+- Created `site/app/how-to/how-to-remove-nail-wraps/page.tsx` — comprehensive static how-to removal guide
+  - Primary targets: "how to remove nail wraps", "how to remove gel nail wraps", "how to take off nail wraps"
+  - Also targets: "can you peel off nail wraps", "how to remove nail wraps without acetone", "how to remove nail wraps without damage", "do nail wraps damage nails when removed", "how long does it take to remove nail wraps", "can you remove nail wraps with rubbing alcohol", "what to do after removing nail wraps", "how to remove Sally Hansen nail strips", "how to remove Dashing Diva nail wraps"
+  - First-person Nancy Davidson intro with personal anecdote about damaging her nail by dry peeling a film wrap without soaking first
+  - Removal method comparison table (3 rows: film wrap peel, gel wrap acetone foil, gel wrap oil soak alternate) with method, tools, time, and acetone columns
+  - Separate sections for film wrap removal (5 steps) and gel wrap removal (8 steps) to serve both user intents clearly
+  - Film wrap supplies table (4 items: warm water or cuticle oil, cuticle pusher, nail file optional, cuticle oil after)
+  - Gel wrap supplies table (6 items: pure acetone, cotton, aluminum foil, cuticle pusher, nail buffer, cuticle oil after)
+  - Yellow warning callout before gel wrap steps: explicit warning not to dry peel gel wraps
+  - 5 tips for removing without nail damage (never dry peel, use pure acetone not polish remover, no hard scraping, moisturize after, let nails rest if thin)
+  - 6-row common mistakes table (dry peeling, wrong remover, forcing gel off early, skipping moisturizer, peeling from tip not cuticle, loose foil wrap)
+  - FAQPage schema with 7 Q&As: how to remove at home, can you peel, how to remove without acetone, do they damage nails, how long does removal take, can you use rubbing alcohol, what to do after removal
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-apply-nail-wraps, what-are-nail-wraps, how-to-remove-press-on-nails, how-to-remove-gel-nails
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Active inbound links from day one: how-to-apply-nail-wraps (run #50) and what-are-nail-wraps (run #49) both link to this URL
+- "How to remove nail wraps" is the natural completion query for anyone who applied them; high purchase-cycle relevance (users searching removal are active nail wrap users, a high-value audience segment)
+- "Can you peel off nail wraps" and "how to remove without damage" target pain-point queries with specific intent; these readers are more engaged than informational browsers
+- Film vs gel split treatment captures both user segments; the acetone vs no-acetone angle is a strong differentiator since most competing articles treat all wrap removal as one method
+- "How to remove gel nail wraps without acetone" is a long-tail with distinct intent; dedicated coverage in the oil soak row of the comparison table and in FAQ captures this segment
+- FAQPage schema eligible for People Also Ask rich snippets on the dry peel, damage, and acetone questions
+- Completes the nail wraps content cluster: what-are (run #49) + how-to-apply (run #50) + how-to-remove (this run) form a fully linked three-page cluster
+
+**Deployment:** success (commit `66481fd`)
+
+---
+
 ## Run #50 - 2026-04-05
 
 **Selection rationale:**
@@ -2658,3 +2698,8 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-04-05 00:09:04] Max loops: 2 (0=infinite)
 [2026-04-05 00:09:04] ==========================================
 [2026-04-05 00:09:04] Run #1 starting (model: sonnet)
+**Run #50 complete.** Deployment: success.
+
+**What was done:** Created `/how-to/how-to-apply-nail-wraps/` as a full static page targeting "how to apply nail wraps" and related queries. The page covers both nail polish film wraps (no lamp) and semi-cured gel nail wraps (LED/UV required) in separate step-by-step sections, which targets both user segments and differentiates from most competing articles that treat them as one category. The `what-are-nail-wraps` page from run #49 already links to this URL, so it has an active inbound link from day one. FAQPage schema targets People Also Ask slots for the UV lamp question, wear time, and top coat use.
+[2026-04-05 00:17:22] Run #1 finished
+[2026-04-05 00:17:28] Run #2 starting (model: sonnet)
