@@ -1,3 +1,41 @@
+## Run #50 - 2026-04-05
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis and inbound link availability
+- `how-to-apply-nail-wraps` is in the sitemap but has no static Next.js page; currently handled by the [slug] fallback
+- The `what-are-nail-wraps` page created in run #49 already links to `/how-to/how-to-apply-nail-wraps/` (line 502 of that file), giving the new page an active inbound link from day one
+- "How to apply nail wraps" is a high-volume how-to query that splits across two distinct user intents: film wraps (no lamp) and semi-cured gel wraps (LED/UV lamp required) — the split was a strong content angle
+- "How to use nail wraps", "how to put on gel nail wraps", "Sally Hansen nail strips how to apply" are all adjacent queries the article targets
+- The nail wraps cluster now has both a what-are page and an apply how-to; the removal how-to (`how-to-remove-nail-wraps`) is the natural next gap
+
+**Changes made:**
+- Created `site/app/how-to/how-to-apply-nail-wraps/page.tsx` — comprehensive static how-to guide
+  - Primary targets: "how to apply nail wraps", "how to apply gel nail wraps", "how to apply semi-cured gel nail wraps"
+  - Also targets: "how to put on nail wraps", "how to use nail wraps", "how to apply Sally Hansen nail strips", "how do nail wraps work", "do nail wraps need UV lamp", "how long do nail wraps last", "how to make nail wraps last longer"
+  - First-person Nancy Davidson intro with personal anecdote about using film wraps for a plaid pattern she couldn't paint freehand
+  - Film wrap vs gel wrap comparison table (material, lamp needed, wear time, brand examples) with link to what-are-nail-wraps for readers who need context
+  - Separate step-by-step sections for each wrap type (6 steps for film wraps, 7 steps for gel wraps) to serve both user intents clearly
+  - Supplies table for each wrap type (film: 6 items including scissors, top coat; gel: 6 items adding UV/LED lamp and gel top coat)
+  - Wear time table (6 rows: film no top coat, film with top coat, gel cured no top coat, gel cured with top coat, gel not cured, high water exposure)
+  - 6 tips for making nail wraps last longer (cuticle gap, free edge seal, avoid water for 1 to 2 hours, no dry peeling, use thumb not fingernails to smooth, warm wrap before applying)
+  - 6-row common mistakes table (no alcohol wipe, cuticle contact, skipping lamp for gel, sawing file, wrong size, no top coat)
+  - FAQPage schema with 7 Q&As: how to apply at home, do they need UV lamp, how long they last, can you apply without base coat, how to remove wrinkles, how to cut to fit, can you use top coat
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-nail-wraps, how-to-remove-nail-wraps, what-are-nail-stickers, how-to-apply-press-on-nails
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Active inbound link from day one: what-are-nail-wraps page (run #49) links directly to this URL
+- "How to apply nail wraps" is the natural companion query to "what are nail wraps" — users who land on the informational page and want to try them search for this
+- Split treatment of film wraps vs gel wraps captures both user segments and is a strong content differentiator (most competing articles treat them as one category)
+- Gel wrap curing section targets a specific pain point ("gel nail wraps not lasting", "gel nail strips feel tacky") that drives repeat searches
+- FAQPage schema eligible for People Also Ask rich snippets on the lamp question, top coat question, and wear time queries
+- Strengthens the nail wraps content cluster: what-are (run #49) + how-to-apply (this run) creates a two-page cluster linked to the removal how-to next
+
+**Deployment:** success (commit `12afd6c`)
+
+---
+
 ## Run #49 - 2026-04-04
 
 **Selection rationale:**
@@ -2603,3 +2641,20 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 - FAQPage schema with 7 Q&As targets People Also Ask positions for "gel polish vs shellac", "how long does gel polish last", "can you do gel polish at home", and more
 [2026-04-04 00:15:53] Run #1 finished
 [2026-04-04 00:15:58] Run #2 starting (model: sonnet)
+**Run #49 complete.** Deployment succeeded.
+
+**What was done:** Created `/what-are/what-are-nail-wraps/` — a comprehensive static page targeting "what are nail wraps", "nail wraps vs nail stickers", "nail wraps vs gel nails", "how long do nail wraps last", "what are silk nail wraps", and related queries.
+
+**Why this page:** It already had 2 live inbound links before it existed (the nail stickers page explicitly compares stickers vs wraps and links to this URL; the category hub also links to it). Adding the page converts those orphaned links into real traffic paths.
+
+**Also updated:** Press-on nails related guides section now links to nail wraps, adding a third inbound link from a topically adjacent page.
+[2026-04-04 00:24:40] Run #2 finished
+[2026-04-04 00:24:40] Reached max loops (2). Stopping.
+[2026-04-05 00:09:04] ==========================================
+[2026-04-05 00:09:04] Agent: Seo Agent
+[2026-04-05 00:09:04] Model: sonnet
+[2026-04-05 00:09:04] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-05 00:09:04] Stop on complete: false
+[2026-04-05 00:09:04] Max loops: 2 (0=infinite)
+[2026-04-05 00:09:04] ==========================================
+[2026-04-05 00:09:04] Run #1 starting (model: sonnet)
