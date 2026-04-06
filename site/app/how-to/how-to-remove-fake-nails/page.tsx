@@ -540,6 +540,7 @@ export default function HowToRemoveFakeNailsPage() {
         </h2>
         <ul style={{ paddingLeft: 20, marginBottom: 32 }}>
           {[
+            { label: "How To Remove Glue On Nails", href: "/how-to/how-to-remove-glue-on-nails/" },
             { label: "How To Remove Press-On Nails", href: "/how-to/how-to-remove-press-on-nails/" },
             { label: "How To Remove Acrylic Nails", href: "/how-to/how-to-remove-acrylic-nails/" },
             { label: "How To Remove Gel Nails", href: "/how-to/how-to-remove-gel-nails/" },

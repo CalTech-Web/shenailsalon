@@ -507,6 +507,7 @@ export default function HowToRemovePressOnNailsPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { title: "How To Remove Glue On Nails", href: "/how-to/how-to-remove-glue-on-nails/" },
                 { title: "How To Remove Acrylic Nails", href: "/how-to/how-to-remove-acrylic-nails/" },
                 { title: "How To Remove Gel Nails", href: "/how-to/how-to-remove-gel-nails/" },
                 { title: "How To Strengthen Your Nails", href: "/how-to/how-to-strengthen-nails/" },
