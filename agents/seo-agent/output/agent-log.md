@@ -35,7 +35,7 @@
 - Cost table with California-specific pricing strengthens local relevance
 - Completes the dip nails cluster: what-are-dip-nails (technical), what-are-dipped-nails (consumer), how-to-apply-dip-powder-nails, how-to-remove-dip-nails are all now linked
 
-**Deployment:** pending
+**Deployment:** success (commit `0aa90ae`)
 
 ---
 
