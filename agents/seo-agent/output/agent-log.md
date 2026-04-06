@@ -1,3 +1,47 @@
+## Run #53 - 2026-04-06
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis and inbound link availability
+- `how-to-remove-glue-on-nails` is in the sitemap but has no static Next.js page; currently handled by the [slug] fallback
+- It is the last remaining gap in the how-to removal cluster: all other removal guides (acrylic, gel, dip, gel-x, shellac, press-on, fake nails, nail wraps) have static pages; this is the only one missing
+- "How to remove glue on nails", "how to get nail glue off nails", "how to remove nail glue without acetone", and "how to get nail glue off skin" are all high-volume practical queries with distinct user intent
+- Two existing pages have natural inbound link opportunities: how-to-remove-press-on-nails (which extensively discusses nail glue as an alternative to adhesive tabs) and how-to-remove-fake-nails (which covers all fake nail types including glue-bonded press-ons)
+- Distinct from the press-on removal page: the glue-on nails page targets users who specifically used nail glue rather than adhesive tabs, covering the stronger bond, longer soak times, and the specific risk of pulling natural nail layers
+
+**Changes made:**
+- Created `site/app/how-to/how-to-remove-glue-on-nails/page.tsx` — comprehensive static how-to removal guide
+  - Primary targets: "how to remove glue on nails", "how to get nail glue off nails", "how to remove nail glue"
+  - Also targets: "how to remove nail glue without acetone", "how to remove glue-on nails at home", "how to take off nails with glue", "how to get nail glue off skin", "how long to soak glue-on nails", "does acetone damage nails", "can you remove glue-on nails without acetone", "what happens if you peel off glue-on nails"
+  - First-person Nancy Davidson intro with personal anecdote about peeling glue-on nails off without soaking and damaging her natural nails
+  - Explanation of why nail glue (cyanoacrylate) requires proper removal: polymer bond is stronger than the upper layers of the natural nail plate
+  - 8-item supplies table covering nail clippers, coarse file, pure acetone, cotton, foil, cuticle pusher, buffer, and aftercare products
+  - Full 8-step acetone foil wrap method as Method 1 (fastest and most reliable)
+  - 6-step warm soapy water method as Method 2 (no acetone option)
+  - 5-step cuticle oil + warm water method as Method 3 (gentle, best combined with warm water)
+  - 5-row removal methods comparison table (acetone foil, acetone bowl, warm water, cuticle oil, peeling) with time, glue type, nail safety, reuse, and notes
+  - Dedicated section on how to get nail glue off skin (single finger, two bonded fingers, cuticle skin, what not to use)
+  - 5-bullet aftercare section covering cuticle oil, nail strengthener, rest periods, peeling recovery, and glove use
+  - 6-row common mistakes table (wrong product, peeling early, skipping clip step, loose foil, over-buffing, skipping aftercare)
+  - FAQPage schema with 7 Q&As: how to remove at home, how to remove without acetone, how long to soak, does acetone damage nails, how to get glue off skin, can you remove without acetone if sensitive, what happens if you peel
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-remove-press-on-nails, how-to-remove-fake-nails, how-to-apply-press-on-nails, what-are-press-on-nails, what-are-fake-nails, how-to-keep-nails-healthy
+- Updated `site/app/how-to/how-to-remove-press-on-nails/page.tsx` — added "How To Remove Glue On Nails" to Related Nail Guides section (this page extensively discusses nail glue vs adhesive tabs and is the natural source for an inbound link)
+- Updated `site/app/how-to/how-to-remove-fake-nails/page.tsx` — added "How To Remove Glue On Nails" to Related Guides section (fake nails include glue-bonded types, making this the logical hub for an inbound link)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links active from day one: press-on removal page and fake nails removal page both link directly to this URL
+- "How to remove glue on nails" and "how to get nail glue off nails" are both high-volume practical queries that capture users at a very specific moment of need (mid-removal)
+- "How to remove nail glue without acetone" targets a distinct user segment (acetone sensitive, wants to reuse nails, or prefers no chemicals); the warm water and cuticle oil methods in their own sections cover this directly
+- "What happens if you peel off glue-on nails" is a high-intent FAQ query frequently seen in People Also Ask; the dedicated warning in the FAQ schema targets this
+- "How to get nail glue off skin" expands reach to users who had an application accident, not just users in removal mode; this is a separate high-volume search cluster
+- The foil wrap vs warm water split treatment differentiates from competing articles that often cover only one method or mix them together
+- Completes the how-to removal cluster: every nail type in the sitemap now has a static removal page
+
+**Deployment:** success (commit `d6d5675`)
+
+---
+
 ## Run #52 - 2026-04-06
 
 **Selection rationale:**
@@ -2763,3 +2807,12 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-04-06 00:09:04] Max loops: 2 (0=infinite)
 [2026-04-06 00:09:04] ==========================================
 [2026-04-06 00:09:04] Run #1 starting (model: sonnet)
+**Run #52 complete.** Deployed successfully.
+
+**What was done:** Created `site/app/what-are/what-are-dipped-nails/page.tsx` — a consumer-focused explainer page targeting the "dipped nails" search cluster, which uses different phrasing than the existing technical "dip powder nails" page.
+
+**Why this page:** The `how-to-remove-dip-nails` page already linked to `/what-are/what-are-dipped-nails/` before the page existed (live inbound link from day one). "Dipped nails" is how consumers describe the service after hearing it at a nail salon, generating a distinct search cluster from "dip powder nails" or "dip nails."
+
+**Key content:** 10-column comparison table (dipped vs acrylic vs gel vs shellac), wear time table, cost table with California pricing, safety and at-home DIY sections, FAQPage schema targeting "are dipped nails the same as acrylic", "dipped nails vs acrylic", and "are dipped nails bad for your nails." Also added a bidirectional link from the existing `what-are-dip-nails` page.
+[2026-04-06 00:18:36] Run #1 finished
+[2026-04-06 00:18:41] Run #2 starting (model: sonnet)
