@@ -1,3 +1,44 @@
+## Run #52 - 2026-04-06
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis and inbound link availability
+- `what-are-dipped-nails` is in the sitemap but has no static Next.js page; currently handled by the [slug] fallback
+- Active inbound link already in place before the page existed: `how-to-remove-dip-nails` (line 399) links to `/what-are/what-are-dipped-nails/` using the anchor text "What Are Dip Powder Nails?"
+- "Dipped nails" is the common consumer search term heard at nail salons, as distinct from the more technical "dip powder nails"; captures a separate search cluster from the existing `what-are-dip-nails` page
+- "What are dipped nails", "dipped nails vs acrylic", "dipped nails meaning", "are dipped nails the same as acrylic", and "how long do dipped nails last" are all high-intent queries with no static page currently matching
+- Completing the dip nails cluster: the technical `what-are-dip-nails` page covers the product in depth; this page captures the broader consumer-intent searches that use "dipped" phrasing
+
+**Changes made:**
+- Created `site/app/what-are/what-are-dipped-nails/page.tsx` — comprehensive consumer-focused explainer
+  - Primary targets: "what are dipped nails", "dipped nails", "dipped nails meaning"
+  - Also targets: "are dipped nails the same as acrylic", "dipped nails vs acrylic", "dipped nails vs gel", "how long do dipped nails last", "how much do dipped nails cost", "are dipped nails bad for your nails", "can you do dipped nails at home", "dipped nails vs SNS", "what are dipped nails at a salon"
+  - First-person Nancy Davidson intro with personal anecdote about switching to dip powder after getting only 10 days from gel polish
+  - Clear explanation of why they are called "dipped" (the jar-dipping application motion) and why the term persists even when brush application is now standard
+  - 10-row dipped nails vs acrylic vs gel vs shellac comparison table (application, lamp, odor, wear, thickness, length extension, removal, damage risk, cost, DIY)
+  - 5-row wear time table (salon set, tips set, at-home kit, natural nail overlay, with nail art) with factors affecting longevity
+  - 7-row cost table covering all service types and at-home kit pricing (California and US averages)
+  - "Are dipped nails bad for your nails?" section covering the absence of liquid monomer as a key safety advantage and the improper-removal risk
+  - "Can you do dipped nails at home?" section covering kit brands, learning curve, and the importance of nail prep
+  - Pros (7) / Cons (6) cards
+  - FAQPage schema with 7 Q&As: what are dipped nails, are they the same as acrylic, how long they last, how much they cost, are they bad for nails, can you do at home, dipped vs gel
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-dip-nails, how-to-apply-dip-powder-nails, how-to-remove-dip-nails, what-are-acrylic-nails, what-are-gel-nails, what-are-shellac-nails
+- Updated `site/app/what-are/what-are-dip-nails/page.tsx` — added "What Are Dipped Nails?" to Related Nail Guides section (bidirectional link; the dip nails page is the authoritative technical reference, the dipped nails page is the consumer search entry point)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Active inbound link from day one: `how-to-remove-dip-nails` links directly to this URL
+- Second inbound link added from `what-are-dip-nails` related guides (bidirectional cluster link)
+- "Dipped nails" captures the consumer-language search cluster that "dip powder nails" and "dip nails" do not fully cover; searchers who heard "dipped" at a salon rather than reading about "dip powder" use different query phrasing
+- "Dipped nails vs acrylic" is a very high-volume comparison query; the 4-column comparison table targets this directly
+- "Are dipped nails bad for your nails" and "are dipped nails the same as acrylic" are both FAQ-style queries well suited to People Also Ask rich results via FAQPage schema
+- Cost table with California-specific pricing strengthens local relevance
+- Completes the dip nails cluster: what-are-dip-nails (technical), what-are-dipped-nails (consumer), how-to-apply-dip-powder-nails, how-to-remove-dip-nails are all now linked
+
+**Deployment:** pending
+
+---
+
 ## Run #51 - 2026-04-05
 
 **Selection rationale:**
@@ -2703,3 +2744,22 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **What was done:** Created `/how-to/how-to-apply-nail-wraps/` as a full static page targeting "how to apply nail wraps" and related queries. The page covers both nail polish film wraps (no lamp) and semi-cured gel nail wraps (LED/UV required) in separate step-by-step sections, which targets both user segments and differentiates from most competing articles that treat them as one category. The `what-are-nail-wraps` page from run #49 already links to this URL, so it has an active inbound link from day one. FAQPage schema targets People Also Ask slots for the UV lamp question, wear time, and top coat use.
 [2026-04-05 00:17:22] Run #1 finished
 [2026-04-05 00:17:28] Run #2 starting (model: sonnet)
+**Run #51 complete.**
+
+**Change made:** Created `/how-to/how-to-remove-nail-wraps/` — a static how-to page that was in the sitemap but only served by the `[slug]` fallback.
+
+**Why this page:** It's the final piece of the nail wraps cluster. `what-are-nail-wraps` (run #49) and `how-to-apply-nail-wraps` (run #50) both already linked to this URL, so the page launched with two live inbound links from topically related pages.
+
+**Content:** Two distinct removal methods — warm water/oil peel for film wraps (no acetone, 5 steps) and acetone foil soak-off for gel wraps (8 steps), with a comparison table, tips for avoiding damage, a common mistakes table, and 7-Q FAQPage schema targeting queries like "can you peel off nail wraps", "how to remove gel nail wraps without acetone", and "do nail wraps damage nails".
+
+**Deployment:** success (`66481fd`).
+[2026-04-05 00:24:59] Run #2 finished
+[2026-04-05 00:24:59] Reached max loops (2). Stopping.
+[2026-04-06 00:09:04] ==========================================
+[2026-04-06 00:09:04] Agent: Seo Agent
+[2026-04-06 00:09:04] Model: sonnet
+[2026-04-06 00:09:04] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-06 00:09:04] Stop on complete: false
+[2026-04-06 00:09:04] Max loops: 2 (0=infinite)
+[2026-04-06 00:09:04] ==========================================
+[2026-04-06 00:09:04] Run #1 starting (model: sonnet)

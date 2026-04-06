@@ -399,12 +399,12 @@ export default function DipNailsPage() {
           <h2 className="text-xl font-bold mb-6" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: "/what-are/what-are-dipped-nails/", label: "What Are Dipped Nails?" },
               { href: "/how-to/how-to-remove-dip-nails/", label: "How To Remove Dip Nails at Home" },
               { href: "/what-are/what-are-gel-nails/", label: "What Are Gel Nails?" },
               { href: "/what-are/what-are-shellac-nails/", label: "What Are Shellac Nails?" },
               { href: "/what-are/what-are-builder-gel-nails/", label: "What Are Builder Gel Nails?" },
               { href: "/what-are/what-are-ombre-nails/", label: "What Are Ombre Nails?" },
-              { href: "/what-are/what-are-french-tip-nails/", label: "What Are French Tip Nails?" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
