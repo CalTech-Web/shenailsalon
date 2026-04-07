@@ -437,6 +437,7 @@ export default function HowToApplyAcrylicNailsPage() {
               {[
                 { title: "How To Remove Acrylic Nails", href: "/how-to/how-to-remove-acrylic-nails/" },
                 { title: "What Are Acrylic Nails?", href: "/what-are/what-are-acrylic-nails/" },
+                { title: "What Are Nail Tips?", href: "/what-are/what-are-nail-tips/" },
                 { title: "What Are Nail Shapes?", href: "/what-are/what-are-nail-shapes/" },
                 { title: "How To Strengthen Your Nails", href: "/how-to/how-to-strengthen-nails/" },
               ].map((link) => (

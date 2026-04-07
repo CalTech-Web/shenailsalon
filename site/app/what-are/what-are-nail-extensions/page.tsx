@@ -459,6 +459,7 @@ export default function NailExtensionsPage() {
               { href: "/what-are/what-are-gel-nails/", label: "What Are Gel Nails?" },
               { href: "/what-are/what-are-gel-x-nails/", label: "What Are Gel-X Nails?" },
               { href: "/what-are/what-are-builder-gel-nails/", label: "What Are Builder Gel Nails?" },
+              { href: "/what-are/what-are-nail-tips/", label: "What Are Nail Tips?" },
               { href: "/how-to/how-to-apply-acrylic-nails/", label: "How To Apply Acrylic Nails" },
               { href: "/how-to/how-to-apply-gel-x-nails/", label: "How To Apply Gel-X Nails" },
               { href: "/how-to/how-to-remove-acrylic-nails/", label: "How To Remove Acrylic Nails" },
