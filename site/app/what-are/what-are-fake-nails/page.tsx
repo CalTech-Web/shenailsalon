@@ -457,7 +457,7 @@ export default function FakeNailsPage() {
               { href: "/what-are/what-are-press-on-nails/", label: "What Are Press-On Nails?" },
               { href: "/what-are/what-are-dip-nails/", label: "What Are Dip Nails?" },
               { href: "/what-are/what-are-nail-extensions/", label: "What Are Nail Extensions?" },
-              { href: "/how-to/how-to-remove-fake-nails/", label: "How To Remove Fake Nails" },
+              { href: "/what-are/what-are-nails-made-of/", label: "What Are Nails Made Of?" },
             ].map(({ href, label }) => (
               <Link
                 key={href}

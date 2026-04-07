@@ -484,7 +484,7 @@ export default function AcrylicNailsPage() {
               { href: "/what-are/what-are-coffin-nails/", label: "What Are Coffin Nails?" },
               { href: "/what-are/what-are-almond-shaped-nails/", label: "What Are Almond Nails?" },
               { href: "/what-are/what-are-solar-nails/", label: "What Are Solar Nails?" },
-              { href: "/how-to/how-to-remove-acrylic-nails/", label: "How to Remove Acrylic Nails" },
+              { href: "/what-are/what-are-nails-made-of/", label: "What Are Nails Made Of?" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
