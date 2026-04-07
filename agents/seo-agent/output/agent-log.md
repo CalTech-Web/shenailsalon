@@ -1,3 +1,44 @@
+## Run #54 - 2026-04-07
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis and inbound link availability
+- `what-are-nail-tips` is in the sitemap but has no static Next.js page; currently handled by the [slug] fallback
+- Two live pages have natural inbound link opportunities before the page existed: `how-to-apply-acrylic-nails` (extensively covers nail tips vs nail forms as the core beginner decision) and `what-are-nail-extensions` (mentions nail tips multiple times as the standard length scaffold)
+- "What are nail tips", "nail tips vs nail forms", "soft gel nail tips", "what are nail tips used for", and "do nail tips damage nails" are all high-intent queries with no static page currently matching
+- Nail tips are a foundational concept across the entire nail extensions cluster (acrylic, gel, builder gel, polygel all use them), making this a high-connectivity page that links naturally into multiple clusters
+
+**Changes made:**
+- Created `site/app/what-are/what-are-nail-tips/page.tsx` — comprehensive static explainer page
+  - Primary targets: "what are nail tips", "nail tips for nails", "what are nail tips used for"
+  - Also targets: "nail tips vs nail forms", "soft gel nail tips", "hard gel nail tips", "how long do nail tips last", "are nail tips bad for your nails", "what are nail tips made of", "can you use nail tips without acrylic", "gel-x nail tips"
+  - First-person Nancy Davidson intro with personal anecdote about attempting acrylic with nail forms before a technician friend told her to start with tips
+  - Explanation of the two nail tip categories: plastic (ABS) half-well tips used as scaffolds under acrylic/gel, and soft gel full-cover tips (gel-x style) used as complete extensions
+  - 6-row types table covering standard plastic, full-cover plastic, french tips, pre-shaped stiletto/almond tips, soft gel full-cover tips, and hard gel pre-formed tips
+  - 8-row nail tips vs nail forms comparison table (structure, skill level, shape, result, best material, nail length, application time, cost)
+  - Step-by-step how nail tips work section (6 steps: size selection, glue application, press-and-rock bonding, trim to length, file the seam, apply extension product)
+  - Dedicated soft gel nail tips section covering gel-x application process (structure gel, LED cure, no acrylic needed) and removal (file surface, acetone soak 10 to 15 min)
+  - 6-row wear time table by scenario (acrylic overlay, hard gel, gel-x, with proper prep, without prep, with water exposure)
+  - "Are nail tips bad for your nails?" section covering two main damage sources: forced removal and over-filing the seam
+  - 6 pros / 6 cons cards
+  - FAQPage schema with 7 Q&As: what are nail tips, nail tips vs forms, what are soft gel nail tips, do nail tips damage nails, can you use without acrylic, how long they last, what are they made of
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: how-to-apply-acrylic-nails, what-are-nail-extensions, what-are-gel-x-nails, what-are-acrylic-nails, what-are-fake-nails, how-to-remove-acrylic-nails
+- Updated `site/app/how-to/how-to-apply-acrylic-nails/page.tsx` — added "What Are Nail Tips?" to Related Nail Guides section (this page covers nail tips vs forms at length and is the most natural source for this inbound link)
+- Updated `site/app/what-are/what-are-nail-extensions/page.tsx` — added "What Are Nail Tips?" to Related Nail Guides section (nail extensions page mentions nail tips as the standard length scaffold in the acrylic and gel-x sections)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two inbound links active from day one: apply-acrylic-nails (the most-viewed how-to guide on the site, covering nail tips extensively) and nail-extensions (covers tips as the primary scaffold method)
+- "What are nail tips" is a high-volume foundational query searched by anyone starting acrylic or gel DIY nails
+- "Nail tips vs nail forms" is a comparison query commonly seen in PAA boxes alongside "how to apply acrylic nails"; the dedicated comparison table targets this directly
+- "Soft gel nail tips" captures the growing gel-x market; dedicated section with application and removal details covers this segment
+- "Do nail tips damage nails" and "what are nail tips made of" are both FAQ-style queries well suited to People Also Ask via FAQPage schema
+- The page connects directly into three established clusters: the acrylic cluster (acrylic nails, how-to-apply-acrylic, how-to-remove-acrylic), the gel-x cluster (gel-x nails, apply-gel-x), and the nail extensions cluster
+
+**Deployment:** success (commit `fae191a`)
+
+---
+
 ## Run #53 - 2026-04-06
 
 **Selection rationale:**
@@ -2816,3 +2857,26 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Key content:** 10-column comparison table (dipped vs acrylic vs gel vs shellac), wear time table, cost table with California pricing, safety and at-home DIY sections, FAQPage schema targeting "are dipped nails the same as acrylic", "dipped nails vs acrylic", and "are dipped nails bad for your nails." Also added a bidirectional link from the existing `what-are-dip-nails` page.
 [2026-04-06 00:18:36] Run #1 finished
 [2026-04-06 00:18:41] Run #2 starting (model: sonnet)
+**Run #53 complete.**
+
+**What was done:** Created `how-to-remove-glue-on-nails` — the last missing page in the how-to removal cluster. This fills a sitemap gap that was being served by the generic `[slug]` fallback.
+
+**Page targets:**
+- Primary: "how to remove glue on nails", "how to get nail glue off nails", "how to remove nail glue"
+- Secondary: "how to remove nail glue without acetone", "how to get nail glue off skin", "what happens if you peel off glue-on nails"
+
+**Structure:** 3 distinct removal methods (acetone foil wrap, warm water, cuticle oil + water), dedicated nail glue on skin section, 5-row methods comparison table, 6-row mistakes table, FAQPage schema with 7 Q&As.
+
+**Inbound links added:** Press-on removal page and fake nails removal page both now link to this URL, giving it two live inbound links from day one.
+
+**Deployment:** success.
+[2026-04-06 00:28:09] Run #2 finished
+[2026-04-06 00:28:09] Reached max loops (2). Stopping.
+[2026-04-07 00:09:04] ==========================================
+[2026-04-07 00:09:04] Agent: Seo Agent
+[2026-04-07 00:09:04] Model: sonnet
+[2026-04-07 00:09:04] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-07 00:09:04] Stop on complete: false
+[2026-04-07 00:09:04] Max loops: 2 (0=infinite)
+[2026-04-07 00:09:04] ==========================================
+[2026-04-07 00:09:04] Run #1 starting (model: sonnet)
