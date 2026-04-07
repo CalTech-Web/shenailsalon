@@ -1,3 +1,43 @@
+## Run #55 - 2026-04-07
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis
+- `what-are-nails-made-of` is in the sitemap but has no static Next.js page; currently served by the [slug] fallback
+- "What are nails made of", "what are fingernails made of", and "what are toenails made of" are all high-volume foundational queries spanning two distinct audiences: general biology curiosity and beauty consumers researching artificial nail chemistry
+- Two natural inbound link sources: `what-are-fake-nails` (a hub for all artificial nail types, directly relevant to material composition) and `what-are-acrylic-nails` (the most established article on the site, covers EMA/PMMA chemistry)
+- The page also serves as a hub linking forward to three currently unbuilt sitemap pages: `what-are-keratin-nails`, `what-are-abs-plastic-nails`, and `what-are-acrylic-resin-nails`
+
+**Changes made:**
+- Created `site/app/what-are/what-are-nails-made-of/page.tsx` — comprehensive composition guide covering both natural and artificial nails
+  - Primary targets: "what are nails made of", "what are fingernails made of", "what are toenails made of"
+  - Also targets: "what are acrylic nails made of", "what are gel nails made of", "what are press-on nails made of", "what are dip nails made of", "what is keratin in nails", "what are nail tips made of", "what are nails made of biologically"
+  - First-person Nancy Davidson intro with personal anecdote about learning nail composition while researching DIY acrylics
+  - Explanation of natural nail anatomy: nail plate (three-layer keratin structure), nail matrix, nail bed, lunula, cuticle/eponychium, and hyponychium
+  - 6-row natural nail anatomy table (component, what it is, composition)
+  - 7-row keratin facts table (protein type, primary amino acid, plate thickness, growth rates for fingers and toes, water content, color source)
+  - Section comparing fingernails vs toenails: same keratin composition, different growth rate (3 to 4 mm vs 1.5 mm per month), and thickness
+  - 8-row artificial nail composition table covering acrylic, hard gel, soft gel/gel polish, soft gel tips (gel-x), press-on nails, nail tips, dip powder, and builder gel (key materials, how it hardens, removal method)
+  - Deep-dive sections on acrylic (EMA monomer + PMMA powder, free-radical polymerization), gel nails (urethane acrylate oligomers + photoinitiators, UV/LED curing), press-on nails (ABS thermoplastic, injection-molded), and dip powder (PMMA resin + cyanoacrylate base)
+  - Section on how nail composition affects nail health (proper removal, filing risk, hydration and keratin health)
+  - FAQPage schema with 7 Q&As: what are nails made of, what are fingernails made of, what are toenails made of, what are acrylic nails made of, what are gel nails made of, what are press-on nails made of, is keratin the same in nails and hair
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-acrylic-nails, what-are-gel-nails, what-are-dip-nails, what-are-press-on-nails, what-are-gel-x-nails, how-to-keep-nails-healthy
+- Updated `site/app/what-are/what-are-fake-nails/page.tsx` — replaced "How To Remove Fake Nails" with "What Are Nails Made Of?" in Related Nail Guides (fake nails page is a hub for all artificial types; composition is the most natural related topic)
+- Updated `site/app/what-are/what-are-acrylic-nails/page.tsx` — replaced "How to Remove Acrylic Nails" with "What Are Nails Made Of?" in Related Nail Guides (acrylic nails page covers EMA/PMMA chemistry in detail; composition page is its natural upstream)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links from day one: what-are-fake-nails (high-traffic hub) and what-are-acrylic-nails (established authority page)
+- "What are nails made of" captures a very broad curiosity audience well beyond the nail product buyer; this type of educational query often ranks well for newer sites because the competition is mostly general health sites, not nail-specialist sites
+- "What are fingernails made of" and "what are toenails made of" are covered in the body text and FAQPage schema, expanding PAA coverage
+- The acrylic, gel, press-on, and dip composition subsections target product-specific composition queries ("what are acrylic nails made of" etc.) that users ask before choosing a nail type
+- FAQPage schema targets 7 distinct People Also Ask question clusters
+- The page acts as a hub linking forward to three currently unbuilt sitemap pages (keratin nails, ABS plastic nails, acrylic resin nails) setting up a future three-page composition cluster
+
+**Deployment:** success (commit `9d332a1`)
+
+---
+
 ## Run #54 - 2026-04-07
 
 **Selection rationale:**
@@ -2880,3 +2920,19 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-04-07 00:09:04] Max loops: 2 (0=infinite)
 [2026-04-07 00:09:04] ==========================================
 [2026-04-07 00:09:04] Run #1 starting (model: sonnet)
+**Run #54 complete.**
+
+**Change made:** Created `site/app/what-are/what-are-nail-tips/page.tsx`, converting the `[slug]` fallback for `/what-are/what-are-nail-tips/` into a full static page.
+
+**Selection rationale:** "What are nail tips" is a foundational query across the entire nail extensions cluster. Multiple existing pages (`how-to-apply-acrylic-nails`, `what-are-nail-extensions`) already mention nail tips extensively, providing natural inbound links from day one.
+
+**Content highlights:**
+- Plastic vs soft gel nail tips comparison
+- 8-row nail tips vs nail forms table (the core beginner decision)
+- Step-by-step how nail tips work section
+- Dedicated gel-x soft gel tips section
+- FAQPage schema targeting "nail tips vs forms", "soft gel nail tips", "do nail tips damage nails", "what are nail tips made of"
+
+**Inbound links added:** `how-to-apply-acrylic-nails` and `what-are-nail-extensions` both now link to the new page. Deployment: success.
+[2026-04-07 00:16:57] Run #1 finished
+[2026-04-07 00:17:03] Run #2 starting (model: sonnet)
