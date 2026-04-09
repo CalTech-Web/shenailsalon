@@ -2936,3 +2936,71 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Inbound links added:** `how-to-apply-acrylic-nails` and `what-are-nail-extensions` both now link to the new page. Deployment: success.
 [2026-04-07 00:16:57] Run #1 finished
 [2026-04-07 00:17:03] Run #2 starting (model: sonnet)
+**Run #55 complete.** Deployment: success (`9d332a1`).
+
+**What was done:** Created `what-are-nails-made-of` as a comprehensive static page targeting the high-volume foundational query cluster "what are nails made of / what are fingernails made of / what are toenails made of," plus product-specific composition queries ("what are acrylic nails made of", "what are gel nails made of", etc.).
+
+**Key content:** 
+- Natural nail anatomy (keratin three-layer plate structure, nail matrix, nail bed, lunula)
+- Keratin facts table (growth rates, thickness, water content, color source)
+- 8-row artificial nail composition table (acrylic, hard gel, soft gel, gel-x, press-on, nail tips, dip powder, builder gel)
+- Deep-dive chemistry sections on acrylic (EMA + PMMA), gel (urethane acrylate oligomers), press-on (ABS plastic), and dip (PMMA + cyanoacrylate)
+- FAQPage schema with 7 Q&As targeting People Also Ask slots
+
+**Inbound links added:** `what-are-fake-nails` and `what-are-acrylic-nails` both link to the new page in their Related Nail Guides sections.
+[2026-04-07 00:26:12] Run #2 finished
+[2026-04-07 00:26:12] Reached max loops (2). Stopping.
+[2026-04-08 00:09:00] ==========================================
+[2026-04-08 00:09:00] Agent: Seo Agent
+[2026-04-08 00:09:00] Model: sonnet
+[2026-04-08 00:09:00] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-08 00:09:00] Stop on complete: false
+[2026-04-08 00:09:00] Max loops: 2 (0=infinite)
+[2026-04-08 00:09:00] ==========================================
+[2026-04-08 00:09:00] Run #1 starting (model: sonnet)
+[2026-04-08 00:12:41] Claude command interrupted or failed
+[2026-04-09 00:09:00] ==========================================
+[2026-04-09 00:09:00] Agent: Seo Agent
+[2026-04-09 00:09:00] Model: sonnet
+[2026-04-09 00:09:00] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-09 00:09:00] Stop on complete: false
+[2026-04-09 00:09:00] Max loops: 2 (0=infinite)
+[2026-04-09 00:09:00] ==========================================
+[2026-04-09 00:09:00] Run #1 starting (model: sonnet)
+
+---
+
+## Run #56 - 2026-04-09
+
+**Selection rationale:**
+- Audited all hub URLs against existing static pages directory
+- Several high-volume nail finish/design terms in the hub had no static pages: matte nails, glitter nails, marble nails, holographic nails, reverse french nails, half-moon nails, negative space nails, long nails, duck nails, flare nails
+- "matte nails" is the highest-volume purely text-intent query in this group, estimated 40-80K/mo at KD=0-2
+- URL `/what-are/what-are-matte-nails/` was already in the sitemap (line 57) and what-are hub, so no sitemap or hub edits needed
+- "Matte nails" SERP is text-friendly: users want to understand what matte finish is, how to get it, colors, and durability — not just images
+
+**Changes made:**
+- Created `site/app/what-are/what-are-matte-nails/page.tsx` — full static article targeting the matte nails cluster
+  - Primary targets: "matte nails", "matte nail polish", "what are matte nails", "matte vs glossy nails"
+  - Also targets: "how to get matte nails", "matte gel nails", "how long do matte nails last", "matte black nails", "matte pink nails", "matte nail colors", "matte top coat"
+  - Matte vs glossy comparison table (8 rows: finish, color saturation, fingerprint visibility, maintenance, application, drying time, durability, best for)
+  - 8 best matte nail colors table with effect and best shape columns
+  - 7-step application guide including gel-specific wipe-off step
+  - DIY callout box for buffing as matte alternative
+  - Wear time by nail type table (6 rows)
+  - Matte black nails dedicated section
+  - Matte pink nails dedicated section
+  - Matte gel nails section with inhibition layer note
+  - Pros grid (6 items) and cons grid (5 items)
+  - FAQPage schema with 7 Q&As targeting: "what are matte nails", "how do you get matte nails", "how long do they last", "matte vs glossy", "can you make gel nails matte", "what colors look best", "how to keep from getting shiny"
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to chrome nails, gel nails, acrylic nails, gel polish, nail art, nail shapes
+
+**Expected impact:**
+- "matte nails" is consistently high-volume with strong text-based SERP intent
+- URL was already in the sitemap and hub, so it had zero PageRank as a fallback page; static content activates all existing signals
+- FAQPage schema with 7 Q&As makes it eligible for People Also Ask positions across multiple queries
+- Completes the nail finishes content cluster (chrome already live, matte now live, glossy covered in gel polish article)
+
+**Deployment:** success (commit `8e13f0c`)
+
