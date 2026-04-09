@@ -1,3 +1,43 @@
+## Run #57 - 2026-04-09
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis
+- `what-are-marble-nails` is in the sitemap but has no static Next.js page; currently served by the [slug] fallback
+- "Marble nails" is a consistently high-volume search with strong year-round demand since the mid-2010s; not a seasonal trend
+- Two live pages mention marble nails repeatedly and are natural inbound link sources: `what-are-nail-art` (lists marble as an intermediate nail art type in its design table) and `what-are-gel-nail-designs` (mentions marble gel nails in FAQPage schema, design table, and body text)
+- Marble nails have broad query cluster coverage: "white marble nails", "black marble nails", "rose gold marble nails", "marble nail designs", "how to do marble nails", "marble nails gel", "marble nails acrylic", "how long do marble nails last"
+
+**Changes made:**
+- Created `site/app/what-are/what-are-marble-nails/page.tsx` — comprehensive explainer page
+  - Primary targets: "what are marble nails", "marble nails", "marble nail designs", "marble nail ideas"
+  - Also targets: "white marble nails", "black marble nails", "rose gold marble nails", "blue marble nails", "marble nails gel", "marble nails acrylic", "how to do marble nails", "how long do marble nails last", "marble nails at home", "marble nail art"
+  - First-person Nancy Davidson intro covering what marble nails are and why the trend has lasting appeal
+  - Definition of marble nails: nail art mimicking stone veining using fine brush, water marbling, nail wraps, or foil
+  - 8-row marble nail designs table (white, black, rose gold, blue, grey, green, gold, terracotta) with color combinations, aesthetic, and best shape
+  - Dedicated white marble nails section: classic Calacatta/Carrara veining on almond and coffin shapes, matte vs glossy finish variation
+  - Dedicated black marble nails section: inverted design with white/silver/gold veining, formal event application
+  - 5-row technique comparison table (gel brush, nail art pen, water marbling, nail wraps/decals, foil transfer) with skill level and notes
+  - Callout tip on thinning gel paint for the brush technique
+  - 6-row wear time table by base type (salon gel, home gel, acrylic, dip, regular polish, nail wraps)
+  - Salon vs DIY comparison section: salon pricing ($55 to $90 in California with art upcharge), nail wrap DIY, nail art pen DIY, water marbling caveats
+  - Pros/cons grid (6 pros, 5 cons)
+  - FAQPage schema with 7 Q&As: what are marble nails, how do you do them, how long do they last, most popular designs, are they hard at home, salon cost, best nail shapes
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-nail-art, what-are-gel-nail-designs, what-are-chrome-nails, what-are-ombre-nails, what-are-nail-wraps, what-are-gel-nails
+- Updated `site/app/what-are/what-are-nail-art/page.tsx` — replaced "All Nail Shapes Explained" with "What Are Marble Nails?" in Related Nail Guides (marble is a direct nail art design topic; nail shapes is a separate category page)
+- Updated `site/app/what-are/what-are-gel-nail-designs/page.tsx` — replaced "What Are Nail Shapes?" with "What Are Marble Nails?" in Related Nail Guides (marble gel nails are mentioned throughout the gel designs page; this creates a bidirectional link)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links from day one: what-are-nail-art and what-are-gel-nail-designs, both high-content pages that already mention marble nails in body text and schemas
+- "Marble nails" is a broad, perennial search term with strong mid-to-long tail cluster (white marble, black marble, rose gold marble, DIY, salon cost, how long they last)
+- FAQPage schema targets 7 distinct People Also Ask question clusters relevant to marble nail searches
+- Technique table differentiates the page from basic "marble nails ideas" listicle competition by covering how each method works and when to use it
+
+**Deployment:** success (commit `365ca13`)
+
+---
+
 ## Run #55 - 2026-04-07
 
 **Selection rationale:**
@@ -3004,3 +3044,16 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 
 **Deployment:** success (commit `8e13f0c`)
 
+**Run #56 complete.** Deployment: success (commit `8e13f0c`).
+
+**What was done:** Created `/what-are/what-are-matte-nails/` — a comprehensive static page replacing the `[slug]` fallback for a URL already in the sitemap and hub.
+
+**Why this will move rankings:**
+- "Matte nails" is consistently high-volume (estimated 40-80K/mo) with a text-friendly SERP — users want to understand what matte finish is, how to get it, what colors work, and how long it lasts
+- The URL was already in the sitemap (line 57) and hub with no static content, so it had zero PageRank flowing through it; the static page activates all existing crawl signals
+- FAQPage schema with 7 Q&As targets People Also Ask positions for "matte vs glossy nails", "can you make gel nails matte", "how to keep matte nails from getting shiny", and more
+- Completes the nail finishes cluster alongside chrome (already live) and gel polish (already live)
+
+**Key content:** Matte vs glossy 8-row comparison table, 8 best colors with effect descriptions, 7-step application guide with gel-specific wipe step, matte black and matte pink dedicated sections, matte gel nails section, wear time table by nail type, and pros/cons grid.
+[2026-04-09 00:15:29] Run #1 finished
+[2026-04-09 00:15:35] Run #2 starting (model: sonnet)
