@@ -457,7 +457,7 @@ export default function GelNailDesignsPage() {
                 { title: "What Are Chrome Nails?", href: "/what-are/what-are-chrome-nails/" },
                 { title: "What Are French Tip Nails?", href: "/what-are/what-are-french-tip-nails/" },
                 { title: "What Are Ombre Nails?", href: "/what-are/what-are-ombre-nails/" },
-                { title: "What Are Nail Shapes?", href: "/what-are/what-are-nail-shapes/" },
+                { title: "What Are Marble Nails?", href: "/what-are/what-are-marble-nails/" },
                 { title: "What Are Cat-Eye Nails?", href: "/what-are/what-are-cat-eye-nails/" },
               ].map((link) => (
                 <Link
