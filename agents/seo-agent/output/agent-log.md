@@ -1,3 +1,46 @@
+## Run #59 - 2026-04-10
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis
+- `what-are-holographic-nails` is in the sitemap but has no static Next.js page; currently served by the [slug] fallback
+- "Holographic nails" has strong search volume with consistent demand and interest from glitter, chrome, and nail art audiences
+- The glitter nails page (run #58) has a dedicated holographic section that explicitly links to what-are-chrome-nails but had no static holographic nails page to link to
+- Broad query cluster: "holographic nails", "what are holographic nails", "holographic nail polish", "holographic nail powder", "holo nails", "linear holographic nails", "scattered holographic nails", "holographic nail art", "holographic nails vs chrome nails", "how long do holographic nails last", "holographic nails DIY", "holographic nails cost"
+- Two live pages are natural inbound link sources: `what-are-glitter-nails` (dedicated holographic section with explicit mention) and `what-are-chrome-nails` (mentions holographic chrome in colors table and FAQ)
+
+**Changes made:**
+- Created `site/app/what-are/what-are-holographic-nails/page.tsx` — comprehensive explainer page
+  - Primary targets: "holographic nails", "what are holographic nails", "holographic nail polish", "holographic nail powder"
+  - Also targets: "holo nails", "linear holographic nails", "scattered holographic nails", "holographic glitter nails", "holographic nail art", "holographic nails vs chrome nails", "best base colors for holographic nails", "how long do holographic nails last", "holographic nails at home", "holographic nails cost"
+  - First-person Nancy Davidson intro covering what holographic nails are and the outdoor-vs-indoor surprise on first try
+  - 7-row types table (linear holo polish, scattered holo polish, holo glitter gel, holo pigment powder, holo chrome powder, foil transfer, duochrome) with what it is and effect
+  - Dedicated linear vs scattered section: explains diffraction grating alignment, distinct rainbow arc vs all-over shimmer, named brands (ILNP, Cirque Colors), everyday wearability comparison
+  - Dedicated holographic powder section: technique (apply on tacky gel, rub with silicone tool, seal with no-wipe topcoat), comparison to chrome powder, dark base recommendation, kit cost ($10 to $20), application tip callout box
+  - 6-row best base colors table (black, dark navy, burgundy, silver/gray, nude, white) with effect on holo and result description
+  - Holographic vs chrome comparison table (6 rows: finish, effect, application, best base, everyday wearability, wear time)
+  - 5-row application methods table (holo polish, powder over gel, holo glitter gel, foil transfer, holo dip powder) with skill level and wear time
+  - 6-row wear time table by nail type (salon gel, home powder, home gel polish, regular polish, dip powder, foil transfer)
+  - Salon vs DIY section: California pricing ($40 to $65 gel with holo finish, $10 to $20 powder upcharge, $55 to $85 detailed nail art, $5 to $10 accent nail add-on), DIY startup cost and per-kit math
+  - Pros/cons grid (6 pros, 5 cons)
+  - FAQPage schema with 7 Q&As: what they are, linear vs scattered, holographic vs chrome, how to apply powder, how long they last, DIY application, salon cost
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-chrome-nails (twice), what-are-glitter-nails, what-are-nail-art, what-are-gel-nails, what-are-matte-nails, what-are-ombre-nails
+- Updated `site/app/what-are/what-are-glitter-nails/page.tsx` — added link to holographic nails page in the Holographic Glitter Nails section (after the chrome nails reference, directing readers to the dedicated holographic guide)
+- Updated `site/app/what-are/what-are-chrome-nails/page.tsx` — added "What Are Holographic Nails?" as the first link in Related Nail Guides (replacing French Tip Nails, which is less directly related to chrome than holographic)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links from day one: what-are-glitter-nails (holographic section with direct editorial context) and what-are-chrome-nails (Related Nail Guides)
+- "Holographic nails" is a distinct, high-volume search cluster separate from both glitter and chrome; the page targets 10+ distinct People Also Ask queries
+- Linear vs scattered section directly addresses the most common differentiation question, targeting "linear holographic nails" and "scattered holographic nails" sub-queries
+- FAQPage schema targets 7 distinct question clusters including the very high-intent "holographic vs chrome" comparison query
+- Powder application section covers the main how-to query cluster with step-by-step detail and a tip callout box
+- Best base colors table differentiates the page from basic "holographic nails ideas" listicles by explaining the physics of why dark bases work best
+
+**Deployment:** success (commit `5dc14b2`)
+
+---
+
 ## Run #58 - 2026-04-10
 
 **Selection rationale:**
@@ -3125,3 +3168,16 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 [2026-04-10 00:09:02] Max loops: 2 (0=infinite)
 [2026-04-10 00:09:02] ==========================================
 [2026-04-10 00:09:02] Run #1 starting (model: sonnet)
+**Run #58 complete.**
+
+**Change made:** Created `/what-are/what-are-glitter-nails/` as a new static page (replacing the generic `[slug]` fallback).
+
+**Why glitter nails:** "Glitter nails" is a perennially high-volume search term with major seasonal spikes (holidays, NYE, prom) and a broad query cluster, including chunky glitter nails, holographic glitter, glitter tips, glitter ombre, gel glitter nails, and how-to/wear-time queries.
+
+**Page contents:** 8-row types table, dedicated sections for chunky glitter, glitter tips, glitter ombre, and holographic glitter, a 6-row application methods table, wear time by nail type, salon vs DIY pricing for California, pros/cons, and a FAQPage schema covering 7 question clusters.
+
+**Inbound links added:** `what-are-nail-art` (already mentions glitter accent nails in the body) and `what-are-chrome-nails` (adjacent sparkle/shine finish category).
+
+**Deployment:** success.
+[2026-04-10 00:15:47] Run #1 finished
+[2026-04-10 00:15:52] Run #2 starting (model: sonnet)
