@@ -329,7 +329,11 @@ export default function GlitterNailsPage() {
               <Link href="/what-are/what-are-chrome-nails/" style={{ color: "#046BD2" }} className="hover:underline">
                 chrome nails
               </Link>
-              . Chrome powder gives a solid metallic mirror finish, while holographic powder gives a rainbow sparkle finish. Both are applied to a cured gel surface using a silicone rubbing tool, and both require a gel topcoat to seal and protect the finish.
+              . Chrome powder gives a solid metallic mirror finish, while holographic powder gives a rainbow sparkle finish. Both are applied to a cured gel surface using a silicone rubbing tool, and both require a gel topcoat to seal and protect the finish. For a full breakdown of holographic finishes, linear versus scattered formulas, and base color choices, see the dedicated{" "}
+              <Link href="/what-are/what-are-holographic-nails/" style={{ color: "#046BD2" }} className="hover:underline">
+                holographic nails guide
+              </Link>
+              .
             </p>
           </div>
 

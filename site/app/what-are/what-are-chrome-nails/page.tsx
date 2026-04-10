@@ -386,11 +386,11 @@ export default function ChromeNailsPage() {
           <h2 className="text-xl font-bold mb-6" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
+              { href: "/what-are/what-are-holographic-nails/", label: "What Are Holographic Nails?" },
               { href: "/what-are/what-are-gel-nails/", label: "What Are Gel Nails?" },
               { href: "/what-are/what-are-almond-shaped-nails/", label: "Almond Nails Guide" },
               { href: "/what-are/what-are-nail-shapes/", label: "All Nail Shapes Explained" },
               { href: "/what-are/what-are-ombre-nails/", label: "What Are Ombre Nails?" },
-              { href: "/what-are/what-are-french-tip-nails/", label: "What Are French Tip Nails?" },
               { href: "/what-are/what-are-glitter-nails/", label: "What Are Glitter Nails?" },
             ].map(({ href, label }) => (
               <Link
