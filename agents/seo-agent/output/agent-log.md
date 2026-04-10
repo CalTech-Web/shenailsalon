@@ -1,3 +1,46 @@
+## Run #58 - 2026-04-10
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis
+- `what-are-glitter-nails` is in the sitemap but has no static Next.js page; currently served by the [slug] fallback
+- "Glitter nails" is a perennially high-volume search term with strong year-round demand and major seasonal spikes (holidays, NYE, prom)
+- Broad query cluster coverage: "glitter nails", "glitter nail designs", "glitter nail ideas", "chunky glitter nails", "fine glitter nails", "holographic glitter nails", "glitter tip nails", "glitter ombre nails", "gel glitter nails", "how long do glitter nails last", "glitter nails at home"
+- Two live pages make strong inbound link sources: `what-are-nail-art` (mentions glitter accent nail as the simplest nail art technique in the design section) and `what-are-chrome-nails` (adjacent sparkle/shine finish category)
+
+**Changes made:**
+- Created `site/app/what-are/what-are-glitter-nails/page.tsx` — comprehensive explainer page
+  - Primary targets: "what are glitter nails", "glitter nails", "glitter nail designs", "glitter nail ideas"
+  - Also targets: "chunky glitter nails", "fine glitter nails", "holographic glitter nails", "glitter tip nails", "glitter ombre nails", "gel glitter nails", "encapsulated glitter nails", "how long do glitter nails last", "glitter nails at home", "glitter nail polish"
+  - First-person Nancy Davidson intro covering what glitter nails are and why they photograph well
+  - 8-row types table (fine shimmer, chunky hex, holographic, loose/encapsulated, glitter ombre, glitter tips, glitter dust, glitter dip powder) with description and effect
+  - Dedicated chunky glitter nails section: particle size, encapsulation technique, seal with clear or builder gel, popular event applications (NYE, holiday parties, prom)
+  - 8-row glitter nail designs table (full glitter, accent nail, glitter tips, glitter ombre, chunky on gel base, holographic, two-color gradient, outline liner) with description and best-use column
+  - Dedicated glitter tip nails section: placement, DIY gel process, why the edge is forgiving, wedding and prom applications
+  - Dedicated glitter ombre nails section: gradient fade technique, gold/nude classic version, dark-base winter version, DIY sponge blending method
+  - Dedicated holographic glitter nails section: prismatic refraction vs single-color glitter, holo powder over dark gel, link to what-are-chrome-nails for comparison
+  - 6-row application methods table (glitter polish, glitter gel polish, loose glitter over tacky base, encapsulated glitter gel, glitter dip powder, glitter foil transfer) with skill level and wear time
+  - Encapsulation tip callout box: apply glitter on sticky inhibition layer, press flat before sealing
+  - 7-row wear time table by nail type (salon gel, home gel, encapsulated gel, dip, acrylic, regular polish, loose glitter over polish)
+  - Salon vs DIY section: California pricing ($35 to $55 gel with glitter polish, $50 to $75 encapsulated chunky, $5 to $10 accent nail add-on), DIY kit cost and per-manicure math
+  - Pros/cons grid (6 pros, 5 cons)
+  - FAQPage schema with 7 Q&As: what are glitter nails, different types, how long they last, DIY application, glitter tips, holographic glitter, salon cost
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-nail-art, what-are-chrome-nails, what-are-ombre-nails, what-are-gel-nails, what-are-matte-nails, what-are-nail-shapes
+- Updated `site/app/what-are/what-are-nail-art/page.tsx` — replaced "What Are Marble Nails?" with "What Are Glitter Nails?" in Related Nail Guides (nail art page mentions glitter accent nail directly in its design tips section; glitter is a more direct nail art design topic than marble)
+- Updated `site/app/what-are/what-are-chrome-nails/page.tsx` — replaced "What Are Gel-X Nails?" with "What Are Glitter Nails?" in Related Nail Guides (chrome and glitter are adjacent sparkle/shine finish categories; the glitter page explicitly compares holographic glitter to chrome powder)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links from day one: what-are-nail-art and what-are-chrome-nails, both high-traffic pages with natural editorial context for the link
+- "Glitter nails" is one of the highest-volume nail searches with consistent year-round demand and major seasonal spikes; broad cluster covers 10+ distinct People Also Ask queries
+- FAQPage schema targets 7 distinct question clusters (what they are, types, wear time, DIY, glitter tips, holographic, salon cost)
+- Application methods table differentiates the page from basic "glitter nail ideas" listicles by covering the mechanics of each technique
+- Holographic section bridges chrome and glitter audiences, increasing topical relevance for both search clusters
+
+**Deployment:** success (commit `46c734a`)
+
+---
+
 ## Run #57 - 2026-04-09
 
 **Selection rationale:**
@@ -3057,3 +3100,28 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Key content:** Matte vs glossy 8-row comparison table, 8 best colors with effect descriptions, 7-step application guide with gel-specific wipe step, matte black and matte pink dedicated sections, matte gel nails section, wear time table by nail type, and pros/cons grid.
 [2026-04-09 00:15:29] Run #1 finished
 [2026-04-09 00:15:35] Run #2 starting (model: sonnet)
+**Run #57 complete.** Here's what was done:
+
+**New page:** `what-are/what-are-marble-nails/` — static Next.js page replacing the [slug] fallback for a URL already in the sitemap.
+
+**Content targets:**
+- Primary: "marble nails", "what are marble nails", "marble nail designs"
+- Long-tail: "white marble nails", "black marble nails", "rose gold marble nails", "how to do marble nails", "marble nails gel", "how long do marble nails last", "marble nails at home"
+
+**Page structure:** design type table (8 styles), dedicated white marble and black marble sections, 5-technique comparison table (gel brush, nail art pen, water marbling, nail wraps, foil), wear time table, salon vs DIY section, pros/cons grid, FAQPage schema (7 Q&As), Article and BreadcrumbList schemas.
+
+**Inbound links added:**
+- `what-are-nail-art` — "What Are Marble Nails?" added to Related Nail Guides (marble nails listed in that page's design table)
+- `what-are-gel-nail-designs` — same addition (marble gel nails mentioned throughout that page's body and FAQ schema)
+
+**Deployment:** success.
+[2026-04-09 00:21:29] Run #2 finished
+[2026-04-09 00:21:29] Reached max loops (2). Stopping.
+[2026-04-10 00:09:02] ==========================================
+[2026-04-10 00:09:02] Agent: Seo Agent
+[2026-04-10 00:09:02] Model: sonnet
+[2026-04-10 00:09:02] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-10 00:09:02] Stop on complete: false
+[2026-04-10 00:09:02] Max loops: 2 (0=infinite)
+[2026-04-10 00:09:02] ==========================================
+[2026-04-10 00:09:02] Run #1 starting (model: sonnet)
