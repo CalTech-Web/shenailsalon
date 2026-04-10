@@ -391,7 +391,7 @@ export default function ChromeNailsPage() {
               { href: "/what-are/what-are-nail-shapes/", label: "All Nail Shapes Explained" },
               { href: "/what-are/what-are-ombre-nails/", label: "What Are Ombre Nails?" },
               { href: "/what-are/what-are-french-tip-nails/", label: "What Are French Tip Nails?" },
-              { href: "/what-are/what-are-gel-x-nails/", label: "What Are Gel-X Nails?" },
+              { href: "/what-are/what-are-glitter-nails/", label: "What Are Glitter Nails?" },
             ].map(({ href, label }) => (
               <Link
                 key={href}

@@ -434,7 +434,7 @@ export default function NailArtPage() {
               { href: "/what-are/what-are-ombre-nails/", label: "What Are Ombre Nails?" },
               { href: "/what-are/what-are-cat-eye-nails/", label: "What Are Cat Eye Nails?" },
               { href: "/what-are/what-are-french-tip-nails/", label: "What Are French Tip Nails?" },
-              { href: "/what-are/what-are-marble-nails/", label: "What Are Marble Nails?" },
+              { href: "/what-are/what-are-glitter-nails/", label: "What Are Glitter Nails?" },
             ].map(({ href, label }) => (
               <Link
                 key={href}
