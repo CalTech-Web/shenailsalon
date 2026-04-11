@@ -1,3 +1,45 @@
+## Run #61 - 2026-04-11
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis
+- `what-are-reverse-french-nails` is in the sitemap but has no static Next.js page; currently served by the [slug] fallback
+- "Reverse french nails" and "reverse french manicure" are high-volume, high-intent search queries with consistent demand since ~2022
+- `what-are-french-tip-nails` already mentions "reverse french" explicitly in 3 places (types table, FAQ about popular styles, FAQ about french tip vs french manicure), making it a ready-made inbound link source
+- Broad query cluster: "reverse french nails", "what are reverse french nails", "reverse french manicure", "reverse french tip nails", "black reverse french nails", "colored reverse french nails", "reverse french nails designs", "how to do reverse french nails", "reverse french gel nails", "reverse french nails at home", "reverse french nails cost", "half moon nails", "reverse french nail ideas"
+- Two live pages are natural inbound link sources: `what-are-french-tip-nails` (multiple existing references to reverse french) and `what-are-nail-art` (lists french tip as an advanced nail art style)
+
+**Changes made:**
+- Created `site/app/what-are/what-are-reverse-french-nails/page.tsx` — comprehensive explainer page
+  - Primary targets: "reverse french nails", "what are reverse french nails", "reverse french manicure", "reverse french tip nails"
+  - Also targets: "black reverse french nails", "colored reverse french nails", "reverse french nails designs", "how to do reverse french nails", "reverse french gel nails", "reverse french nails at home", "reverse french nails cost", "half moon manicure", "reverse french nails ideas"
+  - First-person Nancy Davidson intro about how reverse french makes short nails look longer and the visual logic of drawing the eye upward
+  - Comparison table (6 rows): reverse french vs classic french on stripe position, base color, stripe color, aesthetic, DIY difficulty, salon upcharge
+  - 8-row popular designs table (black on nude, white on black, red on nude, pastel on clear, chrome/metallic, geometric, double stripe, negative space) with description, best shape, and aesthetic
+  - Dedicated black reverse french section: stripe thickness guidance, liner brush vs gel liner pen for DIY, best shapes (almond, coffin)
+  - Dedicated colored reverse french section: 5 specific color combinations with descriptions (red on nude, navy on white, lilac on clear, burnt orange on camel, metallic gold on black)
+  - 8-step DIY guide with tip callout box (how to pre-reduce tape stickiness for cleaner cuticle placement)
+  - 6-row wear time table (salon gel, home gel, regular polish, gel-x, acrylic, press-on) with cuticle placement advantage noted
+  - Nail shapes section with 4 shape categories (almond/oval, coffin/ballerina, stiletto, short square/squoval) explaining how each interacts with the stripe
+  - Salon vs DIY cost section: California pricing ($50 to $80 gel, $10 to $35 nail art upcharge, $80 to $130 gel-x with art), DIY gel kit startup cost and per-manicure math
+  - Pros/cons grid (6 pros, 5 cons)
+  - FAQPage schema with 7 Q&As: what they are, vs classic french, colors, DIY process, wear time, salon cost, best nail shapes
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-french-tip-nails (twice), what-are-nail-art (twice), what-are-almond-shaped-nails, what-are-coffin-nails, what-are-nail-shapes, what-are-gel-nails
+- Updated `site/app/what-are/what-are-french-tip-nails/page.tsx` — added "What Are Reverse French Nails?" as the first link in Related Nail Guides (replacing What Are Shellac Nails, which is less directly related to french tips than reverse french)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- One live inbound link from day one: what-are-french-tip-nails, which already has 3 editorial mentions of reverse french in its body and FAQ
+- "Reverse french manicure" and "black reverse french nails" are high-volume queries that currently have no dedicated page on the site
+- Comparison table directly addresses the most common differentiation question, targeting "reverse french vs french manicure" comparison queries
+- Black reverse french section covers the highest-volume design variation with practical technique detail
+- FAQPage schema covers 7 distinct question clusters including nail shapes (common People Also Ask segment) and salon cost
+- DIY guide targets "how to do reverse french nails" how-to intent without requiring a separate how-to page
+
+**Deployment:** success (commit `39081a2`)
+
+---
+
 ## Run #60 - 2026-04-11
 
 **Selection rationale:**
@@ -3253,3 +3295,14 @@ Run #59 complete. Here's the summary:
 [2026-04-11 00:09:00] Max loops: 2 (0=infinite)
 [2026-04-11 00:09:00] ==========================================
 [2026-04-11 00:09:00] Run #1 starting (model: sonnet)
+**Run #60 complete.** Deployed successfully.
+
+**What was done:**
+
+- Created `/what-are/what-are-3d-nails/` — a full static page replacing the `[slug]` fallback. Covers: 7 types of 3D nail art (gel sculpted, acrylic, charms, encapsulated, stickers, rhinestone clusters, stamping relief), a dedicated nail charms section with gel-setting tip callout, sculpted gel/acrylic section, encapsulated dried flower section, 8-row designs table, wear time table, California salon pricing ($60-$110), pros/cons, and FAQPage schema with 7 Q&As targeting queries like "do 3D nails snag" and "how are 3D nails made."
+
+- Added inbound links from `what-are-nail-art` and `what-are-gel-nail-designs` (both pages already referenced 3D nail art in body copy and tables, making the links contextually strong from day one).
+
+**Target queries:** "3D nails", "what are 3D nails", "3D nail art", "3D nail charms", "nail charms", "sculpted gel nails", "encapsulated nails", "dried flower nails", "rhinestone nails", and several People Also Ask clusters.
+[2026-04-11 00:14:31] Run #1 finished
+[2026-04-11 00:14:36] Run #2 starting (model: sonnet)
