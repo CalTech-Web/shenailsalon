@@ -1,3 +1,44 @@
+## Run #60 - 2026-04-11
+
+**Selection rationale:**
+- No Ahrefs API access this run; selected based on sitemap gap analysis
+- `what-are-3d-nails` is in the sitemap but has no static Next.js page; currently served by the [slug] fallback
+- "3D nails" is a high-volume, trending search cluster driven by social media nail art content
+- Broad query cluster: "3D nails", "what are 3D nails", "3D nail art", "3D nail designs", "3D nail charms", "acrylic 3D nails", "gel 3D nails", "3D nail ideas", "how to do 3D nails", "3D nails at home", "3D nail salon cost", "sculpted nail art", "nail charms", "encapsulated nails", "dried flower nails", "rhinestone nails"
+- Two live high-traffic pages are natural inbound link sources: `what-are-nail-art` (design table explicitly lists "3D nail art" as a design type with description; FAQ answers reference 3D embellishments twice) and `what-are-gel-nail-designs` (gel 3D art is a direct subcategory)
+
+**Changes made:**
+- Created `site/app/what-are/what-are-3d-nails/page.tsx` — comprehensive explainer page
+  - Primary targets: "3D nails", "what are 3D nails", "3D nail art", "3D nail designs"
+  - Also targets: "3D nail charms", "nail charms", "sculpted gel nails", "encapsulated nails", "dried flower nails", "rhinestone nails", "acrylic 3D nails", "gel 3D nails", "3D nails at home", "3D nail salon cost"
+  - First-person Nancy Davidson intro about her first 3D nail charm experience
+  - 7-row types table (gel sculpted, acrylic sculpted, nail charms, encapsulated objects, 3D nail stickers, crystal clusters, stamping relief) with description, skill level, and notes
+  - Dedicated nail charms section: setting technique with gel vs glue, tip callout box with step-by-step gel-setting method
+  - Dedicated sculpted gel and acrylic section: working time comparison, petal layering technique, pigment options
+  - Dedicated encapsulated nails section: dried flowers, foil, glitter encapsulation technique, link to glitter nails page
+  - 8-row popular designs table (sculpted flowers, rhinestone clusters, 3D bow nails, encapsulated dried flowers, pearl accents, butterfly charms, cherry charms, crystal half-moon)
+  - 6-row wear time table (salon gel sculpted, acrylic sculpted, encapsulated salon, charms in gel, stickers over polish, charms with glue only)
+  - Salon vs DIY section: California pricing ($60 to $110 for gel with 3D art, $10 to $20 charm add-on, $40 to $60+ for sculpted flowers), DIY charm kit cost ($10 to $25), pre-made sticker option
+  - Pros/cons grid (6 pros, 5 cons)
+  - FAQPage schema with 7 Q&As: what they are, how they are made, how long they last, most popular designs, DIY at home, salon cost, snagging
+  - BreadcrumbList and Article JSON-LD schemas
+  - Internal links to: what-are-nail-art, what-are-gel-nails, what-are-acrylic-nails, what-are-press-on-nails, what-are-glitter-nails, what-are-gel-nail-designs, what-are-marble-nails, what-are-chrome-nails
+- Updated `site/app/what-are/what-are-nail-art/page.tsx` — replaced "What Are French Tip Nails?" with "What Are 3D Nails?" in Related Nail Guides (nail art page has extensive 3D mentions in design table and FAQ; 3D is more directly related to nail art than French tip)
+- Updated `site/app/what-are/what-are-gel-nail-designs/page.tsx` — replaced "What Are French Tip Nails?" with "What Are 3D Nails?" in Related Nail Guides (gel 3D sculpted art is a core gel nail design type)
+
+**Expected impact:**
+- URL already in sitemap; static page replaces the generic [slug] fallback
+- Two live inbound links from day one: what-are-nail-art (mentions "3D nail art" in design table, FAQ, and body text) and what-are-gel-nail-designs (gel 3D sculpted art is a direct subcategory)
+- "3D nails" is a high-volume, rapidly growing search cluster with strong social media tailwind from TikTok and Instagram nail art content
+- Nail charms section targets the high-intent "nail charms" and "rhinestone nails" sub-queries with specific application technique detail
+- Encapsulated section targets "dried flower nails" and "encapsulated nails" which are trending aesthetic queries
+- FAQPage schema covers 7 distinct question clusters including the practical "do 3D nails snag" question which appears frequently in People Also Ask
+- Designs table targets 8 distinct named design queries from sculpted flowers to butterfly charms and Y2K bow nails
+
+**Deployment:** success (commit `1e033cf`)
+
+---
+
 ## Run #59 - 2026-04-10
 
 **Selection rationale:**
@@ -3181,3 +3222,34 @@ Created `site/app/how-to/how-to-keep-nails-healthy/page.tsx` — a comprehensive
 **Deployment:** success.
 [2026-04-10 00:15:47] Run #1 finished
 [2026-04-10 00:15:52] Run #2 starting (model: sonnet)
+Run #59 complete. Here's the summary:
+
+**Change:** Created `site/app/what-are/what-are-holographic-nails/page.tsx` — a full static page replacing the [slug] fallback for a URL already in the sitemap.
+
+**Why holographic nails:** Strong search volume cluster spanning "holographic nails", "holographic nail polish", "holographic nail powder", "linear vs scattered holographic", "holographic vs chrome nails", and related DIY queries. The glitter nails page (run #58) already had a dedicated holographic section pointing to chrome nails, so a holographic nails page was a natural next node in the content graph.
+
+**Page coverage:**
+- Types table (7 rows: linear polish, scattered polish, holo glitter gel, pigment powder, chrome powder, foil transfer, duochrome)
+- Dedicated linear vs scattered section with brand examples (ILNP, Cirque Colors)
+- Holographic powder technique with application tip callout
+- Best base colors table (6 rows) explaining the physics of dark base contrast
+- Holographic vs chrome comparison table (6 rows)
+- Application methods table with skill level and wear time
+- Wear time table by nail type
+- Salon vs DIY pricing (California)
+- FAQPage schema with 7 Q&As
+- Internal links to: what-are-chrome-nails, what-are-glitter-nails, what-are-gel-nails, what-are-nail-art, what-are-matte-nails, what-are-ombre-nails
+
+**Also updated:** glitter nails page (added link to holographic guide in the holographic section) and chrome nails page (added holographic nails to Related Nail Guides).
+
+**Deployment:** success (commit `5dc14b2`)
+[2026-04-10 00:22:21] Run #2 finished
+[2026-04-10 00:22:21] Reached max loops (2). Stopping.
+[2026-04-11 00:09:00] ==========================================
+[2026-04-11 00:09:00] Agent: Seo Agent
+[2026-04-11 00:09:00] Model: sonnet
+[2026-04-11 00:09:00] Workspace: /Users/brandonhopkins/Projects/seo/shenailsalon/agents/seo-agent
+[2026-04-11 00:09:00] Stop on complete: false
+[2026-04-11 00:09:00] Max loops: 2 (0=infinite)
+[2026-04-11 00:09:00] ==========================================
+[2026-04-11 00:09:00] Run #1 starting (model: sonnet)
