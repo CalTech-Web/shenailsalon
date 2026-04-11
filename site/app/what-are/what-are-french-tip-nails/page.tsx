@@ -353,9 +353,9 @@ export default function FrenchTipNailsPage() {
             <h2 className="text-xl font-bold mb-4" style={{ color: "#1E293B" }}>Related Nail Guides</h2>
             <div className="grid sm:grid-cols-2 gap-3">
               {[
+                { title: "What Are Reverse French Nails?", href: "/what-are/what-are-reverse-french-nails/" },
                 { title: "What Are Gel Nails?", href: "/what-are/what-are-gel-nails/" },
                 { title: "What Are Acrylic Nails?", href: "/what-are/what-are-acrylic-nails/" },
-                { title: "What Are Shellac Nails?", href: "/what-are/what-are-shellac-nails/" },
                 { title: "How to Paint Your Nails", href: "/how-to/how-to-paint-nails/" },
               ].map((link) => (
                 <Link
